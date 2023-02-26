@@ -15,6 +15,7 @@
 		B2A1278529A8202400391C10 /* CityDogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A1278429A8202400391C10 /* CityDogUITests.swift */; };
 		B2A1278729A8202400391C10 /* CityDogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A1278629A8202400391C10 /* CityDogUITestsLaunchTests.swift */; };
 		B2AE843C29ABDC8000C44500 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AE843B29ABDC8000C44500 /* MainMenu.swift */; };
+		B2AE843E29AC16F300C44500 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AE843D29AC16F300C44500 /* LogIn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		B2A1278429A8202400391C10 /* CityDogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDogUITests.swift; sourceTree = "<group>"; };
 		B2A1278629A8202400391C10 /* CityDogUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDogUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B2AE843B29ABDC8000C44500 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		B2AE843D29AC16F300C44500 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				B2A1276929A8202000391C10 /* CityDogApp.swift */,
 				B2A1276B29A8202000391C10 /* LaunchScreen.swift */,
 				B2AE843B29ABDC8000C44500 /* MainMenu.swift */,
+				B2AE843D29AC16F300C44500 /* LogIn.swift */,
 				B2A1276D29A8202300391C10 /* Assets.xcassets */,
 				B2A1276F29A8202300391C10 /* Preview Content */,
 			);
@@ -263,6 +266,7 @@
 				B2A1276C29A8202000391C10 /* LaunchScreen.swift in Sources */,
 				B2A1276A29A8202000391C10 /* CityDogApp.swift in Sources */,
 				B2AE843C29ABDC8000C44500 /* MainMenu.swift in Sources */,
+				B2AE843E29AC16F300C44500 /* LogIn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
