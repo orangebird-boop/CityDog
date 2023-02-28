@@ -1,6 +1,3 @@
-
-//    var icons2 = ["cross.fill", "pawprint.fill", "basket", "fork.knife"]
-
 import SwiftUI
 
 
