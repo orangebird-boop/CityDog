@@ -2,7 +2,7 @@ import Foundation
 
 
 extension Places {
-    class PlacesViewModel {
+    class BarsRestaurantsViewModel {
 //        let place = ["bar1": ("snow"),
 //                       "bar2": ("Chris"),
 //                    "bar3": ("lenny"),
