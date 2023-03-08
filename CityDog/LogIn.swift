@@ -3,10 +3,7 @@ import SwiftUI
 struct LogIn: View {
     var body: some View {
        ZStack {
-         Color.clear.background(
-           Color.white
-             .opacity(0.48)
-         )
+         Color.clear.background()
          .edgesIgnoringSafeArea(.all)
            
          VStack(alignment: .center, spacing: 10.0) {
