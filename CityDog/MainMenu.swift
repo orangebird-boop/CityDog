@@ -6,8 +6,8 @@ struct MainMenu: View {
     var body: some View {
         ZStack {
             Color.clear.background(
-                Color(hue: 0.168, saturation: 1, brightness: 1)
-                    .opacity(0.48)
+//                Color(hue: 0.168, saturation: 1, brightness: 1)
+//                    .opacity(0.48)
             )
             .edgesIgnoringSafeArea(.all)
             
@@ -30,7 +30,7 @@ struct MainMenu: View {
                                 .bold()
                                 .fontWeight(.heavy)
                                 .font(.system(size: 28.0))
-                                .foregroundColor(Color.black)
+                                .foregroundColor(Color.accentColor)
                         }
                         
                         VStack {
@@ -48,7 +48,7 @@ struct MainMenu: View {
                             Text("Promenades")
                                 .fontWeight(.heavy)
                                 .font(.system(size: 28.0))
-                                .foregroundColor(Color.black)
+                                .foregroundColor(Color.accentColor)
                             
                         }
                     }
