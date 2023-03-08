@@ -1,25 +1,32 @@
 import SwiftUI
 
 struct AddComments: View {
+    @State private var profileText = "Enter your comment. You can specify a minimum width for each Spacer, or let it squish all the way to zero if the adjacent content needs all the space."
     var body: some View {
         VStack {
             List {
                 
                 HStack {
                     Text("Title")
-                        .padding()
+                        
+                    Spacer()
                     Text("Lorem ipsum")
-                        .padding()
+                        
                 }
                 HStack {
                     Text("Message")
                         .padding()
-                    Text("Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+                    Spacer()
+                    // entering multiline text
+                    TextEditor(text: $profileText)
+                        .scaledToFill()
                         .padding()
+                        
                 }
                 HStack {
                     Text("Satisfaction")
-                        .padding()
+                        
+                    Spacer()
                     Section {
                         
                         StarRating(rating: .constant(4))
