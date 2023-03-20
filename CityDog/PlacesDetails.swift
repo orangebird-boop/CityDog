@@ -4,40 +4,37 @@ struct PlacesDetails: View {
     
     var body: some View {
         VStack {
-            List {
-                
-                HStack {
-                    Text("Nom")
-                        .padding()
-                    Text("Lorem ipsum")
-                        .padding()
-                }
-                HStack {
-                    Text("Addresse")
-                        .padding()
-                    Text("dolor sit amet, consectetur adipiscing elit")
-                        .padding()
-                }
-                HStack {
-                    Text("Description")
-                        .padding()
-                    Text("Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
-                        .padding()
-                }
-                
-                HStack {
-                    Text("Bon à savoir")
-                        .padding()
-                    Text("should be icons")
-                        .padding()
-                }
+            Form {
                 Section {
-                    
+                    Text("Lorem ipsum")
+                } header: {
+                    Text("Nom")
+                }
+                
+                Section {
+                    Text("Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+                } header: {
+                    Text("Addresse")
+                }
+                
+                Section {
+                    Text("Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+                } header: {
+                    Text("Description")
+                }
+                
+                Section {
+                    Text("Lorem ipsum")
+                } header: {
+                    Text("Bon à savoir")
+                }
+                
+                Section {
                     StarRating(rating: .constant(4))
-                    
-                }.padding()
+                } header: {
+                    Text("Rating")
+                }
             }
-            
          
             Button(action: {
                 // TODO: Specify action

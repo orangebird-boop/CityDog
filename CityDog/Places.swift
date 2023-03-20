@@ -1,29 +1,29 @@
 import SwiftUI
 
+
+
 struct Places: View {
-    let place = ["bar1": Image("Chris"),
-                 "bar2": Image("Chris"),
-                 "bar3": Image("Chris"),
-                 "bar4": Image("Chris")]
+    
+    @State var viewModel: RestaurantsAndBarsViewModel
+
     
     var body: some View {
-        List {
-            ForEach(2..<100) {_ in
-                HStack {
-                    Text("bar1")
-                        .padding()
-                    Text("should be an image")
-                        .padding()
-                }
+        NavigationStack {
+          
+            List {
+                ForEach(viewModel.places, id: \.id) { place in
+                        NavigationLink(place.name, destination: PlacesDetails())
+                    }
+                }.navigationTitle(viewModel.title)
             }
-            
-        }
- }
+
+        
+    }
 }
 
 struct Lieux_Previews: PreviewProvider {
     static var previews: some View {
-        Places()
+        Places(viewModel: RestaurantsAndBarsViewModel())
     }
 }
 

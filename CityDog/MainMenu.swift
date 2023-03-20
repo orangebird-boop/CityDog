@@ -8,8 +8,7 @@ struct MainMenu: View {
     var body: some View {
         ZStack {
             Color.clear.background(
-                //                Color(hue: 0.168, saturation: 1, brightness: 1)
-                //                    .opacity(0.48)
+        
             )
             .edgesIgnoringSafeArea(.all)
             
@@ -18,83 +17,93 @@ struct MainMenu: View {
                     Spacer()
                     HStack (alignment: .top){
                         VStack {
-                            Image(systemName: "cross.fill")
-                                .resizable()
-                                .scaledToFit()
-                                .foregroundColor(Color.black)
-                                .padding(6.0)
-                                .frame(width: 169.0, height: 168.0)
-                                .background(
-                                    Color(hue: 0.282, saturation: 1, brightness: 1)
-                                        .cornerRadius(31.0)
-                                )
-                            Text("Veterinaire")
-                                .bold()
-                                .fontWeight(.heavy)
-                                .font(.system(size: 28.0))
-                                .foregroundColor(Color.accentColor)
+                            Group {
+                                Image(systemName: "cross.fill")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .foregroundColor(Color.black)
+                                    .padding(6.0)
+                                    .frame(width: 169.0, height: 168.0)
+                                    .background(
+                                        Color(hue: 0.282, saturation: 1, brightness: 1)
+                                            .cornerRadius(31.0)
+                                    )
+                                Text("Veterinaire")
+                                    .bold()
+                                    .fontWeight(.heavy)
+                                    .font(.system(size: 28.0))
+                                    .foregroundColor(Color.accentColor)
+                            }
                         }
-                        
                         VStack {
-                            Image(systemName: "pawprint.fill")
-                                .resizable()
-                                .scaledToFit()
-                                .foregroundColor(Color.black)
-                                .padding(6.0)
-                                .frame(width: 168.0, height: 168.0)
-                                .background(
-                                    Color(hue: 0.554, saturation: 1, brightness: 1)
-                                        .cornerRadius(31.0)
-                                )
-                            
-                            Text("Promenades")
-                                .fontWeight(.heavy)
-                                .font(.system(size: 28.0))
-                                .foregroundColor(Color.accentColor)
-                            
+                            Group {
+                                Image(systemName: "pawprint.fill")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .foregroundColor(Color.black)
+                                    .padding(6.0)
+                                    .frame(width: 168.0, height: 168.0)
+                                    .background(
+                                        Color(hue: 0.554, saturation: 1, brightness: 1)
+                                            .cornerRadius(31.0)
+                                    )
+                                
+                                Text("Promenades")
+                                    .fontWeight(.heavy)
+                                    .font(.system(size: 28.0))
+                                    .foregroundColor(Color.accentColor)
+                                
+                            }
                         }
                     }
                     
                     VStack{
                         HStack (alignment: .top){
                             VStack {
-                                Image(systemName: "basket")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .foregroundColor(Color.black)
-                                    .padding(6.0)
-                                    .frame(width: 168.0, height: 168.0)
-                                    .background(
-                                        Color(hue: 0.049, saturation: 1, brightness: 1)
-                                            .cornerRadius(31.0)
-                                    )
-                                Text("Animaleries")
-                                    .bold()
-                                    .fontWeight(.heavy)
-                                    .font(.system(size: 28.0))
-                                    .foregroundColor(Color.black)
-                                
+                                Group {
+                                    Image(systemName: "basket")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .foregroundColor(Color.black)
+                                        .padding(6.0)
+                                        .frame(width: 168.0, height: 168.0)
+                                        .background(
+                                            Color(hue: 0.049, saturation: 1, brightness: 1)
+                                                .cornerRadius(31.0)
+                                        )
+                                    Text("Animaleries")
+                                        .bold()
+                                        .fontWeight(.heavy)
+                                        .font(.system(size: 28.0))
+                                        .foregroundColor(Color.black)
+                                    
+                                }
                             }
                             
                             VStack {
-                                Image(systemName: "fork.knife")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .foregroundColor(Color.black)
-                                    .padding(6.0)
-                                    .frame(width: 168.0, height: 168.0)
-                                    .background(
-                                        Color(hue: 0.105, saturation: 1, brightness: 1)
-                                            .cornerRadius(31.0)
-                                    )
-                                Text("Bars & Restaurants")
-                                    .fontWeight(.heavy)
-                                    .font(.system(size: 28.0))
-                                    .foregroundColor(Color.black)
-                                Spacer()
-                                    .frame(height: 8.0)
-                                
-                                
+                                Group {
+                                    Image(systemName: "fork.knife")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .foregroundColor(Color.black)
+                                        .padding(6.0)
+                                        .frame(width: 168.0, height: 168.0)
+                                        .background(
+                                            Color(hue: 0.105, saturation: 1, brightness: 1)
+                                                .cornerRadius(31.0)
+                                        )
+                                    Text("Bars & Restaurants")
+                                        .fontWeight(.heavy)
+                                        .font(.system(size: 28.0))
+                                        .foregroundColor(Color.black)
+                                    Spacer()
+                                        .frame(height: 8.0)
+                                    
+                                }
+                                .gesture(TapGesture().onEnded {
+                                    print("tapped bar")
+                                }
+                                         )
                             }
                         }
                     }

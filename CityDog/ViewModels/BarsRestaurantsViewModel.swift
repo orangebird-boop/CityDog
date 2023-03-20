@@ -1,13 +1,20 @@
-import Foundation
+import SwiftUI
 
 
-extension Places {
-    class BarsRestaurantsViewModel {
-//        let place = ["bar1": ("snow"),
-//                       "bar2": ("Chris"),
-//                    "bar3": ("lenny"),
-//                     "bar4": ("fire")] as [String : Any]
-        let placeName = ["bar1", "bar2","bar3", "bar4"]
-        let placeImage = ["snow", "Chris", "lenny", "fire"]
-    }
+struct Place {
+    let id: String
+    let name: String
+    let imageURL: String
 }
+   
+    
+    struct RestaurantsAndBarsViewModel {
+        let title = "Restaurants and Bars"
+        let places = [
+            Place(id: "1", name: "name1", imageURL: "Chris"),
+            Place(id: "2", name: "name2", imageURL: ""),
+            Place(id: "3", name: "name3", imageURL: ""),
+            Place(id: "4", name: "name4", imageURL: ""),
+        ]
+    }
+
