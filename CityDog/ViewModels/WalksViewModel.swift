@@ -1,6 +1,6 @@
 import Foundation
 
-extension Places {
+extension Elements {
     class WalksViewModel {
         
         

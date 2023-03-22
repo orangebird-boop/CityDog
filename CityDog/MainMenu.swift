@@ -4,6 +4,7 @@ import SwiftUI
 struct MainMenu: View {
     
     @State private var isNavigatingToLogIn = false
+    @State private var isNavigatingToElements = false
     
     var body: some View {
         ZStack {
@@ -12,7 +13,7 @@ struct MainMenu: View {
             )
             .edgesIgnoringSafeArea(.all)
             
-            NavigationView {
+            NavigationStack {
                 VStack {
                     Spacer()
                     HStack (alignment: .top){
@@ -81,7 +82,8 @@ struct MainMenu: View {
                             }
                             
                             VStack {
-                                Group {
+                                Form {
+                                    NavigationLink("", destination: Elements(viewModel: RestaurantsAndBarsViewModel()))
                                     Image(systemName: "fork.knife")
                                         .resizable()
                                         .scaledToFit()
@@ -102,6 +104,7 @@ struct MainMenu: View {
                                 }
                                 .gesture(TapGesture().onEnded {
                                     print("tapped bar")
+                                    
                                 }
                                          )
                             }

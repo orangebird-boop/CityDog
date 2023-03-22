@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B202BDF329B7BD7300845CE3 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BDF229B7BD7300845CE3 /* UserProfile.swift */; };
-		B202BDF529B7E2E300845CE3 /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BDF429B7E2E200845CE3 /* Places.swift */; };
-		B202BDF729B7E31000845CE3 /* PlacesDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BDF629B7E31000845CE3 /* PlacesDetails.swift */; };
-		B202BDF929B7E33A00845CE3 /* PlacesComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BDF829B7E33A00845CE3 /* PlacesComments.swift */; };
-		B202BDFB29B7E34700845CE3 /* AddComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BDFA29B7E34700845CE3 /* AddComments.swift */; };
+		B202BDF529B7E2E300845CE3 /* Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BDF429B7E2E200845CE3 /* Elements.swift */; };
+		B202BDF729B7E31000845CE3 /* ElementsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BDF629B7E31000845CE3 /* ElementsDetails.swift */; };
+		B202BDF929B7E33A00845CE3 /* ElementsComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BDF829B7E33A00845CE3 /* ElementsComments.swift */; };
+		B202BDFB29B7E34700845CE3 /* ElementsAddComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BDFA29B7E34700845CE3 /* ElementsAddComments.swift */; };
 		B202BDFF29B80C1B00845CE3 /* BarsRestaurantsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BDFE29B80C1B00845CE3 /* BarsRestaurantsViewModel.swift */; };
 		B202BE0529B8A4ED00845CE3 /* StarRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BE0429B8A4ED00845CE3 /* StarRating.swift */; };
 		B202BE0729B8BC6600845CE3 /* WalksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BE0629B8BC6600845CE3 /* WalksViewModel.swift */; };
@@ -46,10 +46,10 @@
 
 /* Begin PBXFileReference section */
 		B202BDF229B7BD7300845CE3 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
-		B202BDF429B7E2E200845CE3 /* Places.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
-		B202BDF629B7E31000845CE3 /* PlacesDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesDetails.swift; sourceTree = "<group>"; };
-		B202BDF829B7E33A00845CE3 /* PlacesComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesComments.swift; sourceTree = "<group>"; };
-		B202BDFA29B7E34700845CE3 /* AddComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddComments.swift; sourceTree = "<group>"; };
+		B202BDF429B7E2E200845CE3 /* Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elements.swift; sourceTree = "<group>"; };
+		B202BDF629B7E31000845CE3 /* ElementsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsDetails.swift; sourceTree = "<group>"; };
+		B202BDF829B7E33A00845CE3 /* ElementsComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsComments.swift; sourceTree = "<group>"; };
+		B202BDFA29B7E34700845CE3 /* ElementsAddComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsAddComments.swift; sourceTree = "<group>"; };
 		B202BDFE29B80C1B00845CE3 /* BarsRestaurantsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarsRestaurantsViewModel.swift; sourceTree = "<group>"; };
 		B202BE0429B8A4ED00845CE3 /* StarRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRating.swift; sourceTree = "<group>"; };
 		B202BE0629B8BC6600845CE3 /* WalksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalksViewModel.swift; sourceTree = "<group>"; };
@@ -125,20 +125,20 @@
 		B2A1276829A8202000391C10 /* CityDog */ = {
 			isa = PBXGroup;
 			children = (
-				B2A1276929A8202000391C10 /* CityDogApp.swift */,
-				B2A1276B29A8202000391C10 /* LaunchScreen.swift */,
-				B2AE843B29ABDC8000C44500 /* MainMenu.swift */,
-				B202BDF229B7BD7300845CE3 /* UserProfile.swift */,
-				B202BDF429B7E2E200845CE3 /* Places.swift */,
-				B202BDF629B7E31000845CE3 /* PlacesDetails.swift */,
-				B213F78329C8F0B0007F8D2B /* ItemRow.swift */,
-				B202BDF829B7E33A00845CE3 /* PlacesComments.swift */,
-				B202BDFA29B7E34700845CE3 /* AddComments.swift */,
-				B202BE0429B8A4ED00845CE3 /* StarRating.swift */,
-				B2AE843D29AC16F300C44500 /* LogIn.swift */,
-				B202BE0029B81F1300845CE3 /* ViewModels */,
 				B2A1276D29A8202300391C10 /* Assets.xcassets */,
+				B2A1276929A8202000391C10 /* CityDogApp.swift */,
+				B202BDF429B7E2E200845CE3 /* Elements.swift */,
+				B202BDFA29B7E34700845CE3 /* ElementsAddComments.swift */,
+				B202BDF829B7E33A00845CE3 /* ElementsComments.swift */,
+				B202BDF629B7E31000845CE3 /* ElementsDetails.swift */,
+				B213F78329C8F0B0007F8D2B /* ItemRow.swift */,
+				B2A1276B29A8202000391C10 /* LaunchScreen.swift */,
+				B2AE843D29AC16F300C44500 /* LogIn.swift */,
+				B2AE843B29ABDC8000C44500 /* MainMenu.swift */,
 				B2A1276F29A8202300391C10 /* Preview Content */,
+				B202BE0429B8A4ED00845CE3 /* StarRating.swift */,
+				B202BDF229B7BD7300845CE3 /* UserProfile.swift */,
+				B202BE0029B81F1300845CE3 /* ViewModels */,
 			);
 			path = CityDog;
 			sourceTree = "<group>";
@@ -299,18 +299,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2A1276C29A8202000391C10 /* LaunchScreen.swift in Sources */,
-				B202BDF729B7E31000845CE3 /* PlacesDetails.swift in Sources */,
+				B202BDF729B7E31000845CE3 /* ElementsDetails.swift in Sources */,
 				B213F78429C8F0B0007F8D2B /* ItemRow.swift in Sources */,
 				B202BE0529B8A4ED00845CE3 /* StarRating.swift in Sources */,
 				B2A1276A29A8202000391C10 /* CityDogApp.swift in Sources */,
 				B202BDF329B7BD7300845CE3 /* UserProfile.swift in Sources */,
-				B202BDF529B7E2E300845CE3 /* Places.swift in Sources */,
-				B202BDF929B7E33A00845CE3 /* PlacesComments.swift in Sources */,
+				B202BDF529B7E2E300845CE3 /* Elements.swift in Sources */,
+				B202BDF929B7E33A00845CE3 /* ElementsComments.swift in Sources */,
 				B202BDFF29B80C1B00845CE3 /* BarsRestaurantsViewModel.swift in Sources */,
 				B2AE843C29ABDC8000C44500 /* MainMenu.swift in Sources */,
 				B202BE0729B8BC6600845CE3 /* WalksViewModel.swift in Sources */,
 				B2AE843E29AC16F300C44500 /* LogIn.swift in Sources */,
-				B202BDFB29B7E34700845CE3 /* AddComments.swift in Sources */,
+				B202BDFB29B7E34700845CE3 /* ElementsAddComments.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

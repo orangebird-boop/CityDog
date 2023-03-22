@@ -2,7 +2,7 @@ import SwiftUI
 
 
 
-struct Places: View {
+struct Elements: View {
     
     @State var viewModel: RestaurantsAndBarsViewModel
 
@@ -12,7 +12,7 @@ struct Places: View {
           
             List {
                 ForEach(viewModel.places, id: \.id) { place in
-                        NavigationLink(place.name, destination: PlacesDetails())
+                        NavigationLink(place.name, destination: ElementsDetails())
                     }
                 }.navigationTitle(viewModel.title)
             }
@@ -23,7 +23,7 @@ struct Places: View {
 
 struct Lieux_Previews: PreviewProvider {
     static var previews: some View {
-        Places(viewModel: RestaurantsAndBarsViewModel())
+        Elements(viewModel: RestaurantsAndBarsViewModel())
     }
 }
 
