@@ -24,6 +24,8 @@
 		B2A1278529A8202400391C10 /* CityDogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A1278429A8202400391C10 /* CityDogUITests.swift */; };
 		B2A1278729A8202400391C10 /* CityDogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A1278629A8202400391C10 /* CityDogUITestsLaunchTests.swift */; };
 		B2A24FDB29CC5EDC00393887 /* DogProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A24FDA29CC5EDC00393887 /* DogProfile.swift */; };
+		B2A24FDD29CC708800393887 /* AddDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A24FDC29CC708800393887 /* AddDog.swift */; };
+		B2A24FE329CC7ACE00393887 /* ModifyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A24FE229CC7ACE00393887 /* ModifyProfile.swift */; };
 		B2AE843C29ABDC8000C44500 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AE843B29ABDC8000C44500 /* MainMenu.swift */; };
 		B2AE843E29AC16F300C44500 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AE843D29AC16F300C44500 /* LogIn.swift */; };
 /* End PBXBuildFile section */
@@ -66,6 +68,8 @@
 		B2A1278429A8202400391C10 /* CityDogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDogUITests.swift; sourceTree = "<group>"; };
 		B2A1278629A8202400391C10 /* CityDogUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDogUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B2A24FDA29CC5EDC00393887 /* DogProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogProfile.swift; sourceTree = "<group>"; };
+		B2A24FDC29CC708800393887 /* AddDog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDog.swift; sourceTree = "<group>"; };
+		B2A24FE229CC7ACE00393887 /* ModifyProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyProfile.swift; sourceTree = "<group>"; };
 		B2AE843B29ABDC8000C44500 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		B2AE843D29AC16F300C44500 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,18 +133,14 @@
 			children = (
 				B2A1276D29A8202300391C10 /* Assets.xcassets */,
 				B2A1276929A8202000391C10 /* CityDogApp.swift */,
-				B202BDF429B7E2E200845CE3 /* Elements.swift */,
-				B202BDFA29B7E34700845CE3 /* ElementsAddComments.swift */,
-				B202BDF829B7E33A00845CE3 /* ElementsComments.swift */,
-				B202BDF629B7E31000845CE3 /* ElementsDetails.swift */,
-				B213F78329C8F0B0007F8D2B /* ItemRow.swift */,
-				B2A1276B29A8202000391C10 /* LaunchScreen.swift */,
 				B2AE843D29AC16F300C44500 /* LogIn.swift */,
 				B2AE843B29ABDC8000C44500 /* MainMenu.swift */,
+				B2A24FDF29CC798100393887 /* DogProfile */,
+				B2A24FDE29CC797000393887 /* Profile */,
+				B2A24FE029CC79A600393887 /* Elements */,
+				B2A1276B29A8202000391C10 /* LaunchScreen.swift */,
+				B2A24FE129CC79CA00393887 /* Components */,
 				B2A1276F29A8202300391C10 /* Preview Content */,
-				B202BE0429B8A4ED00845CE3 /* StarRating.swift */,
-				B202BDF229B7BD7300845CE3 /* UserProfile.swift */,
-				B2A24FDA29CC5EDC00393887 /* DogProfile.swift */,
 				B202BE0029B81F1300845CE3 /* ViewModels */,
 			);
 			path = CityDog;
@@ -169,6 +169,44 @@
 				B2A1278629A8202400391C10 /* CityDogUITestsLaunchTests.swift */,
 			);
 			path = CityDogUITests;
+			sourceTree = "<group>";
+		};
+		B2A24FDE29CC797000393887 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				B202BDF229B7BD7300845CE3 /* UserProfile.swift */,
+				B2A24FE229CC7ACE00393887 /* ModifyProfile.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		B2A24FDF29CC798100393887 /* DogProfile */ = {
+			isa = PBXGroup;
+			children = (
+				B2A24FDC29CC708800393887 /* AddDog.swift */,
+				B2A24FDA29CC5EDC00393887 /* DogProfile.swift */,
+			);
+			path = DogProfile;
+			sourceTree = "<group>";
+		};
+		B2A24FE029CC79A600393887 /* Elements */ = {
+			isa = PBXGroup;
+			children = (
+				B202BDF429B7E2E200845CE3 /* Elements.swift */,
+				B202BDFA29B7E34700845CE3 /* ElementsAddComments.swift */,
+				B202BDF829B7E33A00845CE3 /* ElementsComments.swift */,
+				B202BDF629B7E31000845CE3 /* ElementsDetails.swift */,
+			);
+			path = Elements;
+			sourceTree = "<group>";
+		};
+		B2A24FE129CC79CA00393887 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B213F78329C8F0B0007F8D2B /* ItemRow.swift */,
+				B202BE0429B8A4ED00845CE3 /* StarRating.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,7 +346,9 @@
 				B2A1276A29A8202000391C10 /* CityDogApp.swift in Sources */,
 				B202BDF329B7BD7300845CE3 /* UserProfile.swift in Sources */,
 				B2A24FDB29CC5EDC00393887 /* DogProfile.swift in Sources */,
+				B2A24FE329CC7ACE00393887 /* ModifyProfile.swift in Sources */,
 				B202BDF529B7E2E300845CE3 /* Elements.swift in Sources */,
+				B2A24FDD29CC708800393887 /* AddDog.swift in Sources */,
 				B202BDF929B7E33A00845CE3 /* ElementsComments.swift in Sources */,
 				B202BDFF29B80C1B00845CE3 /* BarsRestaurantsViewModel.swift in Sources */,
 				B2AE843C29ABDC8000C44500 /* MainMenu.swift in Sources */,
