@@ -13,7 +13,7 @@ struct MainMenu: View {
             )
             .edgesIgnoringSafeArea(.all)
             
-            NavigationStack {
+            NavigationView {
                 VStack {
                     Spacer()
                     HStack (alignment: .top){
@@ -82,7 +82,7 @@ struct MainMenu: View {
                             }
                             
                             VStack {
-                                Form {
+                                Group {
                                     NavigationLink("", destination: Elements(viewModel: RestaurantsAndBarsViewModel()))
                                     Image(systemName: "fork.knife")
                                         .resizable()

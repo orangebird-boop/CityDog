@@ -23,6 +23,7 @@
 		B2A1277B29A8202400391C10 /* CityDogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A1277A29A8202400391C10 /* CityDogTests.swift */; };
 		B2A1278529A8202400391C10 /* CityDogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A1278429A8202400391C10 /* CityDogUITests.swift */; };
 		B2A1278729A8202400391C10 /* CityDogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A1278629A8202400391C10 /* CityDogUITestsLaunchTests.swift */; };
+		B2A24FDB29CC5EDC00393887 /* DogProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A24FDA29CC5EDC00393887 /* DogProfile.swift */; };
 		B2AE843C29ABDC8000C44500 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AE843B29ABDC8000C44500 /* MainMenu.swift */; };
 		B2AE843E29AC16F300C44500 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AE843D29AC16F300C44500 /* LogIn.swift */; };
 /* End PBXBuildFile section */
@@ -64,6 +65,7 @@
 		B2A1278029A8202400391C10 /* CityDogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CityDogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2A1278429A8202400391C10 /* CityDogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDogUITests.swift; sourceTree = "<group>"; };
 		B2A1278629A8202400391C10 /* CityDogUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDogUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B2A24FDA29CC5EDC00393887 /* DogProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogProfile.swift; sourceTree = "<group>"; };
 		B2AE843B29ABDC8000C44500 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		B2AE843D29AC16F300C44500 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -138,6 +140,7 @@
 				B2A1276F29A8202300391C10 /* Preview Content */,
 				B202BE0429B8A4ED00845CE3 /* StarRating.swift */,
 				B202BDF229B7BD7300845CE3 /* UserProfile.swift */,
+				B2A24FDA29CC5EDC00393887 /* DogProfile.swift */,
 				B202BE0029B81F1300845CE3 /* ViewModels */,
 			);
 			path = CityDog;
@@ -304,6 +307,7 @@
 				B202BE0529B8A4ED00845CE3 /* StarRating.swift in Sources */,
 				B2A1276A29A8202000391C10 /* CityDogApp.swift in Sources */,
 				B202BDF329B7BD7300845CE3 /* UserProfile.swift in Sources */,
+				B2A24FDB29CC5EDC00393887 /* DogProfile.swift in Sources */,
 				B202BDF529B7E2E300845CE3 /* Elements.swift in Sources */,
 				B202BDF929B7E33A00845CE3 /* ElementsComments.swift in Sources */,
 				B202BDFF29B80C1B00845CE3 /* BarsRestaurantsViewModel.swift in Sources */,
