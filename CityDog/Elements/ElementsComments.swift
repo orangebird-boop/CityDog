@@ -6,7 +6,7 @@ struct ElementsComments: View {
     @State private var isNavigatingToAddComments = false
     
     var body: some View {
-        NavigationView {
+      
             VStack {
                 List {
                     ForEach(2..<6) {_ in
@@ -47,7 +47,6 @@ struct ElementsComments: View {
                 })
             }.navigationTitle("Comments")
         }
-    }
 }
 
 struct PlacesComments_Previews: PreviewProvider {

@@ -5,7 +5,7 @@ struct ElementsDetails: View {
     @State private var isNavigatingToComments = false
     
     var body: some View {
-        NavigationView {
+      
             VStack {
                 Form {
                     Section {
@@ -77,7 +77,7 @@ struct ElementsDetails: View {
                 }.navigationTitle("Details")
             }
             
-        }
+        
     }
 
     struct PlacesDetails_Previews: PreviewProvider {

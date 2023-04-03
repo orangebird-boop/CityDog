@@ -4,7 +4,10 @@ import SwiftUI
 struct MainMenu: View {
     
     @State private var isNavigatingToLogIn = false
-    @State private var isNavigatingToElements = false
+    @State private var isNavigatingToVeterinary = false
+    @State private var isNavigatingToRestaurants = false
+    @State private var isNavigatingToShops = false
+    @State private var isNavigatingToWalks = false
     
     var body: some View {
         ZStack {
@@ -83,7 +86,10 @@ struct MainMenu: View {
                             
                             VStack {
                                 Group {
-                                    NavigationLink("", destination: Elements(viewModel: RestaurantsAndBarsViewModel()))
+                                    NavigationLink(destination: Elements(viewModel: RestaurantsAndBarsViewModel()), isActive: $isNavigatingToRestaurants)
+                                    {
+                                        EmptyView()
+                                    }
                                     Image(systemName: "fork.knife")
                                         .resizable()
                                         .scaledToFit()
@@ -103,6 +109,7 @@ struct MainMenu: View {
                                     
                                 }
                                 .gesture(TapGesture().onEnded {
+                                    isNavigatingToRestaurants = true
                                     print("tapped bar")
                                     
                                 }
