@@ -4,15 +4,14 @@ import SwiftUI
 
 struct Elements: View {
     
-    @State var viewModel: RandomViewModel
-    
+    @State var viewModel: ElementsViewModel
     
     var body: some View {
         
         
         List {
-            ForEach(viewModel.places, id: \.id) { place in
-                NavigationLink(place.name, destination: ElementsDetails())
+            ForEach(viewModel.elements, id: \.id) { place in
+                NavigationLink(place.title, destination: ElementsDetails())
             }
         }.navigationTitle(viewModel.title)
     }
@@ -20,7 +19,7 @@ struct Elements: View {
 
 struct Lieux_Previews: PreviewProvider {
     static var previews: some View {
-        Elements(viewModel: RandomViewModel())
+        Elements(viewModel: RestaurantsBarsViewModel())
     }
 }
 

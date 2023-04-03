@@ -6,10 +6,7 @@ struct MainMenu: View {
     @State private var path: [String] = []
     
     @State private var isNavigatingToLogIn = false
-    @State private var isNavigatingToVeterinary = false
-    @State private var isNavigatingToRestaurants = false
-    @State private var isNavigatingToShops = false
-    @State private var isNavigatingToWalks = false
+  
     
     var body: some View {
         ZStack {
@@ -86,7 +83,7 @@ struct MainMenu: View {
                                 }
                             }
                             NavigationLink {
-                                Elements(viewModel: RandomViewModel())
+                                Elements(viewModel: RestaurantsBarsViewModel())
                             } label: {
                                 VStack {
                                     Group {

@@ -12,7 +12,7 @@
 		B202BDF729B7E31000845CE3 /* ElementsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BDF629B7E31000845CE3 /* ElementsDetails.swift */; };
 		B202BDF929B7E33A00845CE3 /* ElementsComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BDF829B7E33A00845CE3 /* ElementsComments.swift */; };
 		B202BDFB29B7E34700845CE3 /* ElementsAddComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BDFA29B7E34700845CE3 /* ElementsAddComments.swift */; };
-		B202BDFF29B80C1B00845CE3 /* BarsRestaurantsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BDFE29B80C1B00845CE3 /* BarsRestaurantsViewModel.swift */; };
+		B202BDFF29B80C1B00845CE3 /* RandomViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BDFE29B80C1B00845CE3 /* RandomViewModel.swift */; };
 		B202BE0529B8A4ED00845CE3 /* StarRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BE0429B8A4ED00845CE3 /* StarRating.swift */; };
 		B202BE0729B8BC6600845CE3 /* WalksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BE0629B8BC6600845CE3 /* WalksViewModel.swift */; };
 		B213F78429C8F0B0007F8D2B /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B213F78329C8F0B0007F8D2B /* ItemRow.swift */; };
@@ -28,6 +28,9 @@
 		B2A24FE329CC7ACE00393887 /* ModifyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A24FE229CC7ACE00393887 /* ModifyProfile.swift */; };
 		B2AE843C29ABDC8000C44500 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AE843B29ABDC8000C44500 /* MainMenu.swift */; };
 		B2AE843E29AC16F300C44500 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AE843D29AC16F300C44500 /* LogIn.swift */; };
+		B2C0A8FE29DB64930056521B /* DisplayElementDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A8FD29DB64930056521B /* DisplayElementDetails.swift */; };
+		B2C0A90029DB654B0056521B /* RestaurantsBarsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A8FF29DB654B0056521B /* RestaurantsBarsViewModel.swift */; };
+		B2C0A90229DB75D90056521B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A90129DB75D90056521B /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,7 +56,7 @@
 		B202BDF629B7E31000845CE3 /* ElementsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsDetails.swift; sourceTree = "<group>"; };
 		B202BDF829B7E33A00845CE3 /* ElementsComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsComments.swift; sourceTree = "<group>"; };
 		B202BDFA29B7E34700845CE3 /* ElementsAddComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsAddComments.swift; sourceTree = "<group>"; };
-		B202BDFE29B80C1B00845CE3 /* BarsRestaurantsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarsRestaurantsViewModel.swift; sourceTree = "<group>"; };
+		B202BDFE29B80C1B00845CE3 /* RandomViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomViewModel.swift; sourceTree = "<group>"; };
 		B202BE0429B8A4ED00845CE3 /* StarRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRating.swift; sourceTree = "<group>"; };
 		B202BE0629B8BC6600845CE3 /* WalksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalksViewModel.swift; sourceTree = "<group>"; };
 		B213F78329C8F0B0007F8D2B /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
@@ -72,6 +75,9 @@
 		B2A24FE229CC7ACE00393887 /* ModifyProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyProfile.swift; sourceTree = "<group>"; };
 		B2AE843B29ABDC8000C44500 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		B2AE843D29AC16F300C44500 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
+		B2C0A8FD29DB64930056521B /* DisplayElementDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayElementDetails.swift; sourceTree = "<group>"; };
+		B2C0A8FF29DB654B0056521B /* RestaurantsBarsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsBarsViewModel.swift; sourceTree = "<group>"; };
+		B2C0A90129DB75D90056521B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +108,10 @@
 		B202BE0029B81F1300845CE3 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				B202BDFE29B80C1B00845CE3 /* BarsRestaurantsViewModel.swift */,
+				B202BDFE29B80C1B00845CE3 /* RandomViewModel.swift */,
 				B202BE0629B8BC6600845CE3 /* WalksViewModel.swift */,
+				B2C0A8FD29DB64930056521B /* DisplayElementDetails.swift */,
+				B2C0A8FF29DB654B0056521B /* RestaurantsBarsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -132,13 +140,13 @@
 			isa = PBXGroup;
 			children = (
 				B2A1276D29A8202300391C10 /* Assets.xcassets */,
+				B2A1276B29A8202000391C10 /* LaunchScreen.swift */,
 				B2A1276929A8202000391C10 /* CityDogApp.swift */,
 				B2AE843D29AC16F300C44500 /* LogIn.swift */,
 				B2AE843B29ABDC8000C44500 /* MainMenu.swift */,
 				B2A24FDF29CC798100393887 /* DogProfile */,
 				B2A24FDE29CC797000393887 /* Profile */,
 				B2A24FE029CC79A600393887 /* Elements */,
-				B2A1276B29A8202000391C10 /* LaunchScreen.swift */,
 				B2A24FE129CC79CA00393887 /* Components */,
 				B2A1276F29A8202300391C10 /* Preview Content */,
 				B202BE0029B81F1300845CE3 /* ViewModels */,
@@ -205,6 +213,7 @@
 			children = (
 				B213F78329C8F0B0007F8D2B /* ItemRow.swift */,
 				B202BE0429B8A4ED00845CE3 /* StarRating.swift */,
+				B2C0A90129DB75D90056521B /* ImagePicker.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -340,18 +349,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2A1276C29A8202000391C10 /* LaunchScreen.swift in Sources */,
+				B2C0A90029DB654B0056521B /* RestaurantsBarsViewModel.swift in Sources */,
 				B202BDF729B7E31000845CE3 /* ElementsDetails.swift in Sources */,
 				B213F78429C8F0B0007F8D2B /* ItemRow.swift in Sources */,
 				B202BE0529B8A4ED00845CE3 /* StarRating.swift in Sources */,
 				B2A1276A29A8202000391C10 /* CityDogApp.swift in Sources */,
 				B202BDF329B7BD7300845CE3 /* UserProfile.swift in Sources */,
+				B2C0A90229DB75D90056521B /* ImagePicker.swift in Sources */,
 				B2A24FDB29CC5EDC00393887 /* DogProfile.swift in Sources */,
 				B2A24FE329CC7ACE00393887 /* ModifyProfile.swift in Sources */,
 				B202BDF529B7E2E300845CE3 /* Elements.swift in Sources */,
 				B2A24FDD29CC708800393887 /* AddDog.swift in Sources */,
 				B202BDF929B7E33A00845CE3 /* ElementsComments.swift in Sources */,
-				B202BDFF29B80C1B00845CE3 /* BarsRestaurantsViewModel.swift in Sources */,
+				B202BDFF29B80C1B00845CE3 /* RandomViewModel.swift in Sources */,
 				B2AE843C29ABDC8000C44500 /* MainMenu.swift in Sources */,
+				B2C0A8FE29DB64930056521B /* DisplayElementDetails.swift in Sources */,
 				B202BE0729B8BC6600845CE3 /* WalksViewModel.swift in Sources */,
 				B2AE843E29AC16F300C44500 /* LogIn.swift in Sources */,
 				B202BDFB29B7E34700845CE3 /* ElementsAddComments.swift in Sources */,
@@ -516,6 +528,7 @@
 				DEVELOPMENT_TEAM = U56C9Q3FLL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Program needs acces to your camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -545,6 +558,7 @@
 				DEVELOPMENT_TEAM = U56C9Q3FLL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Program needs acces to your camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

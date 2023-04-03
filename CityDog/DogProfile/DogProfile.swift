@@ -2,7 +2,7 @@ import SwiftUI
 
 struct DogProfile: View {
     var body: some View {
- 
+        NavigationStack {
             Form {
                 HStack {
                     
@@ -24,7 +24,9 @@ struct DogProfile: View {
                             .foregroundColor(Color.black)
                     }
                 }
-            }
+            }.navigationTitle("Dog Profile")
+               
+        }
     }
 }
 
