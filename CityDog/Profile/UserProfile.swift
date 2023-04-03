@@ -2,7 +2,7 @@
 import SwiftUI
 
 struct UserProfile: View {
-    @State var viewModel: RestaurantsAndBarsViewModel
+    @State var viewModel: RandomViewModel
     
     var body: some View {
 
@@ -92,6 +92,6 @@ struct UserProfile: View {
 
 struct UserProfile_Previews: PreviewProvider {
     static var previews: some View {
-        UserProfile(viewModel: RestaurantsAndBarsViewModel())
+        UserProfile(viewModel: RandomViewModel())
     }
 }

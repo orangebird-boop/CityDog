@@ -3,6 +3,8 @@ import SwiftUI
 
 struct MainMenu: View {
     
+    @State private var path: [String] = []
+    
     @State private var isNavigatingToLogIn = false
     @State private var isNavigatingToVeterinary = false
     @State private var isNavigatingToRestaurants = false
@@ -12,11 +14,11 @@ struct MainMenu: View {
     var body: some View {
         ZStack {
             Color.clear.background(
-        
+                
             )
             .edgesIgnoringSafeArea(.all)
             
-            NavigationView {
+            NavigationStack {
                 VStack {
                     Spacer()
                     HStack (alignment: .top){
@@ -32,7 +34,7 @@ struct MainMenu: View {
                                         Color(hue: 0.282, saturation: 1, brightness: 1)
                                             .cornerRadius(31.0)
                                     )
-                                Text("Veterinaire")
+                                Text("Veterinairy")
                                     .bold()
                                     .fontWeight(.heavy)
                                     .font(.system(size: 28.0))
@@ -52,7 +54,7 @@ struct MainMenu: View {
                                             .cornerRadius(31.0)
                                     )
                                 
-                                Text("Promenades")
+                                Text("Walks")
                                     .fontWeight(.heavy)
                                     .font(.system(size: 28.0))
                                     .foregroundColor(Color.accentColor)
@@ -75,72 +77,78 @@ struct MainMenu: View {
                                             Color(hue: 0.049, saturation: 1, brightness: 1)
                                                 .cornerRadius(31.0)
                                         )
-                                    Text("Animaleries")
+                                    Text("Pet Shops")
                                         .bold()
                                         .fontWeight(.heavy)
                                         .font(.system(size: 28.0))
-                                        .foregroundColor(Color.black)
+                                        .foregroundColor(Color.accentColor)
                                     
                                 }
                             }
-                            
-                            VStack {
-                                Group {
-                                    NavigationLink(destination: Elements(viewModel: RestaurantsAndBarsViewModel()), isActive: $isNavigatingToRestaurants)
-                                    {
-                                        EmptyView()
+                            NavigationLink {
+                                Elements(viewModel: RandomViewModel())
+                            } label: {
+                                VStack {
+                                    Group {
+                                        Image(systemName: "fork.knife")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .foregroundColor(Color.black)
+                                            .padding(6.0)
+                                            .frame(width: 168.0, height: 168.0)
+                                            .background(
+                                                Color(hue: 0.105, saturation: 1, brightness: 1)
+                                                    .cornerRadius(31.0)
+                                            )
+                                        Text("Bars & Restaurants")
+                                            .fontWeight(.heavy)
+                                            .font(.system(size: 28.0))
+                                            .foregroundColor(Color.accentColor)
+                                        Spacer()
+                                            .frame(height: 8.0)
                                     }
-                                    Image(systemName: "fork.knife")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .foregroundColor(Color.black)
-                                        .padding(6.0)
-                                        .frame(width: 168.0, height: 168.0)
-                                        .background(
-                                            Color(hue: 0.105, saturation: 1, brightness: 1)
-                                                .cornerRadius(31.0)
-                                        )
-                                    Text("Bars & Restaurants")
-                                        .fontWeight(.heavy)
-                                        .font(.system(size: 28.0))
-                                        .foregroundColor(Color.black)
-                                    Spacer()
-                                        .frame(height: 8.0)
-                                    
                                 }
-                                .gesture(TapGesture().onEnded {
-                                    isNavigatingToRestaurants = true
-                                    print("tapped bar")
-                                    
-                                }
-                                         )
+                                
                             }
+                            //                                    .navigationDestination(for: String.self) { destination in Elements(viewModel: RestaurantsAndBarsViewModel())
+                            
                         }
+                        
                     }
                     Spacer()
                     VStack {
                         NavigationLink(destination: LogIn(), isActive: $isNavigatingToLogIn) {
                             EmptyView()
                         }
-                            Button(action: {
-                                isNavigatingToLogIn = true
-                            }, label: {
-                                Text("Connexion")
-                                    .fontWeight(.heavy)
-                                    .font(.system(size: 23.0))
-                                    .padding(16.0)
-                                    .frame(width: 337.0)
-                                    .foregroundColor(Color.white)
-                                    .background(
-                                        Color(hue: 0.373, saturation: 1, brightness: 1)
-                                            .cornerRadius(11.0)
-                                    )
-                                    .shadow(radius: 2.0)
-                            })
-                        }
-                   
+                        Button(action: {
+                            isNavigatingToLogIn = true
+                        }, label: {
+                            Text("Connexion")
+                                .fontWeight(.heavy)
+                                .font(.system(size: 23.0))
+                                .padding(16.0)
+                                .frame(width: 337.0)
+                                .foregroundColor(Color.white)
+                                .background(
+                                    Color(hue: 0.373, saturation: 1, brightness: 1)
+                                        .cornerRadius(11.0)
+                                )
+                                .shadow(radius: 2.0)
+                        })
+                    }.padding()
+                    
                 } .navigationTitle("City Dog")
-                
+                    .toolbar {
+                        ToolbarItem {
+                            NavigationLink {
+                                // destination view to navigation to
+                                UserProfile(viewModel: RandomViewModel())
+                            } label: {
+                                Image(systemName: "person.circle")
+                                    
+                            }
+                        }
+                    }
             }
         }
     }

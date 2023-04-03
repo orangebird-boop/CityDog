@@ -4,7 +4,7 @@ import SwiftUI
 
 struct Elements: View {
     
-    @State var viewModel: RestaurantsAndBarsViewModel
+    @State var viewModel: RandomViewModel
     
     
     var body: some View {
@@ -20,7 +20,7 @@ struct Elements: View {
 
 struct Lieux_Previews: PreviewProvider {
     static var previews: some View {
-        Elements(viewModel: RestaurantsAndBarsViewModel())
+        Elements(viewModel: RandomViewModel())
     }
 }
 

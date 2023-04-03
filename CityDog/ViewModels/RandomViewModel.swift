@@ -8,7 +8,7 @@ struct Place {
 }
    
     
-    struct RestaurantsAndBarsViewModel {
+    struct RandomViewModel {
         let title = "Restaurants and Bars"
         let places = [
             Place(id: "1", name: "name1", imageURL: "Chris"),
