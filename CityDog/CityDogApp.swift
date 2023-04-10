@@ -5,7 +5,7 @@ struct CityDogApp: App {
     var body: some Scene {
         WindowGroup {
 //            LaunchScreen()
-            MainMenu()
+            MainView()
 //            AddDog()
 //            Elements(viewModel: RestaurantsAndBarsViewModel())
         }

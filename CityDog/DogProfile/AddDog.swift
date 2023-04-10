@@ -26,7 +26,7 @@ struct AddDog: View {
                           .aspectRatio(contentMode: .fill)
                           .clipShape(Circle())
 
-                 Text("Change photo")
+                 Text("Add photo")
                      .font(.headline)
                      .frame(maxWidth: .infinity)
                      .frame(height: 50)

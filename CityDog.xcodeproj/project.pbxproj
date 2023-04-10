@@ -31,6 +31,9 @@
 		B2C0A8FE29DB64930056521B /* DisplayElementDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A8FD29DB64930056521B /* DisplayElementDetails.swift */; };
 		B2C0A90029DB654B0056521B /* RestaurantsBarsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A8FF29DB654B0056521B /* RestaurantsBarsViewModel.swift */; };
 		B2C0A90229DB75D90056521B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A90129DB75D90056521B /* ImagePicker.swift */; };
+		B2C0A90429E1AD9A0056521B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A90329E1AD9A0056521B /* MainView.swift */; };
+		B2C0A90629E46A700056521B /* ModifyName.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A90529E46A700056521B /* ModifyName.swift */; };
+		B2C0A90829E48E200056521B /* ModifyPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A90729E48E200056521B /* ModifyPassword.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,9 @@
 		B2C0A8FD29DB64930056521B /* DisplayElementDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayElementDetails.swift; sourceTree = "<group>"; };
 		B2C0A8FF29DB654B0056521B /* RestaurantsBarsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsBarsViewModel.swift; sourceTree = "<group>"; };
 		B2C0A90129DB75D90056521B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		B2C0A90329E1AD9A0056521B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B2C0A90529E46A700056521B /* ModifyName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyName.swift; sourceTree = "<group>"; };
+		B2C0A90729E48E200056521B /* ModifyPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyPassword.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,7 @@
 				B2A1276929A8202000391C10 /* CityDogApp.swift */,
 				B2AE843D29AC16F300C44500 /* LogIn.swift */,
 				B2AE843B29ABDC8000C44500 /* MainMenu.swift */,
+				B2C0A90329E1AD9A0056521B /* MainView.swift */,
 				B2A24FDF29CC798100393887 /* DogProfile */,
 				B2A24FDE29CC797000393887 /* Profile */,
 				B2A24FE029CC79A600393887 /* Elements */,
@@ -183,6 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				B202BDF229B7BD7300845CE3 /* UserProfile.swift */,
+				B2C0A90729E48E200056521B /* ModifyPassword.swift */,
+				B2C0A90529E46A700056521B /* ModifyName.swift */,
 				B2A24FE229CC7ACE00393887 /* ModifyProfile.swift */,
 			);
 			path = Profile;
@@ -358,9 +367,12 @@
 				B2C0A90229DB75D90056521B /* ImagePicker.swift in Sources */,
 				B2A24FDB29CC5EDC00393887 /* DogProfile.swift in Sources */,
 				B2A24FE329CC7ACE00393887 /* ModifyProfile.swift in Sources */,
+				B2C0A90829E48E200056521B /* ModifyPassword.swift in Sources */,
+				B2C0A90429E1AD9A0056521B /* MainView.swift in Sources */,
 				B202BDF529B7E2E300845CE3 /* Elements.swift in Sources */,
 				B2A24FDD29CC708800393887 /* AddDog.swift in Sources */,
 				B202BDF929B7E33A00845CE3 /* ElementsComments.swift in Sources */,
+				B2C0A90629E46A700056521B /* ModifyName.swift in Sources */,
 				B202BDFF29B80C1B00845CE3 /* RandomViewModel.swift in Sources */,
 				B2AE843C29ABDC8000C44500 /* MainMenu.swift in Sources */,
 				B2C0A8FE29DB64930056521B /* DisplayElementDetails.swift in Sources */,
