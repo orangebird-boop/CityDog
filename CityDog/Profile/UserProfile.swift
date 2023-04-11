@@ -4,7 +4,9 @@ import SwiftUI
 struct UserProfile: View {
     @State var viewModel: RandomViewModel
     @State private var isNavigatingToAddDog = false
-
+    @State private var showingDeleteAlert = false
+    
+    
     
     var body: some View {
 
@@ -34,25 +36,24 @@ struct UserProfile: View {
                         } .padding()
                     }
                 }
-              
-//                .padding(.horizontal, 20)
-//                .sheet(isPresented: $showSheet) {
-//                            // Pick an image from the photo library:
-//                        ImagePicker(sourceType: .photoLibrary, selectedImage: self.$image)
-//                    }
-//
-//                Text("Chris Schoerning")
-//                    .fontWeight(.heavy)
-//                    .font(.system(size: 36.0))
-//                    .foregroundColor(Color.black)
-                
-              
-//                    NavigationStack {
+
                         
                         List {
                             ForEach(viewModel.places, id: \.id) { place in
                                 NavigationLink(place.name, destination: DogProfile())
+                            }.swipeActions {
+                                Button("Delete", role: .destructive) {
+                                    showingDeleteAlert = true
+                                }
                             }
+                            .confirmationDialog(
+                                Text("Are you sure to delete this dog?"),
+                                isPresented: $showingDeleteAlert,
+                                titleVisibility: .visible
+                            ) {
+                                // I have no idea why i need to keep this, but if i delete it, xcode is not happy
+                            }
+                            
                             NavigationLink {
                                 AddDog()
                             } label: {
@@ -61,47 +62,20 @@ struct UserProfile: View {
                             }.foregroundColor(Color.red)
                             
                         }
-//                    }
+         //TODO: Make function to delete from VM and DB
                 
-                    
-//                    Spacer()
-                    
-//                    Spacer()
-//                        .frame(height: 18.0)
-//                    NavigationLink(destination: AddDog(), isActive: $isNavigatingToAddDog) {
-//                        EmptyView()
+                
+//                func deleteItem(_ item: NSManagedObject) {
+//                    viewModel.places.delete(viewModel.places, id: \.id)
+//                        do {
+//                            try viewModel.places.save()
+//                        } catch let error {
+//                            print("Error: \(error)")
+//                        }
 //                    }
-//                    Button(action: {
-//                        isNavigatingToAddDog = true
-//                    }, label: {
-//                        Text("Add Dog")
-//                            .fontWeight(.heavy)
-//                            .font(.system(size: 23.0))
-//                            .padding(16.0)
-//                            .frame(width: 337.0)
-//                            .foregroundColor(Color.white)
-//                            .background(
-//                                Color(hue: 0.373, saturation: 1, brightness: 1)
-//                                    .cornerRadius(11.0)
-//                            )
-//                            .shadow(radius: 2.0)
-//                    })
+//                }
+
                     Spacer()
-//                    Button(action: {
-//                        // TODO: Specify action
-//                    }, label: {
-//                        Text("se déconnecter ")
-//                            .fontWeight(.heavy)
-//                            .font(.system(size: 23.0))
-//                            .padding(16.0)
-//                            .frame(width: 337.0)
-//                            .foregroundColor(Color.white)
-//                            .background(
-//                                Color(hue: 0.373, saturation: 1, brightness: 1)
-//                                    .cornerRadius(11.0)
-//                            )
-//                            .shadow(radius: 2.0)
-//                    })
                 
             }
             .navigationTitle("My profile")
