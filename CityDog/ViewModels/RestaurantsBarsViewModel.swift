@@ -2,7 +2,7 @@ import Foundation
 
 class RestaurantsBarsViewModel: ElementsViewModel {
     let title = "Restaurants / Bars"
-    private (set) var elements: [DisplayElementDetails] = []
+    private (set) var elements: [ElementsModel] = []
     
     init() {
         refreshElements()
@@ -11,12 +11,9 @@ class RestaurantsBarsViewModel: ElementsViewModel {
     func refreshElements() {
         // TODO: Fetch from DB
         elements = [
-        DisplayElementDetails(title: "Bar 1", imageURL: "", id: "1"),
-        DisplayElementDetails(title: "Bar 2", imageURL: "", id: "2"),
-        DisplayElementDetails(title: "Bar 3", imageURL: "", id: "3"),
-        DisplayElementDetails(title: "Bar 4", imageURL: "", id: "4"),
-        DisplayElementDetails(title: "Bar 5", imageURL: "", id: "5"),
+        ElementsModel(type: "Bar", title: "cafe de paris", imageURL: "", id: "1", adresse:  "57 rue de la Revolution", postalCode: "93100", latitude: 48.85354317054084, long: 2.428509121061213, goodToKnow: [], description: "iuhemiuchfiuehciufhlcurf", phoneNumber: "0648856001", sumRating: 4, comments: Comments(title: "ok", text: "more than ok", rating: 4))
     
         ]
     }
 }
+

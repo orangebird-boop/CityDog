@@ -8,12 +8,13 @@ struct Elements: View {
     
     var body: some View {
         
-        
-        List {
-            ForEach(viewModel.elements, id: \.id) { place in
-                NavigationLink(place.title, destination: ElementsDetails())
-            }
-        }.navigationTitle(viewModel.title)
+        NavigationStack {
+            List {
+                ForEach(viewModel.elements, id: \.id) { place in
+                    NavigationLink(place.title, destination: ElementsDetails())
+                }
+            }.navigationTitle(viewModel.title)
+        }
     }
 }
 
