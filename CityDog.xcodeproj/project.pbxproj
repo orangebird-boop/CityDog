@@ -28,7 +28,6 @@
 		B2A24FE329CC7ACE00393887 /* ModifyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A24FE229CC7ACE00393887 /* ModifyProfile.swift */; };
 		B2AE843C29ABDC8000C44500 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AE843B29ABDC8000C44500 /* MainMenu.swift */; };
 		B2AE843E29AC16F300C44500 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AE843D29AC16F300C44500 /* LogIn.swift */; };
-		B2C0A8FE29DB64930056521B /* ElementsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A8FD29DB64930056521B /* ElementsModel.swift */; };
 		B2C0A90029DB654B0056521B /* RestaurantsBarsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A8FF29DB654B0056521B /* RestaurantsBarsViewModel.swift */; };
 		B2C0A90229DB75D90056521B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A90129DB75D90056521B /* ImagePicker.swift */; };
 		B2C0A90429E1AD9A0056521B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A90329E1AD9A0056521B /* MainView.swift */; };
@@ -37,7 +36,8 @@
 		B2C0A90A29E5DFF00056521B /* ElementsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A90929E5DFF00056521B /* ElementsProtocol.swift */; };
 		B2C0A90C29E5E2A60056521B /* VeterinariansViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A90B29E5E2A60056521B /* VeterinariansViewModel.swift */; };
 		B2C0A90E29E5E30A0056521B /* ShopsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A90D29E5E30A0056521B /* ShopsViewModel.swift */; };
-		B2C0A91129E5F7290056521B /* UserProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A91029E5F7290056521B /* UserProfileModel.swift */; };
+		ED5BD89D29E6D6BF00A72917 /* CityDogEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED5BD89C29E6D6BF00A72917 /* CityDogEntities.framework */; };
+		ED5BD89E29E6D6BF00A72917 /* CityDogEntities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ED5BD89C29E6D6BF00A72917 /* CityDogEntities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +56,20 @@
 			remoteInfo = CityDog;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ED5BD89F29E6D6C000A72917 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ED5BD89E29E6D6BF00A72917 /* CityDogEntities.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B202BDF229B7BD7300845CE3 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
@@ -82,7 +96,6 @@
 		B2A24FE229CC7ACE00393887 /* ModifyProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyProfile.swift; sourceTree = "<group>"; };
 		B2AE843B29ABDC8000C44500 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		B2AE843D29AC16F300C44500 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
-		B2C0A8FD29DB64930056521B /* ElementsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsModel.swift; sourceTree = "<group>"; };
 		B2C0A8FF29DB654B0056521B /* RestaurantsBarsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsBarsViewModel.swift; sourceTree = "<group>"; };
 		B2C0A90129DB75D90056521B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		B2C0A90329E1AD9A0056521B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -91,7 +104,7 @@
 		B2C0A90929E5DFF00056521B /* ElementsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsProtocol.swift; sourceTree = "<group>"; };
 		B2C0A90B29E5E2A60056521B /* VeterinariansViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeterinariansViewModel.swift; sourceTree = "<group>"; };
 		B2C0A90D29E5E30A0056521B /* ShopsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsViewModel.swift; sourceTree = "<group>"; };
-		B2C0A91029E5F7290056521B /* UserProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileModel.swift; sourceTree = "<group>"; };
+		ED5BD89C29E6D6BF00A72917 /* CityDogEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CityDogEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED5BD89D29E6D6BF00A72917 /* CityDogEntities.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +153,7 @@
 				B2A1277929A8202400391C10 /* CityDogTests */,
 				B2A1278329A8202400391C10 /* CityDogUITests */,
 				B2A1276729A8202000391C10 /* Products */,
+				ED5BD89B29E6D6BF00A72917 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,7 +181,6 @@
 				B2A24FE029CC79A600393887 /* Elements */,
 				B2A24FE129CC79CA00393887 /* Components */,
 				B2A1276F29A8202300391C10 /* Preview Content */,
-				B2C0A90F29E5E3BB0056521B /* Models */,
 				B202BE0029B81F1300845CE3 /* ViewModels */,
 			);
 			path = CityDog;
@@ -238,13 +252,12 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		B2C0A90F29E5E3BB0056521B /* Models */ = {
+		ED5BD89B29E6D6BF00A72917 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B2C0A8FD29DB64930056521B /* ElementsModel.swift */,
-				B2C0A91029E5F7290056521B /* UserProfileModel.swift */,
+				ED5BD89C29E6D6BF00A72917 /* CityDogEntities.framework */,
 			);
-			path = Models;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +270,7 @@
 				B2A1276229A8202000391C10 /* Sources */,
 				B2A1276329A8202000391C10 /* Frameworks */,
 				B2A1276429A8202000391C10 /* Resources */,
+				ED5BD89F29E6D6C000A72917 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -383,7 +397,6 @@
 				B2C0A90029DB654B0056521B /* RestaurantsBarsViewModel.swift in Sources */,
 				B202BDF729B7E31000845CE3 /* ElementsDetails.swift in Sources */,
 				B213F78429C8F0B0007F8D2B /* ItemRow.swift in Sources */,
-				B2C0A91129E5F7290056521B /* UserProfileModel.swift in Sources */,
 				B202BE0529B8A4ED00845CE3 /* StarRating.swift in Sources */,
 				B2A1276A29A8202000391C10 /* CityDogApp.swift in Sources */,
 				B202BDF329B7BD7300845CE3 /* UserProfile.swift in Sources */,
@@ -398,7 +411,6 @@
 				B2C0A90629E46A700056521B /* ModifyName.swift in Sources */,
 				B202BDFF29B80C1B00845CE3 /* RandomViewModel.swift in Sources */,
 				B2AE843C29ABDC8000C44500 /* MainMenu.swift in Sources */,
-				B2C0A8FE29DB64930056521B /* ElementsModel.swift in Sources */,
 				B202BE0729B8BC6600845CE3 /* WalksViewModel.swift in Sources */,
 				B2AE843E29AC16F300C44500 /* LogIn.swift in Sources */,
 				B2C0A90A29E5DFF00056521B /* ElementsProtocol.swift in Sources */,
@@ -489,7 +501,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -543,7 +555,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
