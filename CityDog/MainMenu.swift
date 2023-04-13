@@ -128,26 +128,6 @@ struct MainMenu: View {
                             
                         }
                         Spacer()
-                        VStack {
-                            NavigationLink(destination: LogIn(), isActive: $isNavigatingToLogIn) {
-                                EmptyView()
-                            }
-                            Button(action: {
-                                isNavigatingToLogIn = true
-                            }, label: {
-                                Text("Connexion")
-                                    .fontWeight(.heavy)
-                                    .font(.system(size: 23.0))
-                                    .padding(16.0)
-                                    .frame(width: 337.0)
-                                    .foregroundColor(Color.white)
-                                    .background(
-                                        Color(hue: 0.373, saturation: 1, brightness: 1)
-                                            .cornerRadius(11.0)
-                                    )
-                                    .shadow(radius: 2.0)
-                            })
-                        }.padding()
                         
                     } .navigationTitle("City Dog")
                       
