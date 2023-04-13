@@ -1,4 +1,5 @@
 import Foundation
+import CityDogEntities
 
 class RestaurantsBarsViewModel: ElementsViewModel {
     let title = "Restaurants / Bars"
