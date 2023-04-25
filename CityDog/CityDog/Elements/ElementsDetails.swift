@@ -1,9 +1,10 @@
 import SwiftUI
+import CityDogEntities
 
 struct ElementsDetails: View {
     
     @State private var isNavigatingToComments = false
-//    @State var viewModel: ElementsViewModel
+    @State var viewModel: ElementsDetailsViewModel
     
     var body: some View {
         NavigationStack {
@@ -29,7 +30,7 @@ struct ElementsDetails: View {
                                 .font(.headline)
                                 .cornerRadius(16)
                                 .foregroundColor(.accentColor)
-                          
+                            
                         }
                     }
                     
@@ -52,43 +53,32 @@ struct ElementsDetails: View {
                     }
                     
                     Section {
-                        Text("Go to comments")
+                        NavigationLink {
+                            ElementsComments()
+                        } label: {
+                            Text("Go to comments")
+                        }
+                        
                     } header: {
                         Text("Comments")
                     }
-                    NavigationLink(destination: ElementsComments(), isActive: $isNavigatingToComments) {
-                        EmptyView()
-                        Section {
-                            
-                            Button(action: {
-                                isNavigatingToComments = true
-                            }, label: {
-                                Text("Voir commentaires")
-                                    .fontWeight(.heavy)
-                                    .font(.system(size: 23.0))
-                                    .padding(16.0)
-                                    .frame(width: 337.0)
-                                    .foregroundColor(Color.white)
-                                    .background(
-                                        Color(hue: 0.401, saturation: 1, brightness: 1)
-                                            .cornerRadius(16.0)
-                                    )
-                            })
-                        } header: {
-                            Text("Comments")
-                        }
-                    }
                 }
-            }.navigationTitle("Details")
-        }
             }
-            
-        
+        }.navigationTitle(viewModel.element.title)
     }
+}
 
-    struct PlacesDetails_Previews: PreviewProvider {
-        static var previews: some View {
-            ElementsDetails()
-        }
+struct PlacesDetails_Previews: PreviewProvider {
+    static var previews: some View {
+        ElementsDetails(viewModel: DummyViewModel(element: ElementsModel(type: "", title: "Dummy", imageURL: "", id: "", adresse: "", postalCode: "", latitude: 0.1, long: 0.4, description: "", sumRating: 3)) )
     }
+}
+
+private struct DummyViewModel: ElementsDetailsViewModel {
+    var element: CityDogEntities.ElementsModel
+    
+    init(element: CityDogEntities.ElementsModel) {
+        self.element = element
+    }
+}
 

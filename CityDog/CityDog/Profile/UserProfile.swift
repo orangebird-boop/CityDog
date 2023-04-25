@@ -39,27 +39,35 @@ struct UserProfile: View {
 
                         
                         List {
-                            ForEach(viewModel.places, id: \.id) { place in
-                                NavigationLink(place.name, destination: DogProfile())
-                            }.swipeActions {
-                                Button("Delete", role: .destructive) {
-                                    showingDeleteAlert = true
-                                }
+                            Section{
+                                NavigationLink {
+                                    AddDog()
+                                } label: {
+                                    Text("Add dog")
+                                }.foregroundColor(Color.red)
                             }
-                            .confirmationDialog(
-                                Text("Are you sure to delete this dog?"),
-                                isPresented: $showingDeleteAlert,
-                                titleVisibility: .visible
-                            ) {
-                                // I have no idea why i need to keep this, but if i delete it, xcode is not happy
-                            }
-                            
-                            NavigationLink {
-                                AddDog()
-                            } label: {
-                                Text("Add dog")
+                            Section {
                                 
-                            }.foregroundColor(Color.red)
+                                ForEach(viewModel.places, id: \.id) { place in
+                                    NavigationLink(place.name, destination: DogProfile())
+                                }.swipeActions {
+                                    Button("Delete", role: .destructive) {
+                                        showingDeleteAlert = true
+                                    }
+                                }
+                                .confirmationDialog(
+                                    Text("Are you sure to delete this dog?"),
+                                    isPresented: $showingDeleteAlert,
+                                    titleVisibility: .visible
+                                ) {
+                                    // I have no idea why i need to keep this, but if i delete it, xcode is not happy
+                                }
+                                
+                                
+                            }header: {
+                                Text("My Dogs")
+                            }
+                      
                             
                         }
          //TODO: Make function to delete from VM and DB

@@ -10,8 +10,8 @@ struct Elements: View {
         
         NavigationStack {
             List {
-                ForEach(viewModel.elements, id: \.id) { place in
-                    NavigationLink(place.title, destination: ElementsDetails())
+                ForEach(viewModel.elements, id: \.id) { element in
+                    NavigationLink(element.title, destination: ElementsDetails(viewModel: DefaultElementDetailsViewModel(element: element)))
                 }
             }.navigationTitle(viewModel.title)
         }

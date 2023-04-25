@@ -7,3 +7,11 @@ protocol ElementsViewModel {
     
     func refreshElements()
 }
+
+protocol ElementsDetailsViewModel {
+    var element: ElementsModel { get }
+}
+
+struct DefaultElementDetailsViewModel: ElementsDetailsViewModel {
+    let element: ElementsModel
+}
