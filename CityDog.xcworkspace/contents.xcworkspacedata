@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:CityDogEntities/CityDogEntities.xcodeproj">
+      location = "group:CityDog/CityDog.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:CityDog/CityDog.xcodeproj">
+      location = "group:CityDogEntities/CityDogEntities.xcodeproj">
    </FileRef>
 </Workspace>

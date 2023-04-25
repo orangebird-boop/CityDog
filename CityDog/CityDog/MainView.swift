@@ -6,7 +6,7 @@ struct MainView: View {
         TabView {
             MainMenu()
                 .tabItem {
-                    Label("Menu", systemImage: "list.bullet.circle")
+                    Label("Home", systemImage: "house")
                 }
             
             UserProfile(viewModel: RandomViewModel())
