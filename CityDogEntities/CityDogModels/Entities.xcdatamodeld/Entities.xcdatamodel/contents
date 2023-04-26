@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21512" systemVersion="22D68" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Addresse" representedClassName="Addresse" syncable="YES">
+        <attribute name="city" attributeType="String"/>
+        <attribute name="number" attributeType="String"/>
+        <attribute name="street" attributeType="String"/>
+        <attribute name="zipCode" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Comments" representedClassName="Comments" syncable="YES">
+        <attribute name="message" optional="YES" attributeType="String"/>
+        <attribute name="rating" attributeType="Integer 32" minValueString="0" maxValueString="5" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" attributeType="String"/>
+    </entity>
+    <entity name="Element" representedClassName="Element" syncable="YES">
+        <attribute name="goodToKnow" attributeType="String"/>
+        <attribute name="gpsLocation" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="image" optional="YES" attributeType="String"/>
+        <attribute name="smallDescription" attributeType="String"/>
+        <attribute name="title" attributeType="String"/>
+        <attribute name="type" attributeType="String"/>
+        <relationship name="addresse" toMany="YES" deletionRule="Cascade" destinationEntity="Addresse"/>
+        <relationship name="comments" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Comments"/>
+    </entity>
+</model>

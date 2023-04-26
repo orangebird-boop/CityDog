@@ -11,12 +11,6 @@ struct ElementsDetails: View {
             VStack {
                 Form {
                     Section {
-                        Text("Lorem ipsum")
-                    } header: {
-                        Text("Nom")
-                    }
-                    
-                    Section {
                         Text("Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
                     } header: {
                         Text("Addresse")
@@ -57,6 +51,7 @@ struct ElementsDetails: View {
                             ElementsComments()
                         } label: {
                             Text("Go to comments")
+                                .foregroundColor(.accentColor)
                         }
                         
                     } header: {
