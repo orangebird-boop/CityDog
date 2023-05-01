@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B202BDF329B7BD7300845CE3 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BDF229B7BD7300845CE3 /* UserProfile.swift */; };
+		B202BDF329B7BD7300845CE3 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BDF229B7BD7300845CE3 /* UserProfileView.swift */; };
 		B202BDF529B7E2E300845CE3 /* Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BDF429B7E2E200845CE3 /* Elements.swift */; };
 		B202BDF729B7E31000845CE3 /* ElementsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BDF629B7E31000845CE3 /* ElementsDetails.swift */; };
 		B202BDF929B7E33A00845CE3 /* ElementsComments.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BDF829B7E33A00845CE3 /* ElementsComments.swift */; };
@@ -23,21 +23,23 @@
 		B2A1277B29A8202400391C10 /* CityDogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A1277A29A8202400391C10 /* CityDogTests.swift */; };
 		B2A1278529A8202400391C10 /* CityDogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A1278429A8202400391C10 /* CityDogUITests.swift */; };
 		B2A1278729A8202400391C10 /* CityDogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A1278629A8202400391C10 /* CityDogUITestsLaunchTests.swift */; };
-		B2A24FDB29CC5EDC00393887 /* DogProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A24FDA29CC5EDC00393887 /* DogProfile.swift */; };
-		B2A24FDD29CC708800393887 /* AddDog.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A24FDC29CC708800393887 /* AddDog.swift */; };
-		B2A24FE329CC7ACE00393887 /* ModifyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A24FE229CC7ACE00393887 /* ModifyProfile.swift */; };
+		B2A24FDB29CC5EDC00393887 /* DogProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A24FDA29CC5EDC00393887 /* DogProfileView.swift */; };
+		B2A24FDD29CC708800393887 /* AddDogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A24FDC29CC708800393887 /* AddDogView.swift */; };
+		B2A24FE329CC7ACE00393887 /* ModifyProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2A24FE229CC7ACE00393887 /* ModifyProfileView.swift */; };
 		B2AE843C29ABDC8000C44500 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AE843B29ABDC8000C44500 /* MainMenu.swift */; };
 		B2AE843E29AC16F300C44500 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AE843D29AC16F300C44500 /* LogIn.swift */; };
 		B2C0A90029DB654B0056521B /* RestaurantsBarsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A8FF29DB654B0056521B /* RestaurantsBarsViewModel.swift */; };
 		B2C0A90229DB75D90056521B /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A90129DB75D90056521B /* ImagePicker.swift */; };
 		B2C0A90429E1AD9A0056521B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A90329E1AD9A0056521B /* MainView.swift */; };
-		B2C0A90629E46A700056521B /* ModifyName.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A90529E46A700056521B /* ModifyName.swift */; };
-		B2C0A90829E48E200056521B /* ModifyPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A90729E48E200056521B /* ModifyPassword.swift */; };
+		B2C0A90629E46A700056521B /* ModifyNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A90529E46A700056521B /* ModifyNameView.swift */; };
+		B2C0A90829E48E200056521B /* ModifyPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A90729E48E200056521B /* ModifyPasswordView.swift */; };
 		B2C0A90A29E5DFF00056521B /* ElementsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A90929E5DFF00056521B /* ElementsProtocol.swift */; };
 		B2C0A90C29E5E2A60056521B /* VeterinariansViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A90B29E5E2A60056521B /* VeterinariansViewModel.swift */; };
 		B2C0A90E29E5E30A0056521B /* ShopsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A90D29E5E30A0056521B /* ShopsViewModel.swift */; };
 		B2C0A92C29E83D8C0056521B /* CityDogEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2C0A92B29E83D8C0056521B /* CityDogEntities.framework */; };
 		B2C0A92D29E83D8C0056521B /* CityDogEntities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2C0A92B29E83D8C0056521B /* CityDogEntities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B2C0A9BD2A0007DE0056521B /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9BC2A0007DE0056521B /* UserProfileViewModel.swift */; };
+		B2C0A9BF2A0027360056521B /* ModifyProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9BE2A0027360056521B /* ModifyProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,7 +74,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B202BDF229B7BD7300845CE3 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		B202BDF229B7BD7300845CE3 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
 		B202BDF429B7E2E200845CE3 /* Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elements.swift; sourceTree = "<group>"; };
 		B202BDF629B7E31000845CE3 /* ElementsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsDetails.swift; sourceTree = "<group>"; };
 		B202BDF829B7E33A00845CE3 /* ElementsComments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsComments.swift; sourceTree = "<group>"; };
@@ -91,20 +93,22 @@
 		B2A1278029A8202400391C10 /* CityDogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CityDogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2A1278429A8202400391C10 /* CityDogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDogUITests.swift; sourceTree = "<group>"; };
 		B2A1278629A8202400391C10 /* CityDogUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityDogUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		B2A24FDA29CC5EDC00393887 /* DogProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogProfile.swift; sourceTree = "<group>"; };
-		B2A24FDC29CC708800393887 /* AddDog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDog.swift; sourceTree = "<group>"; };
-		B2A24FE229CC7ACE00393887 /* ModifyProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyProfile.swift; sourceTree = "<group>"; };
+		B2A24FDA29CC5EDC00393887 /* DogProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogProfileView.swift; sourceTree = "<group>"; };
+		B2A24FDC29CC708800393887 /* AddDogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDogView.swift; sourceTree = "<group>"; };
+		B2A24FE229CC7ACE00393887 /* ModifyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyProfileView.swift; sourceTree = "<group>"; };
 		B2AE843B29ABDC8000C44500 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		B2AE843D29AC16F300C44500 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
 		B2C0A8FF29DB654B0056521B /* RestaurantsBarsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsBarsViewModel.swift; sourceTree = "<group>"; };
 		B2C0A90129DB75D90056521B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		B2C0A90329E1AD9A0056521B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		B2C0A90529E46A700056521B /* ModifyName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyName.swift; sourceTree = "<group>"; };
-		B2C0A90729E48E200056521B /* ModifyPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyPassword.swift; sourceTree = "<group>"; };
+		B2C0A90529E46A700056521B /* ModifyNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyNameView.swift; sourceTree = "<group>"; };
+		B2C0A90729E48E200056521B /* ModifyPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyPasswordView.swift; sourceTree = "<group>"; };
 		B2C0A90929E5DFF00056521B /* ElementsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsProtocol.swift; sourceTree = "<group>"; };
 		B2C0A90B29E5E2A60056521B /* VeterinariansViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeterinariansViewModel.swift; sourceTree = "<group>"; };
 		B2C0A90D29E5E30A0056521B /* ShopsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopsViewModel.swift; sourceTree = "<group>"; };
 		B2C0A92B29E83D8C0056521B /* CityDogEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CityDogEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2C0A9BC2A0007DE0056521B /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
+		B2C0A9BE2A0027360056521B /* ModifyProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,8 @@
 				B2C0A90B29E5E2A60056521B /* VeterinariansViewModel.swift */,
 				B2C0A90929E5DFF00056521B /* ElementsProtocol.swift */,
 				B2C0A8FF29DB654B0056521B /* RestaurantsBarsViewModel.swift */,
+				B2C0A9BC2A0007DE0056521B /* UserProfileViewModel.swift */,
+				B2C0A9BE2A0027360056521B /* ModifyProfileViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -214,10 +220,8 @@
 		B2A24FDE29CC797000393887 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				B202BDF229B7BD7300845CE3 /* UserProfile.swift */,
-				B2C0A90729E48E200056521B /* ModifyPassword.swift */,
-				B2C0A90529E46A700056521B /* ModifyName.swift */,
-				B2A24FE229CC7ACE00393887 /* ModifyProfile.swift */,
+				B202BDF229B7BD7300845CE3 /* UserProfileView.swift */,
+				B2C0A9C02A0027770056521B /* Modify */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -225,8 +229,8 @@
 		B2A24FDF29CC798100393887 /* DogProfile */ = {
 			isa = PBXGroup;
 			children = (
-				B2A24FDC29CC708800393887 /* AddDog.swift */,
-				B2A24FDA29CC5EDC00393887 /* DogProfile.swift */,
+				B2A24FDC29CC708800393887 /* AddDogView.swift */,
+				B2A24FDA29CC5EDC00393887 /* DogProfileView.swift */,
 			);
 			path = DogProfile;
 			sourceTree = "<group>";
@@ -258,6 +262,16 @@
 				B2C0A92B29E83D8C0056521B /* CityDogEntities.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2C0A9C02A0027770056521B /* Modify */ = {
+			isa = PBXGroup;
+			children = (
+				B2C0A90729E48E200056521B /* ModifyPasswordView.swift */,
+				B2C0A90529E46A700056521B /* ModifyNameView.swift */,
+				B2A24FE229CC7ACE00393887 /* ModifyProfileView.swift */,
+			);
+			path = Modify;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,16 +413,18 @@
 				B213F78429C8F0B0007F8D2B /* ItemRow.swift in Sources */,
 				B202BE0529B8A4ED00845CE3 /* StarRating.swift in Sources */,
 				B2A1276A29A8202000391C10 /* CityDogApp.swift in Sources */,
-				B202BDF329B7BD7300845CE3 /* UserProfile.swift in Sources */,
+				B202BDF329B7BD7300845CE3 /* UserProfileView.swift in Sources */,
 				B2C0A90229DB75D90056521B /* ImagePicker.swift in Sources */,
-				B2A24FDB29CC5EDC00393887 /* DogProfile.swift in Sources */,
-				B2A24FE329CC7ACE00393887 /* ModifyProfile.swift in Sources */,
-				B2C0A90829E48E200056521B /* ModifyPassword.swift in Sources */,
+				B2A24FDB29CC5EDC00393887 /* DogProfileView.swift in Sources */,
+				B2A24FE329CC7ACE00393887 /* ModifyProfileView.swift in Sources */,
+				B2C0A9BD2A0007DE0056521B /* UserProfileViewModel.swift in Sources */,
+				B2C0A90829E48E200056521B /* ModifyPasswordView.swift in Sources */,
+				B2C0A9BF2A0027360056521B /* ModifyProfileViewModel.swift in Sources */,
 				B2C0A90429E1AD9A0056521B /* MainView.swift in Sources */,
 				B202BDF529B7E2E300845CE3 /* Elements.swift in Sources */,
-				B2A24FDD29CC708800393887 /* AddDog.swift in Sources */,
+				B2A24FDD29CC708800393887 /* AddDogView.swift in Sources */,
 				B202BDF929B7E33A00845CE3 /* ElementsComments.swift in Sources */,
-				B2C0A90629E46A700056521B /* ModifyName.swift in Sources */,
+				B2C0A90629E46A700056521B /* ModifyNameView.swift in Sources */,
 				B202BDFF29B80C1B00845CE3 /* RandomViewModel.swift in Sources */,
 				B2AE843C29ABDC8000C44500 /* MainMenu.swift in Sources */,
 				B202BE0729B8BC6600845CE3 /* WalksViewModel.swift in Sources */,

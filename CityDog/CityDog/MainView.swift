@@ -1,5 +1,6 @@
 
 import SwiftUI
+import CityDogEntities
 
 struct MainView: View {
     var body: some View {
@@ -8,8 +9,8 @@ struct MainView: View {
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
-            
-            UserProfile(viewModel: RandomViewModel())
+            // TODO: Replace this by real data from DB
+            UserProfileView(viewModel: UserProfileViewModel(user: User.dummyUser()))
                 .tabItem {
                     Label("Profile", systemImage: "person.circle")
                 }

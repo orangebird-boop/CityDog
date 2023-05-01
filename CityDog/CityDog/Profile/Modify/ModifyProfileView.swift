@@ -1,13 +1,19 @@
 import SwiftUI
+import CityDogEntities
 
-struct ModifyProfile: View {
+struct ModifyProfileView: View {
+    
+    init(viewModel: ModifyProfileViewModel) {
+        self.viewModel = viewModel
+    }
+    
+    @State private var viewModel: ModifyProfileViewModel
     @State private var image = UIImage()
     @State private var showSheet = false
     
     var body: some View {
         NavigationStack {
-            
-      
+
             VStack(alignment: .center, spacing: 0.0) {
                 Form {
                     VStack {
@@ -36,29 +42,23 @@ struct ModifyProfile: View {
                         ImagePicker(sourceType: .photoLibrary, selectedImage: self.$image)
                     }
                     
-                    Text("Chris Schoerning")
-                        .fontWeight(.heavy)
-                        .font(.system(size: 36.0))
-                        .foregroundColor(Color.black)
-                }
-                
-                Section {
-                    List {
-                        NavigationLink {
-                            ModifyName(name: "", firstName: "", middleName: "")
-                        }label: {
-                            Text("Name")
-                        }
-                        NavigationLink {
-                            ModifyPassword(email: "", oldPSW: "", newPSW: "")
-                        }label: {
-                            Text("E-mail and password")
+                    Section {
+                        List {
+                            NavigationLink {
+                                // TODO: takes a VM with user to be able to update in DB
+                                ModifyName(name: "", firstName: "", middleName: "")
+                            } label: {
+                                Text("Name")
+                            }
+                            NavigationLink {
+                                ModifyPassword(email: "", oldPSW: "", newPSW: "")
+                            } label: {
+                                Text("E-mail and password")
+                            }
                         }
                     }
                 }
-                
-                Spacer()
-            }.navigationTitle("Modify profile")
+            }.navigationTitle(viewModel.user.fullName)
             
 //            Button(action: {
 //                // TODO: Specify action
@@ -80,6 +80,6 @@ struct ModifyProfile: View {
 
 struct ModifyProfile_Previews: PreviewProvider {
     static var previews: some View {
-        ModifyProfile()
+        ModifyProfileView(viewModel: ModifyProfileViewModel(user: User.dummyUser()))
     }
 }

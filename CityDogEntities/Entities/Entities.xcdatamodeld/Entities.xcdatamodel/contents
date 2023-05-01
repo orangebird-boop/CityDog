@@ -14,12 +14,12 @@
     <entity name="ElementEntity" representedClassName="ElementEntity" syncable="YES">
         <attribute name="goodToKnow" attributeType="String"/>
         <attribute name="gpsLocation" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
-        <attribute name="id" attributeType="String"/>
+        <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="image" optional="YES" attributeType="String"/>
         <attribute name="smallDescription" attributeType="String"/>
         <attribute name="title" attributeType="String"/>
         <attribute name="type" attributeType="String"/>
-        <relationship name="addresse" toMany="YES" deletionRule="Cascade" destinationEntity="AddressEntity"/>
+        <relationship name="address" maxCount="1" deletionRule="Cascade" destinationEntity="AddressEntity"/>
         <relationship name="comments" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CommentEntity"/>
     </entity>
 </model>

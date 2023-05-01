@@ -1,8 +1,9 @@
 
 import SwiftUI
+import CityDogEntities
 
-struct UserProfile: View {
-    @State var viewModel: RandomViewModel
+struct UserProfileView: View {
+    @State var viewModel: UserProfileViewModel
     @State private var isNavigatingToAddDog = false
     @State private var showingDeleteAlert = false
     
@@ -14,24 +15,30 @@ struct UserProfile: View {
             VStack(alignment: .leading, spacing: 0.0) {
                 Section {
                     NavigationLink {
-                        ModifyProfile()
+                        ModifyProfileView(viewModel: ModifyProfileViewModel(user: viewModel.user))
                     } label: {
                         HStack(alignment: .center) {
                             Image("profile")
                                 .resizable()
-                                .cornerRadius(20)
-                                .frame(width: 60, height: 60)
-                                .clipped()
                                 .aspectRatio(contentMode: .fit)
+                                .frame(width: 60, height: 60)
+                               
+                                
                             
                             VStack(alignment: .leading) {
-                                Text("Sign in to CityDog")
+                                Text(viewModel.user.fullName)
                                     .foregroundColor(Color.accentColor)
                                     .lineLimit(nil)
-                                Text("Set up your profile and more...")
+                                Text("Manage profile")
                                     .foregroundColor(Color.gray)
                                 
                             }
+                            Spacer()
+                            
+                            Image(systemName: "gear")
+                                .resizable()
+                                .frame(width: 30, height: 30)
+                                
        
                         } .padding()
                     }
@@ -48,8 +55,8 @@ struct UserProfile: View {
                             }
                             Section {
                                 
-                                ForEach(viewModel.places, id: \.id) { place in
-                                    NavigationLink(place.name, destination: DogProfile())
+                                ForEach(viewModel.user.dogs, id: \.id) { dog in
+                                    NavigationLink(dog.name, destination: DogProfile())
                                 }.swipeActions {
                                     Button("Delete", role: .destructive) {
                                         showingDeleteAlert = true
@@ -86,7 +93,7 @@ struct UserProfile: View {
                     Spacer()
                 
             }
-            .navigationTitle("My profile")
+//            .navigationTitle()
 
         }
     }
@@ -94,6 +101,6 @@ struct UserProfile: View {
 
 struct UserProfile_Previews: PreviewProvider {
     static var previews: some View {
-        UserProfile(viewModel: RandomViewModel())
+        UserProfileView(viewModel: UserProfileViewModel(user: User(id: UUID().uuidString, firstNames: "John", lastName: "Appleseed", email: "johnappleseed@apple.com", password: "", dogs: [Dog(id: UUID().uuidString, name: "Snoopy", breed: "Beagle", age: "5", pictureURL: ""), Dog(id: UUID().uuidString, name: "Prince", breed: "French Bulldog", age: "8", pictureURL: "")])))
     }
 }
