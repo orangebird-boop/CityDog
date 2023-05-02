@@ -46,7 +46,7 @@ struct ModifyProfileView: View {
                         List {
                             NavigationLink {
                                 // TODO: takes a VM with user to be able to update in DB
-                                ModifyName(name: "", firstName: "", middleName: "")
+//                                ModifyName(name: "", firstName: "", middleName: "")
                             } label: {
                                 Text("Name")
                             }

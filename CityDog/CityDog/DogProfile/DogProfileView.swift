@@ -1,6 +1,13 @@
 import SwiftUI
+import CityDogEntities
 
-struct DogProfile: View {
+struct DogProfileView: View {
+  init(viewModel: DogProfileViewModel) {
+        self.viewModel = viewModel
+    }
+    
+    var viewModel: DogProfileViewModel
+    
     var body: some View {
         NavigationStack {
             Form {
@@ -32,6 +39,6 @@ struct DogProfile: View {
 
 struct DogProfile_Previews: PreviewProvider {
     static var previews: some View {
-        DogProfile()
+        DogProfileView(viewModel: DogProfileViewModel(dog: Dog.dummyDog()))
     }
 }

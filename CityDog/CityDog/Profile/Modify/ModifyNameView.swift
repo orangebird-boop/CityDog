@@ -1,9 +1,15 @@
 import SwiftUI
+import CityDogEntities
 
-struct ModifyName: View {
-    @State var name: String
-    @State var firstName: String
-    @State var middleName: String
+struct ModifyNameView: View {
+
+    
+    init(viewModel: ModifyNameViewModel) {
+        self.viewModel = viewModel
+    }
+    
+    @State private var viewModel: ModifyNameViewModel
+   
     
     var body: some View {
         NavigationStack {
@@ -15,22 +21,15 @@ struct ModifyName: View {
 
                             Spacer()
 
-                            TextField("", text: $name).multilineTextAlignment(.trailing)
+                            TextField("", text: $viewModel.user.firstName).multilineTextAlignment(.trailing)
                         }
-                        
-                        HStack {
-                            Text("First name")
-
-                            Spacer()
-
-                            TextField("", text: $firstName).multilineTextAlignment(.trailing)
-                        }
+                    
                         HStack {
                             Text("Middle name")
 
                             Spacer()
 
-                            TextField("", text: $middleName).multilineTextAlignment(.trailing)
+                            TextField("", text: $viewModel.user.lastName).multilineTextAlignment(.trailing)
                         }
                         
                     }
@@ -41,7 +40,7 @@ struct ModifyName: View {
                             .toolbar {
                                 ToolbarItem {
                                     NavigationLink {
-                                        // destination SAVE
+                                        // TODO: Save in DB
                                     } label: {
                                         Text("Save")
             
@@ -54,6 +53,6 @@ struct ModifyName: View {
 
 struct ModifyName_Previews: PreviewProvider {
     static var previews: some View {
-        ModifyName(name: "Christopher", firstName: "Schoerning", middleName: "Mark")
+        ModifyNameView(viewModel: ModifyNameViewModel(user: User.dummyUser()))
     }
 }

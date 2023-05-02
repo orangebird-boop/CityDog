@@ -48,7 +48,7 @@ struct UserProfileView: View {
                         List {
                             Section{
                                 NavigationLink {
-                                    AddDog()
+                                    AddDogView()
                                 } label: {
                                     Text("Add dog")
                                 }.foregroundColor(Color.red)
@@ -56,7 +56,7 @@ struct UserProfileView: View {
                             Section {
                                 
                                 ForEach(viewModel.user.dogs, id: \.id) { dog in
-                                    NavigationLink(dog.name, destination: DogProfile())
+//                                    NavigationLink(dog.name, destination: DogProfileView(viewModel: DogProfileViewModel()))
                                 }.swipeActions {
                                     Button("Delete", role: .destructive) {
                                         showingDeleteAlert = true

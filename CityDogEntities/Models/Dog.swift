@@ -20,3 +20,8 @@ public struct Dog: Identifiable {
     }
 }
  
+public extension Dog {
+    static func dummyDog() -> Self {
+        Dog(id: UUID().uuidString, name: "Lenny", breed: "Fox Terrier", age: "12", pictureURL: "")
+    }
+}

@@ -5,12 +5,12 @@ public struct User: Identifiable {
     // MARK: - Properties
     
     public let id: String
-    public let firstNames: String
-    public let lastName: String
+    public var firstName: String
+    public var lastName: String
     public let email: String
-    public let password: String
+    public var password: String
     public var fullName: String {
-        "\(firstNames) \(lastName)"
+        "\(firstName) \(lastName)"
     }
     
     public let dogs: [Dog]
@@ -19,7 +19,7 @@ public struct User: Identifiable {
     
     public init(id: String, firstNames: String, lastName: String, email: String, password: String, dogs: [Dog]) {
         self.id = id
-        self.firstNames = firstNames
+        self.firstName = firstNames
         self.lastName = lastName
         self.email = email
         self.password = password

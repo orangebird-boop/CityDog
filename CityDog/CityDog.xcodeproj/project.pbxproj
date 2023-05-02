@@ -40,6 +40,10 @@
 		B2C0A92D29E83D8C0056521B /* CityDogEntities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2C0A92B29E83D8C0056521B /* CityDogEntities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B2C0A9BD2A0007DE0056521B /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9BC2A0007DE0056521B /* UserProfileViewModel.swift */; };
 		B2C0A9BF2A0027360056521B /* ModifyProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9BE2A0027360056521B /* ModifyProfileViewModel.swift */; };
+		B2C0A9C42A01AAED0056521B /* ModifyNameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9C32A01AAED0056521B /* ModifyNameViewModel.swift */; };
+		B2C0A9C62A01ADF00056521B /* DogProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9C52A01ADF00056521B /* DogProfileViewModel.swift */; };
+		B2C0A9C82A01AEE50056521B /* AddDogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9C72A01AEE40056521B /* AddDogViewModel.swift */; };
+		B2C0A9CA2A01AF400056521B /* ModifyPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9C92A01AF400056521B /* ModifyPasswordViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +113,10 @@
 		B2C0A92B29E83D8C0056521B /* CityDogEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CityDogEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C0A9BC2A0007DE0056521B /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
 		B2C0A9BE2A0027360056521B /* ModifyProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyProfileViewModel.swift; sourceTree = "<group>"; };
+		B2C0A9C32A01AAED0056521B /* ModifyNameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyNameViewModel.swift; sourceTree = "<group>"; };
+		B2C0A9C52A01ADF00056521B /* DogProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogProfileViewModel.swift; sourceTree = "<group>"; };
+		B2C0A9C72A01AEE40056521B /* AddDogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDogViewModel.swift; sourceTree = "<group>"; };
+		B2C0A9C92A01AF400056521B /* ModifyPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyPasswordViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,14 +148,14 @@
 		B202BE0029B81F1300845CE3 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				B2C0A9C22A01A94F0056521B /* ProfileViewModels */,
+				B2C0A9C12A01A9390056521B /* DogProfileViewModels */,
 				B202BDFE29B80C1B00845CE3 /* RandomViewModel.swift */,
 				B2C0A90D29E5E30A0056521B /* ShopsViewModel.swift */,
 				B202BE0629B8BC6600845CE3 /* WalksViewModel.swift */,
 				B2C0A90B29E5E2A60056521B /* VeterinariansViewModel.swift */,
 				B2C0A90929E5DFF00056521B /* ElementsProtocol.swift */,
 				B2C0A8FF29DB654B0056521B /* RestaurantsBarsViewModel.swift */,
-				B2C0A9BC2A0007DE0056521B /* UserProfileViewModel.swift */,
-				B2C0A9BE2A0027360056521B /* ModifyProfileViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -272,6 +280,26 @@
 				B2A24FE229CC7ACE00393887 /* ModifyProfileView.swift */,
 			);
 			path = Modify;
+			sourceTree = "<group>";
+		};
+		B2C0A9C12A01A9390056521B /* DogProfileViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B2C0A9C52A01ADF00056521B /* DogProfileViewModel.swift */,
+				B2C0A9C72A01AEE40056521B /* AddDogViewModel.swift */,
+			);
+			path = DogProfileViewModels;
+			sourceTree = "<group>";
+		};
+		B2C0A9C22A01A94F0056521B /* ProfileViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B2C0A9BC2A0007DE0056521B /* UserProfileViewModel.swift */,
+				B2C0A9BE2A0027360056521B /* ModifyProfileViewModel.swift */,
+				B2C0A9C32A01AAED0056521B /* ModifyNameViewModel.swift */,
+				B2C0A9C92A01AF400056521B /* ModifyPasswordViewModel.swift */,
+			);
+			path = ProfileViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -410,8 +438,10 @@
 				B2C0A90C29E5E2A60056521B /* VeterinariansViewModel.swift in Sources */,
 				B2C0A90029DB654B0056521B /* RestaurantsBarsViewModel.swift in Sources */,
 				B202BDF729B7E31000845CE3 /* ElementsDetails.swift in Sources */,
+				B2C0A9C42A01AAED0056521B /* ModifyNameViewModel.swift in Sources */,
 				B213F78429C8F0B0007F8D2B /* ItemRow.swift in Sources */,
 				B202BE0529B8A4ED00845CE3 /* StarRating.swift in Sources */,
+				B2C0A9C82A01AEE50056521B /* AddDogViewModel.swift in Sources */,
 				B2A1276A29A8202000391C10 /* CityDogApp.swift in Sources */,
 				B202BDF329B7BD7300845CE3 /* UserProfileView.swift in Sources */,
 				B2C0A90229DB75D90056521B /* ImagePicker.swift in Sources */,
@@ -419,6 +449,7 @@
 				B2A24FE329CC7ACE00393887 /* ModifyProfileView.swift in Sources */,
 				B2C0A9BD2A0007DE0056521B /* UserProfileViewModel.swift in Sources */,
 				B2C0A90829E48E200056521B /* ModifyPasswordView.swift in Sources */,
+				B2C0A9C62A01ADF00056521B /* DogProfileViewModel.swift in Sources */,
 				B2C0A9BF2A0027360056521B /* ModifyProfileViewModel.swift in Sources */,
 				B2C0A90429E1AD9A0056521B /* MainView.swift in Sources */,
 				B202BDF529B7E2E300845CE3 /* Elements.swift in Sources */,
@@ -427,6 +458,7 @@
 				B2C0A90629E46A700056521B /* ModifyNameView.swift in Sources */,
 				B202BDFF29B80C1B00845CE3 /* RandomViewModel.swift in Sources */,
 				B2AE843C29ABDC8000C44500 /* MainMenu.swift in Sources */,
+				B2C0A9CA2A01AF400056521B /* ModifyPasswordViewModel.swift in Sources */,
 				B202BE0729B8BC6600845CE3 /* WalksViewModel.swift in Sources */,
 				B2AE843E29AC16F300C44500 /* LogIn.swift in Sources */,
 				B2C0A90A29E5DFF00056521B /* ElementsProtocol.swift in Sources */,

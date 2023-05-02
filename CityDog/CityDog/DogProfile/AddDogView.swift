@@ -1,7 +1,7 @@
 import SwiftUI
 import PhotosUI
 
-struct AddDog: View {
+struct AddDogView: View {
     
     var dogBreeds = ["Golden Retrievers", "Boston Terriers", "Labrador Retrievers", "Poodles", "Border Collie", "Beagle", "Irish Setter", "Staffordshire Bull Terrier", "Cavalier King Charles Spaniel", "Cockapoo", "Boxer", "Shih Tzu", "French Bulldog","Fox Terrier", "unknown"]
     var ageOfDog = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"]
@@ -101,6 +101,6 @@ struct AddDog: View {
 
 struct AddDog_Previews: PreviewProvider {
     static var previews: some View {
-        AddDog()
+        AddDogView()
     }
 }
