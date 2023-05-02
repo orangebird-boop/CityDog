@@ -39,6 +39,6 @@ struct DogProfileView: View {
 
 struct DogProfile_Previews: PreviewProvider {
     static var previews: some View {
-        DogProfileView(viewModel: DogProfileViewModel(dog: Dog.dummyDog()))
+        DogProfileView(viewModel: DogProfileViewModel(dog: DogModel.dummyDog()))
     }
 }

@@ -2,7 +2,7 @@
 //  ElementEntity+CoreDataProperties.swift
 //  CityDogEntities
 //
-//  Created by Nora Lilla Matyassi on 29/04/2023.
+//  Created by Nora Lilla Matyassi on 02/05/2023.
 //
 //
 
@@ -18,30 +18,13 @@ extension ElementEntity {
 
     @NSManaged public var goodToKnow: String?
     @NSManaged public var gpsLocation: Double
-    @NSManaged public var id: String?
+    @NSManaged public var id: UUID?
     @NSManaged public var image: String?
     @NSManaged public var smallDescription: String?
     @NSManaged public var title: String?
     @NSManaged public var type: String?
-    @NSManaged public var addresse: NSSet?
+    @NSManaged public var address: AddressEntity?
     @NSManaged public var comments: NSSet?
-
-}
-
-// MARK: Generated accessors for addresse
-extension ElementEntity {
-
-    @objc(addAddresseObject:)
-    @NSManaged public func addToAddresse(_ value: AddressEntity)
-
-    @objc(removeAddresseObject:)
-    @NSManaged public func removeFromAddresse(_ value: AddressEntity)
-
-    @objc(addAddresse:)
-    @NSManaged public func addToAddresse(_ values: NSSet)
-
-    @objc(removeAddresse:)
-    @NSManaged public func removeFromAddresse(_ values: NSSet)
 
 }
 

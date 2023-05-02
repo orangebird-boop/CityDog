@@ -11,6 +11,13 @@
         <attribute name="rating" attributeType="Integer 32" minValueString="0" maxValueString="5" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="title" attributeType="String"/>
     </entity>
+    <entity name="DogEntity" representedClassName="DogEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="age" attributeType="String"/>
+        <attribute name="breed" attributeType="String"/>
+        <attribute name="id" attributeType="String"/>
+        <attribute name="image" attributeType="String"/>
+        <attribute name="name" attributeType="String"/>
+    </entity>
     <entity name="ElementEntity" representedClassName="ElementEntity" syncable="YES">
         <attribute name="goodToKnow" attributeType="String"/>
         <attribute name="gpsLocation" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
@@ -21,5 +28,13 @@
         <attribute name="type" attributeType="String"/>
         <relationship name="address" maxCount="1" deletionRule="Cascade" destinationEntity="AddressEntity"/>
         <relationship name="comments" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CommentEntity"/>
+    </entity>
+    <entity name="UserEntity" representedClassName="UserEntity" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <relationship name="dog" toMany="YES" minCount="1" maxCount="5" deletionRule="Cascade" destinationEntity="DogEntity"/>
     </entity>
 </model>

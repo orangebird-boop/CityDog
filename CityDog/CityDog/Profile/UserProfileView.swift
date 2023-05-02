@@ -101,6 +101,6 @@ struct UserProfileView: View {
 
 struct UserProfile_Previews: PreviewProvider {
     static var previews: some View {
-        UserProfileView(viewModel: UserProfileViewModel(user: User(id: UUID().uuidString, firstNames: "John", lastName: "Appleseed", email: "johnappleseed@apple.com", password: "", dogs: [Dog(id: UUID().uuidString, name: "Snoopy", breed: "Beagle", age: "5", pictureURL: ""), Dog(id: UUID().uuidString, name: "Prince", breed: "French Bulldog", age: "8", pictureURL: "")])))
+        UserProfileView(viewModel: UserProfileViewModel(user: User(id: UUID().uuidString, firstNames: "John", lastName: "Appleseed", email: "johnappleseed@apple.com", password: "", dogs: [DogModel(id: UUID().uuidString, name: "Snoopy", breed: "Beagle", age: "5", pictureURL: ""), DogModel(id: UUID().uuidString, name: "Prince", breed: "French Bulldog", age: "8", pictureURL: "")])))
     }
 }

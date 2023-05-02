@@ -1,6 +1,6 @@
 import Foundation
 
-public struct Dog: Identifiable {
+public struct DogModel: Identifiable {
 
     // MARK: - Properties
     
@@ -20,8 +20,8 @@ public struct Dog: Identifiable {
     }
 }
  
-public extension Dog {
+public extension DogModel {
     static func dummyDog() -> Self {
-        Dog(id: UUID().uuidString, name: "Lenny", breed: "Fox Terrier", age: "12", pictureURL: "")
+        DogModel(id: UUID().uuidString, name: "Lenny", breed: "Fox Terrier", age: "12", pictureURL: "")
     }
 }

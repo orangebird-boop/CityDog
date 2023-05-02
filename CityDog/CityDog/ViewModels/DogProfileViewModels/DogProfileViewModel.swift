@@ -3,5 +3,5 @@ import Foundation
 import CityDogEntities
 
 struct DogProfileViewModel {
-    var dog: Dog
+    var dog: DogModel
 }

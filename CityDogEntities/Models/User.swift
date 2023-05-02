@@ -13,11 +13,11 @@ public struct User: Identifiable {
         "\(firstName) \(lastName)"
     }
     
-    public let dogs: [Dog]
+    public let dogs: [DogModel]
     
     // MARK: - Initialization
     
-    public init(id: String, firstNames: String, lastName: String, email: String, password: String, dogs: [Dog]) {
+    public init(id: String, firstNames: String, lastName: String, email: String, password: String, dogs: [DogModel]) {
         self.id = id
         self.firstName = firstNames
         self.lastName = lastName
@@ -29,6 +29,6 @@ public struct User: Identifiable {
 
 public extension User {
     static func dummyUser() -> Self {
-        User(id: UUID().uuidString, firstNames: "John", lastName: "Appleseed", email: "johnappleseed@apple.com", password: "", dogs: [Dog(id: UUID().uuidString, name: "Snoopy", breed: "Beagle", age: "5", pictureURL: ""), Dog(id: UUID().uuidString, name: "Prince", breed: "French Bulldog", age: "8", pictureURL: "")])
+        User(id: UUID().uuidString, firstNames: "John", lastName: "Appleseed", email: "johnappleseed@apple.com", password: "", dogs: [DogModel(id: UUID().uuidString, name: "Snoopy", breed: "Beagle", age: "5", pictureURL: ""), DogModel(id: UUID().uuidString, name: "Prince", breed: "French Bulldog", age: "8", pictureURL: "")])
     }
 }
