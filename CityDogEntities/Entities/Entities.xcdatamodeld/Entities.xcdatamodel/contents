@@ -11,7 +11,7 @@
         <attribute name="rating" attributeType="Integer 32" minValueString="0" maxValueString="5" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="title" attributeType="String"/>
     </entity>
-    <entity name="DogEntity" representedClassName="DogEntity" syncable="YES" codeGenerationType="class">
+    <entity name="DogEntity" representedClassName="DogEntity" syncable="YES">
         <attribute name="age" attributeType="String"/>
         <attribute name="breed" attributeType="String"/>
         <attribute name="id" attributeType="String"/>
@@ -35,6 +35,6 @@
         <attribute name="id" optional="YES" attributeType="String"/>
         <attribute name="lastName" optional="YES" attributeType="String"/>
         <attribute name="password" optional="YES" attributeType="String"/>
-        <relationship name="dog" toMany="YES" minCount="1" maxCount="5" deletionRule="Cascade" destinationEntity="DogEntity"/>
+        <relationship name="dogs" toMany="YES" minCount="1" maxCount="5" deletionRule="Cascade" destinationEntity="DogEntity"/>
     </entity>
 </model>

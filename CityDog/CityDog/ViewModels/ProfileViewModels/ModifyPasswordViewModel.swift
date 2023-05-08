@@ -2,5 +2,10 @@ import Foundation
 import CityDogEntities
 
 struct ModifyPasswordViewModel{
-    var user: User
+    let user: User
+    var newPassword: String
+    
+    func saveChanges() {
+        // TODO: Ask UserPersistenceService to update user with new Password
+    }
 }

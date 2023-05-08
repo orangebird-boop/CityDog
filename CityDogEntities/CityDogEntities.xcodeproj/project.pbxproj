@@ -12,16 +12,17 @@
 		B2C0A93129F93B720056521B /* Entities.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A92F29F93B720056521B /* Entities.xcdatamodeld */; };
 		B2C0A9B929FFDAB20056521B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9B829FFDAB20056521B /* User.swift */; };
 		B2C0A9BB29FFDBB60056521B /* DogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9BA29FFDBB60056521B /* DogModel.swift */; };
-		B2C0A9E92A01B4D90056521B /* UserEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9DF2A01B4D90056521B /* UserEntity+CoreDataClass.swift */; };
-		B2C0A9EA2A01B4D90056521B /* UserEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9E02A01B4D90056521B /* UserEntity+CoreDataProperties.swift */; };
-		B2C0A9EB2A01B4D90056521B /* DogEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9E12A01B4D90056521B /* DogEntity+CoreDataClass.swift */; };
-		B2C0A9EC2A01B4D90056521B /* DogEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9E22A01B4D90056521B /* DogEntity+CoreDataProperties.swift */; };
-		B2C0A9ED2A01B4D90056521B /* CommentEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9E32A01B4D90056521B /* CommentEntity+CoreDataClass.swift */; };
-		B2C0A9EE2A01B4D90056521B /* CommentEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9E42A01B4D90056521B /* CommentEntity+CoreDataProperties.swift */; };
-		B2C0A9EF2A01B4D90056521B /* AddressEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9E52A01B4D90056521B /* AddressEntity+CoreDataClass.swift */; };
-		B2C0A9F02A01B4D90056521B /* AddressEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9E62A01B4D90056521B /* AddressEntity+CoreDataProperties.swift */; };
-		B2C0A9F12A01B4D90056521B /* ElementEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9E72A01B4D90056521B /* ElementEntity+CoreDataClass.swift */; };
-		B2C0A9F22A01B4D90056521B /* ElementEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9E82A01B4D90056521B /* ElementEntity+CoreDataProperties.swift */; };
+		B2C0A9FD2A090BA50056521B /* ElementEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9F32A090BA50056521B /* ElementEntity+CoreDataClass.swift */; };
+		B2C0A9FE2A090BA50056521B /* ElementEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9F42A090BA50056521B /* ElementEntity+CoreDataProperties.swift */; };
+		B2C0A9FF2A090BA50056521B /* CommentEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9F52A090BA50056521B /* CommentEntity+CoreDataClass.swift */; };
+		B2C0AA002A090BA50056521B /* CommentEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9F62A090BA50056521B /* CommentEntity+CoreDataProperties.swift */; };
+		B2C0AA012A090BA50056521B /* UserEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9F72A090BA50056521B /* UserEntity+CoreDataClass.swift */; };
+		B2C0AA022A090BA50056521B /* UserEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9F82A090BA50056521B /* UserEntity+CoreDataProperties.swift */; };
+		B2C0AA032A090BA50056521B /* AddressEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9F92A090BA50056521B /* AddressEntity+CoreDataClass.swift */; };
+		B2C0AA042A090BA50056521B /* AddressEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9FA2A090BA50056521B /* AddressEntity+CoreDataProperties.swift */; };
+		B2C0AA052A090BA50056521B /* DogEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9FB2A090BA50056521B /* DogEntity+CoreDataClass.swift */; };
+		B2C0AA062A090BA50056521B /* DogEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9FC2A090BA50056521B /* DogEntity+CoreDataProperties.swift */; };
+		B2C0AA092A090C1B0056521B /* UserPersistenceServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0AA082A090C1B0056521B /* UserPersistenceServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,16 +32,17 @@
 		B2C0A93029F93B720056521B /* Entities.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Entities.xcdatamodel; sourceTree = "<group>"; };
 		B2C0A9B829FFDAB20056521B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B2C0A9BA29FFDBB60056521B /* DogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModel.swift; sourceTree = "<group>"; };
-		B2C0A9DF2A01B4D90056521B /* UserEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		B2C0A9E02A01B4D90056521B /* UserEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		B2C0A9E12A01B4D90056521B /* DogEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DogEntity+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		B2C0A9E22A01B4D90056521B /* DogEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DogEntity+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		B2C0A9E32A01B4D90056521B /* CommentEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommentEntity+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		B2C0A9E42A01B4D90056521B /* CommentEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommentEntity+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		B2C0A9E52A01B4D90056521B /* AddressEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddressEntity+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		B2C0A9E62A01B4D90056521B /* AddressEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddressEntity+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
-		B2C0A9E72A01B4D90056521B /* ElementEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ElementEntity+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
-		B2C0A9E82A01B4D90056521B /* ElementEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ElementEntity+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		B2C0A9F32A090BA50056521B /* ElementEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ElementEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B2C0A9F42A090BA50056521B /* ElementEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ElementEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B2C0A9F52A090BA50056521B /* CommentEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommentEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B2C0A9F62A090BA50056521B /* CommentEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommentEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B2C0A9F72A090BA50056521B /* UserEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B2C0A9F82A090BA50056521B /* UserEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B2C0A9F92A090BA50056521B /* AddressEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddressEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B2C0A9FA2A090BA50056521B /* AddressEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddressEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B2C0A9FB2A090BA50056521B /* DogEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DogEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		B2C0A9FC2A090BA50056521B /* DogEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DogEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		B2C0AA082A090C1B0056521B /* UserPersistenceServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPersistenceServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 		B2C0A91229E83B7E0056521B = {
 			isa = PBXGroup;
 			children = (
+				B2C0AA072A090BF80056521B /* Services */,
 				B2C0A9AB29FD49690056521B /* Entities */,
 				B2C0A91E29E83B7E0056521B /* Models */,
 				B2C0A91D29E83B7E0056521B /* Products */,
@@ -85,19 +88,27 @@
 		B2C0A9AB29FD49690056521B /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				B2C0A9DF2A01B4D90056521B /* UserEntity+CoreDataClass.swift */,
-				B2C0A9E02A01B4D90056521B /* UserEntity+CoreDataProperties.swift */,
-				B2C0A9E12A01B4D90056521B /* DogEntity+CoreDataClass.swift */,
-				B2C0A9E22A01B4D90056521B /* DogEntity+CoreDataProperties.swift */,
-				B2C0A9E32A01B4D90056521B /* CommentEntity+CoreDataClass.swift */,
-				B2C0A9E42A01B4D90056521B /* CommentEntity+CoreDataProperties.swift */,
-				B2C0A9E52A01B4D90056521B /* AddressEntity+CoreDataClass.swift */,
-				B2C0A9E62A01B4D90056521B /* AddressEntity+CoreDataProperties.swift */,
-				B2C0A9E72A01B4D90056521B /* ElementEntity+CoreDataClass.swift */,
-				B2C0A9E82A01B4D90056521B /* ElementEntity+CoreDataProperties.swift */,
+				B2C0A9F32A090BA50056521B /* ElementEntity+CoreDataClass.swift */,
+				B2C0A9F42A090BA50056521B /* ElementEntity+CoreDataProperties.swift */,
+				B2C0A9F52A090BA50056521B /* CommentEntity+CoreDataClass.swift */,
+				B2C0A9F62A090BA50056521B /* CommentEntity+CoreDataProperties.swift */,
+				B2C0A9F72A090BA50056521B /* UserEntity+CoreDataClass.swift */,
+				B2C0A9F82A090BA50056521B /* UserEntity+CoreDataProperties.swift */,
+				B2C0A9F92A090BA50056521B /* AddressEntity+CoreDataClass.swift */,
+				B2C0A9FA2A090BA50056521B /* AddressEntity+CoreDataProperties.swift */,
+				B2C0A9FB2A090BA50056521B /* DogEntity+CoreDataClass.swift */,
+				B2C0A9FC2A090BA50056521B /* DogEntity+CoreDataProperties.swift */,
 				B2C0A92F29F93B720056521B /* Entities.xcdatamodeld */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		B2C0AA072A090BF80056521B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B2C0AA082A090C1B0056521B /* UserPersistenceServices.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,21 +189,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2C0A9F02A01B4D90056521B /* AddressEntity+CoreDataProperties.swift in Sources */,
-				B2C0A9EE2A01B4D90056521B /* CommentEntity+CoreDataProperties.swift in Sources */,
+				B2C0AA042A090BA50056521B /* AddressEntity+CoreDataProperties.swift in Sources */,
+				B2C0AA002A090BA50056521B /* CommentEntity+CoreDataProperties.swift in Sources */,
+				B2C0AA022A090BA50056521B /* UserEntity+CoreDataProperties.swift in Sources */,
+				B2C0AA012A090BA50056521B /* UserEntity+CoreDataClass.swift in Sources */,
+				B2C0A9FF2A090BA50056521B /* CommentEntity+CoreDataClass.swift in Sources */,
 				B2C0A92929E83C560056521B /* ElementsModel.swift in Sources */,
-				B2C0A9F12A01B4D90056521B /* ElementEntity+CoreDataClass.swift in Sources */,
-				B2C0A9EA2A01B4D90056521B /* UserEntity+CoreDataProperties.swift in Sources */,
-				B2C0A9F22A01B4D90056521B /* ElementEntity+CoreDataProperties.swift in Sources */,
-				B2C0A9E92A01B4D90056521B /* UserEntity+CoreDataClass.swift in Sources */,
-				B2C0A9EC2A01B4D90056521B /* DogEntity+CoreDataProperties.swift in Sources */,
-				B2C0A9ED2A01B4D90056521B /* CommentEntity+CoreDataClass.swift in Sources */,
-				B2C0A9EB2A01B4D90056521B /* DogEntity+CoreDataClass.swift in Sources */,
+				B2C0A9FD2A090BA50056521B /* ElementEntity+CoreDataClass.swift in Sources */,
 				B2C0A9BB29FFDBB60056521B /* DogModel.swift in Sources */,
 				B2C0A92729E83C420056521B /* UserProfileModel.swift in Sources */,
-				B2C0A9EF2A01B4D90056521B /* AddressEntity+CoreDataClass.swift in Sources */,
+				B2C0AA052A090BA50056521B /* DogEntity+CoreDataClass.swift in Sources */,
 				B2C0A93129F93B720056521B /* Entities.xcdatamodeld in Sources */,
+				B2C0AA032A090BA50056521B /* AddressEntity+CoreDataClass.swift in Sources */,
+				B2C0AA062A090BA50056521B /* DogEntity+CoreDataProperties.swift in Sources */,
+				B2C0AA092A090C1B0056521B /* UserPersistenceServices.swift in Sources */,
 				B2C0A9B929FFDAB20056521B /* User.swift in Sources */,
+				B2C0A9FE2A090BA50056521B /* ElementEntity+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

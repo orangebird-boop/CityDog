@@ -2,7 +2,7 @@
 //  UserEntity+CoreDataProperties.swift
 //  CityDogEntities
 //
-//  Created by Nora Lilla Matyassi on 02/05/2023.
+//  Created by Nora Lilla Matyassi on 08/05/2023.
 //
 //
 
@@ -21,24 +21,24 @@ extension UserEntity {
     @NSManaged public var id: String?
     @NSManaged public var lastName: String?
     @NSManaged public var password: String?
-    @NSManaged public var dog: NSSet?
+    @NSManaged public var dogs: NSSet?
 
 }
 
-// MARK: Generated accessors for dog
+// MARK: Generated accessors for dogs
 extension UserEntity {
 
-    @objc(addDogObject:)
-    @NSManaged public func addToDog(_ value: DogEntity)
+    @objc(addDogsObject:)
+    @NSManaged public func addToDogs(_ value: DogEntity)
 
-    @objc(removeDogObject:)
-    @NSManaged public func removeFromDog(_ value: DogEntity)
+    @objc(removeDogsObject:)
+    @NSManaged public func removeFromDogs(_ value: DogEntity)
 
-    @objc(addDog:)
-    @NSManaged public func addToDog(_ values: NSSet)
+    @objc(addDogs:)
+    @NSManaged public func addToDogs(_ values: NSSet)
 
-    @objc(removeDog:)
-    @NSManaged public func removeFromDog(_ values: NSSet)
+    @objc(removeDogs:)
+    @NSManaged public func removeFromDogs(_ values: NSSet)
 
 }
 

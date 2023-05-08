@@ -46,7 +46,7 @@ struct ModifyPassword: View {
                                         // destination SAVE
                                     } label: {
                                         Text("Save")
-            
+            // TODO: create a message to alert usert about changing password
                                     }
                                 }
                             }
