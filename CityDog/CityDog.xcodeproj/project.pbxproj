@@ -44,6 +44,7 @@
 		B2C0A9C62A01ADF00056521B /* DogProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9C52A01ADF00056521B /* DogProfileViewModel.swift */; };
 		B2C0A9C82A01AEE50056521B /* AddDogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9C72A01AEE40056521B /* AddDogViewModel.swift */; };
 		B2C0A9CA2A01AF400056521B /* ModifyPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9C92A01AF400056521B /* ModifyPasswordViewModel.swift */; };
+		B2C0AA0C2A0929270056521B /* dogBreeds.json in Resources */ = {isa = PBXBuildFile; fileRef = B2C0AA0B2A0929260056521B /* dogBreeds.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,7 @@
 		B2C0A9C52A01ADF00056521B /* DogProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogProfileViewModel.swift; sourceTree = "<group>"; };
 		B2C0A9C72A01AEE40056521B /* AddDogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDogViewModel.swift; sourceTree = "<group>"; };
 		B2C0A9C92A01AF400056521B /* ModifyPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyPasswordViewModel.swift; sourceTree = "<group>"; };
+		B2C0AA0B2A0929260056521B /* dogBreeds.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dogBreeds.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 		B2A1276829A8202000391C10 /* CityDog */ = {
 			isa = PBXGroup;
 			children = (
+				B2C0AA0A2A0929000056521B /* Resources */,
 				B2A1276D29A8202300391C10 /* Assets.xcassets */,
 				B2A1276B29A8202000391C10 /* LaunchScreen.swift */,
 				B2A1276929A8202000391C10 /* CityDogApp.swift */,
@@ -302,6 +305,14 @@
 			path = ProfileViewModels;
 			sourceTree = "<group>";
 		};
+		B2C0AA0A2A0929000056521B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B2C0AA0B2A0929260056521B /* dogBreeds.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -409,6 +420,7 @@
 			files = (
 				B2A1277129A8202300391C10 /* Preview Assets.xcassets in Resources */,
 				B2A1276E29A8202300391C10 /* Assets.xcassets in Resources */,
+				B2C0AA0C2A0929270056521B /* dogBreeds.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

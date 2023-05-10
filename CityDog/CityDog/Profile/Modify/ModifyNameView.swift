@@ -44,7 +44,7 @@ struct ModifyNameView: View {
                                     } label: {
                                         Text("Save")
             
-                                    }
+                                    }.disabled(viewModel.hasUnsavedChanges)
                                 }
                             }
         }

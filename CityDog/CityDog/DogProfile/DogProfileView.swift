@@ -7,7 +7,7 @@ struct DogProfileView: View {
     }
     
     var viewModel: DogProfileViewModel
-    
+  
     var body: some View {
         NavigationStack {
             Form {
