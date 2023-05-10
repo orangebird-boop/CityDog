@@ -23,7 +23,7 @@ public class UserPersistenceServices {
     }
     
     func fetchDogs(for user: User) {
-        
+  
     }
     
     func add(dog: DogModel, to user: User) {
@@ -36,10 +36,10 @@ public class UserPersistenceServices {
             let matchingUsers = try Self.context.fetch(request)
             
             guard let currentUserEntity = matchingUsers.first else {
-                return  // make a message
+                fatalError("fetching user was unsuccessful")
             }
             guard let dogEntityDescription = NSEntityDescription.entity(forEntityName: "DogEntity", in: Self.context) else {
-                return // make a message
+                fatalError("fetching dogs was unsuccessful")
             }
             
             let dogEntity = DogEntity(entity: dogEntityDescription, insertInto: Self.context)

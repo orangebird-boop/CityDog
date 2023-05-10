@@ -6,12 +6,12 @@ public struct DogModel: Identifiable {
     
     public let id: String
     public let name: String
-    public let breed: String
+    public let breed: Breed
     public let age: String
     public let pictureURL: String
     
     // MARK: - Initialization
-    public init(id: String, name: String, breed: String, age: String, pictureURL: String) {
+    public init(id: String, name: String, breed: Breed, age: String, pictureURL: String) {
         self.id = id
         self.name = name
         self.breed = breed
@@ -20,8 +20,19 @@ public struct DogModel: Identifiable {
     }
 }
  
-public extension DogModel {
-    static func dummyDog() -> Self {
-        DogModel(id: UUID().uuidString, name: "Lenny", breed: "Fox Terrier", age: "12", pictureURL: "")
-    }
+//public extension DogModel {
+//    static func dummyDog() -> Self {
+//        DogModel(id: UUID().uuidString, name: "Lenny", breed: Breed(from: loadJson(filename: "dogbreeds.json")), age: "12", pictureURL: "")
+//    }
+//}
+
+//struct ResponseData: Decodable {
+//    var breed: [Breed]
+//}
+
+public struct Breed: Decodable {
+    var id : Int
+    public var breedName: String
 }
+
+
