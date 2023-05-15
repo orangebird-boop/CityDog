@@ -46,7 +46,7 @@ public class UserPersistenceServices {
             dogEntity.name = dog.name
             dogEntity.age = dog.age
             dogEntity.id = dog.id
-            dogEntity.breed = dog.breed
+            dogEntity.breed = dog.breed.name
             dogEntity.image = dog.pictureURL
             
             currentUserEntity.addToDogs(dogEntity)

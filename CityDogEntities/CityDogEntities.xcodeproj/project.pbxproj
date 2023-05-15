@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B2BC5BB02A1120200061F258 /* FilesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BC5BAF2A1120200061F258 /* FilesService.swift */; };
+		B2BC5BB22A1122FB0061F258 /* DefaultsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BC5BB12A1122FB0061F258 /* DefaultsService.swift */; };
 		B2C0A92729E83C420056521B /* UserProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A92629E83C420056521B /* UserProfileModel.swift */; };
 		B2C0A92929E83C560056521B /* ElementsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A92829E83C560056521B /* ElementsModel.swift */; };
 		B2C0A93129F93B720056521B /* Entities.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A92F29F93B720056521B /* Entities.xcdatamodeld */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B2BC5BAF2A1120200061F258 /* FilesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesService.swift; sourceTree = "<group>"; };
+		B2BC5BB12A1122FB0061F258 /* DefaultsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsService.swift; sourceTree = "<group>"; };
 		B2C0A91C29E83B7E0056521B /* CityDogEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CityDogEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2C0A92629E83C420056521B /* UserProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileModel.swift; sourceTree = "<group>"; };
 		B2C0A92829E83C560056521B /* ElementsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementsModel.swift; sourceTree = "<group>"; };
@@ -107,6 +111,8 @@
 			isa = PBXGroup;
 			children = (
 				B2C0AA082A090C1B0056521B /* UserPersistenceServices.swift */,
+				B2BC5BAF2A1120200061F258 /* FilesService.swift */,
+				B2BC5BB12A1122FB0061F258 /* DefaultsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -203,8 +209,10 @@
 				B2C0AA032A090BA50056521B /* AddressEntity+CoreDataClass.swift in Sources */,
 				B2C0AA062A090BA50056521B /* DogEntity+CoreDataProperties.swift in Sources */,
 				B2C0AA092A090C1B0056521B /* UserPersistenceServices.swift in Sources */,
+				B2BC5BB02A1120200061F258 /* FilesService.swift in Sources */,
 				B2C0A9B929FFDAB20056521B /* User.swift in Sources */,
 				B2C0A9FE2A090BA50056521B /* ElementEntity+CoreDataProperties.swift in Sources */,
+				B2BC5BB22A1122FB0061F258 /* DefaultsService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -48,7 +48,7 @@ struct UserProfileView: View {
                         List {
                             Section{
                                 NavigationLink {
-                                    AddDogView()
+                                    AddDogView(viewModel: AddDogViewModel(dog: DogModel(id: "11", name: "Santa", breed: Breed(id: 1, name: "Puli"), age: "5", pictureURL: "")))
                                 } label: {
                                     Text("Add dog")
                                 }.foregroundColor(Color.red)
@@ -101,6 +101,6 @@ struct UserProfileView: View {
 
 struct UserProfile_Previews: PreviewProvider {
     static var previews: some View {
-        UserProfileView(viewModel: UserProfileViewModel(user: User(id: UUID().uuidString, firstNames: "John", lastName: "Appleseed", email: "johnappleseed@apple.com", password: "", dogs: [DogModel(id: UUID().uuidString, name: "Snoopy", breed: "Beagle", age: "5", pictureURL: ""), DogModel(id: UUID().uuidString, name: "Prince", breed: "French Bulldog", age: "8", pictureURL: "")])))
+        UserProfileView(viewModel: UserProfileViewModel(user: User(id: UUID().uuidString, firstNames: "John", lastName: "Appleseed", email: "johnappleseed@apple.com", password: "", dogs: [DogModel(id: UUID().uuidString, name: "Snoopy", breed: Breed(id: 1, name: "Beagle"), age: "11", pictureURL: "")])))
     }
 }

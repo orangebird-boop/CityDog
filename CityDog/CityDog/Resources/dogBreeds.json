@@ -1,5 +1,4 @@
-
-var dogBreeds = [
+[
   {
     "id": 1,
     "name": "Affenpinscher"
@@ -688,14 +687,4 @@ var dogBreeds = [
     "id": 264,
     "name": "Yorkshire Terrier"
   }
-];
-
-var listHolder = document.getElementById("list");
-
-var innerBreeds = "";
-
-breeds.map(function(breed){
-  innerBreeds += "<p>" + breed.id  + " - " + breed.name  + "</p>";
-});
-
-listHolder.innerHTML = innerBreeds;
+]

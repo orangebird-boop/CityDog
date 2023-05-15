@@ -1,13 +1,15 @@
 import SwiftUI
 import PhotosUI
+import CityDogEntities
 
 struct AddDogView: View {
     
-    var dogBreeds = ["Golden Retrievers", "Boston Terriers", "Labrador Retrievers", "Poodles", "Border Collie", "Beagle", "Irish Setter", "Staffordshire Bull Terrier", "Cavalier King Charles Spaniel", "Cockapoo", "Boxer", "Shih Tzu", "French Bulldog","Fox Terrier", "unknown"]
+
     var ageOfDog = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"]
-    
-    @State private var selectedDogBreed = "unknown"
-    @State private var selectedAge = "2"
+    var viewModel: AddDogViewModel
+
+    @State private var selectedDogBreed = ""
+    @State private var selectedAge = ""
     @State private var dogName = ""
     @State private var profilPictureItem: PhotosPickerItem?
     @State private var profilPicture: Image?
@@ -18,33 +20,35 @@ struct AddDogView: View {
         VStack {
             Form {
                 VStack {
-                            Image(uiImage: self.image)
-                          .resizable()
-                          .cornerRadius(50)
-                          .frame(width: 150, height: 150)
-                          .background(Color.black.opacity(0.2))
-                          .aspectRatio(contentMode: .fill)
-                          .clipShape(Circle())
-
-                 Text("Add photo")
-                     .font(.headline)
-                     .frame(maxWidth: .infinity)
-                     .frame(height: 50)
-
-                     .cornerRadius(16)
-                     .foregroundColor(.accentColor)
-                         .padding(.horizontal, 20)
-                         .onTapGesture {
-                           showSheet = true
-                         }
-                    }
+                    Image(uiImage: self.image)
+                        .resizable()
+                        .cornerRadius(50)
+                        .frame(width: 150, height: 150)
+                        .background(Color.black.opacity(0.2))
+                        .aspectRatio(contentMode: .fill)
+                        .clipShape(Circle())
+                    
+                    Text("Add photo")
+                        .font(.headline)
+                        .frame(maxWidth: .infinity)
+                        .frame(height: 50)
+                    
+                        .cornerRadius(16)
+                        .foregroundColor(.accentColor)
+                        .padding(.horizontal, 20)
+                        .onTapGesture {
+                            showSheet = true
+                        }
+                }
+                
                 .padding(.horizontal, 20)
                 .sheet(isPresented: $showSheet) {
-                            // Pick an image from the photo library:
-                        ImagePicker(sourceType: .photoLibrary, selectedImage: self.$image)
-                    }
+                    // Pick an image from the photo library:
+                    ImagePicker(sourceType: .photoLibrary, selectedImage: self.$image)
+                }
+            }
             
-                
+            Form {
                 
                 Section {
                     TextField("Buddy", text: $dogName)
@@ -54,10 +58,13 @@ struct AddDogView: View {
                 
                 Section {
                     Picker("Please select a dog breed", selection: $selectedDogBreed) {
-                        ForEach(dogBreeds, id: \.self) {
-                            Text($0)
+                        
+                        ForEach(viewModel.getBreeds(), id: \.self) {
+                            Text($0.name)
+                            
                         }
                     }
+                    
                 }
                 
                 Section {
@@ -81,6 +88,7 @@ struct AddDogView: View {
                 }
             }
             
+            
             Button(action: {
                 // TODO: Specify action
             }, label: {
@@ -95,12 +103,14 @@ struct AddDogView: View {
                             .cornerRadius(16.0)
                     )
             })
+            
         }
     }
 }
 
 struct AddDog_Previews: PreviewProvider {
     static var previews: some View {
-        AddDogView()
+        AddDogView(viewModel: AddDogViewModel(dog: DogModel.dummyDog()))
     }
 }
+

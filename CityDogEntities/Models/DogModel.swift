@@ -19,20 +19,21 @@ public struct DogModel: Identifiable {
         self.pictureURL = pictureURL
     }
 }
- 
-//public extension DogModel {
-//    static func dummyDog() -> Self {
-//        DogModel(id: UUID().uuidString, name: "Lenny", breed: Breed(from: loadJson(filename: "dogbreeds.json")), age: "12", pictureURL: "")
-//    }
-//}
 
-//struct ResponseData: Decodable {
-//    var breed: [Breed]
-//}
 
-public struct Breed: Decodable {
-    var id : Int
-    public var breedName: String
+public struct Breed: Decodable, Hashable {
+    
+    public init(id: Int, name: String) {
+        self.id = id
+        self.name = name
+    }
+    
+    public let id : Int
+    public let name: String
 }
 
-
+public extension DogModel {
+    static func dummyDog() -> Self {
+        DogModel(id: UUID().uuidString, name: "Lenny", breed: Breed(id: 2, name: "Fox Terrier"), age: "12", pictureURL: "")
+    }
+}

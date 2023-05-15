@@ -29,6 +29,6 @@ public struct User: Identifiable {
 
 public extension User {
     static func dummyUser() -> Self {
-        User(id: UUID().uuidString, firstNames: "John", lastName: "Appleseed", email: "johnappleseed@apple.com", password: "", dogs: [DogModel(id: UUID().uuidString, name: "Snoopy", breed: "Beagle", age: "5", pictureURL: ""), DogModel(id: UUID().uuidString, name: "Prince", breed: "French Bulldog", age: "8", pictureURL: "")])
+        User(id: UUID().uuidString, firstNames: "John", lastName: "Appleseed", email: "johnappleseed@apple.com", password: "", dogs: [DogModel(id: UUID().uuidString, name: "Snoopy", breed: Breed(id: 1, name: "Beagle"), age: "11", pictureURL: "")])
     }
 }
