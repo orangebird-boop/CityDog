@@ -8,7 +8,7 @@ struct AddDogView: View {
     var ageOfDog = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"]
     var viewModel: AddDogViewModel
 
-    @State private var selectedDogBreed = ""
+    @State private var selectedDogBreed = "" // Breed.name
     @State private var selectedAge = ""
     @State private var dogName = ""
     @State private var profilPictureItem: PhotosPickerItem?
