@@ -5,7 +5,7 @@ struct ElementsDetails: View {
     
     @State private var isNavigatingToComments = false
     @State var viewModel: ElementsDetailsViewModel
-    
+
     var body: some View {
         NavigationStack {
             VStack {
@@ -24,28 +24,28 @@ struct ElementsDetails: View {
                                 .font(.headline)
                                 .cornerRadius(16)
                                 .foregroundColor(.accentColor)
-                            
+
                         }
                     }
-                    
+
                     Section {
                         Text("Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
                     } header: {
                         Text("Description")
                     }
-                    
+
                     Section {
                         Text("Lorem ipsum")
                     } header: {
                         Text("Bon à savoir")
                     }
-                    
+
                     Section {
                         StarRating(rating: .constant(4))
                     } header: {
                         Text("Rating")
                     }
-                    
+
                     Section {
                         NavigationLink {
                             ElementsComments()
@@ -53,21 +53,21 @@ struct ElementsDetails: View {
                             Text("Go to comments")
                                 .foregroundColor(.accentColor)
                         }
-                        
+
                     } header: {
                         Text("Comments")
                     }
                 }
             }
-        }.navigationTitle(viewModel.element.title)
-    }
+        }
+  }
 }
 
-struct PlacesDetails_Previews: PreviewProvider {
-    static var previews: some View {
-        ElementsDetails(viewModel: DummyViewModel(element: ElementsModel(type: "", title: "Dummy", imageURL: "", id: "", adresse: "", postalCode: "", latitude: 0.1, long: 0.4, description: "", sumRating: 3)) )
-    }
-}
+//struct PlacesDetails_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ElementsDetails(viewModel: DummyViewModel(element: ElementsModel(type: "", title: "Dummy", imageURL: "", id: "", adresse: "", postalCode: "", latitude: 0.1, long: 0.4, description: "", sumRating: 3)) )
+//    }
+//}
 
 private struct DummyViewModel: ElementsDetailsViewModel {
     var element: CityDogEntities.ElementsModel

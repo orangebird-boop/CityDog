@@ -5,11 +5,11 @@ import CityDogEntities
 struct AddDogViewModel {
    
     
-    var service = DefaultsService(filesService: FilesService())
+    var service = DogService(filesService: FilesService())
     var dog: DogModel
 
     
-    public init(service: DefaultsService = DefaultsService(filesService: FilesService()), dog: DogModel) {
+    public init(service: DogService = DogService(filesService: FilesService()), dog: DogModel) {
         self.service = service
         self.dog = dog
 
@@ -22,8 +22,4 @@ struct AddDogViewModel {
         return dogBreeds
     }
 
-        
-  
-
-    
 }

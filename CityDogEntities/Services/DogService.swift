@@ -1,6 +1,6 @@
 import Foundation
 
-public struct DefaultsService {
+public struct DogService {
     private let filesService: FilesService
     
     public init(filesService: FilesService) {

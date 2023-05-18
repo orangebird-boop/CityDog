@@ -6,23 +6,24 @@ struct Elements: View {
     
     @State var viewModel: ElementsViewModel
     
+    
     var body: some View {
-        
+       
         NavigationStack {
             List {
-                ForEach(viewModel.elements, id: \.id) { element in
-                    NavigationLink(element.title, destination: ElementsDetails(viewModel: DefaultElementDetailsViewModel(element: element)))
+                ForEach(viewModel.getElements(), id: \.id) { element in
+                    NavigationLink(element.name, destination: ElementsDetails(viewModel: DefaultElementDetailsViewModel(element: element)))
                 }
-            }.navigationTitle(viewModel.title)
+          } //.navigationTitle(viewModel)
         }
     }
 }
 
-struct Lieux_Previews: PreviewProvider {
-    static var previews: some View {
-        Elements(viewModel: RestaurantsBarsViewModel())
-    }
-}
+//struct Lieux_Previews: PreviewProvider {
+//    static var previews: some View {
+//        Elements(viewModel: RestaurantsBarsViewModel())
+//    }
+//}
 
 
 

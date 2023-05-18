@@ -16,8 +16,120 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
             endingLineNumber = "19"
-            landmarkName = "image"
+            landmarkName = "body"
             landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EC16CEFF-ADFB-42A0-B5AE-8E34A9823E61"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CityDog/CityDog/Elements/Elements.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "EC16CEFF-ADFB-42A0-B5AE-8E34A9823E61 - 4c063825b64451fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;CityDogEntities.ElementsModel&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, CityDog.ElementsDetails&gt;&gt; in closure #1 () -&gt; SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;CityDogEntities.ElementsModel&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, CityDog.ElementsDetails&gt;&gt;&gt; in CityDog.Elements.body.getter : some"
+                  moduleName = "CityDog"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/noralilla/LocalDocuments/work/CityDog/CityDog/CityDog/Elements/Elements.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "187">
+               </Location>
+               <Location
+                  uuid = "EC16CEFF-ADFB-42A0-B5AE-8E34A9823E61 - 1ca6e80b0eca925b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (CityDogEntities.ElementsModel) -&gt; SwiftUI.NavigationLink&lt;SwiftUI.Text, CityDog.ElementsDetails&gt; in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;CityDogEntities.ElementsModel&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, CityDog.ElementsDetails&gt;&gt; in closure #1 () -&gt; SwiftUI.List&lt;Swift.Never, SwiftUI.ForEach&lt;Swift.Array&lt;CityDogEntities.ElementsModel&gt;, Swift.String, SwiftUI.NavigationLink&lt;SwiftUI.Text, CityDog.ElementsDetails&gt;&gt;&gt; in CityDog.Elements.body.getter : some"
+                  moduleName = "CityDog"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/noralilla/LocalDocuments/work/CityDog/CityDog/CityDog/Elements/Elements.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "205">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E44B5087-8184-48C5-811E-AA835B39B11F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CityDog/CityDog/ViewModels/ElementsProtocol.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "7"
+            endingLineNumber = "7"
+            landmarkName = "ElementsViewModel"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "51E67609-DE29-4C4B-939D-ADF00D8EF2F7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CityDog/CityDog/ViewModels/WalksViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "refreshElements()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "908A970B-6C76-4AA5-A3AD-49ECE39FBE3F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CityDog/CityDog/ViewModels/WalksViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "refreshElements()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3F738E82-3D80-4234-94A8-3494A7198C75"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CityDog/CityDog/ViewModels/WalksViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "init()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
