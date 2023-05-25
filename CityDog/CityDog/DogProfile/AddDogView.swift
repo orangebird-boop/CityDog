@@ -8,7 +8,8 @@ struct AddDogView: View {
     var ageOfDog = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"]
     var viewModel: AddDogViewModel
 
-    @State private var selectedDogBreed = "" // Breed.name
+//    @State private var selectedDogBreed: Breed
+    @State private var selectedDogBreedIndex = -1
     @State private var selectedAge = ""
     @State private var dogName = ""
     @State private var profilPictureItem: PhotosPickerItem?
@@ -57,13 +58,13 @@ struct AddDogView: View {
                 }
                 
                 Section {
-                    Picker("Please select a dog breed", selection: $selectedDogBreed) {
+                    Picker("Please select a dog breed", selection: $selectedDogBreedIndex) {
                         
-                        ForEach(viewModel.getBreeds(), id: \.self) {
+                        ForEach(viewModel.dogBreeds, id: \.id) {
                             Text($0.name)
                             
                         }
-                    }
+                    }.pickerStyle(.navigationLink)
                     
                 }
                 
@@ -108,9 +109,9 @@ struct AddDogView: View {
     }
 }
 
-struct AddDog_Previews: PreviewProvider {
-    static var previews: some View {
-        AddDogView(viewModel: AddDogViewModel(dog: DogModel.dummyDog()))
-    }
-}
+//struct AddDog_Previews: PreviewProvider {
+//    static var previews: some View {
+//        AddDogView(viewModel: AddDogViewModel(dog: DogModel.dummyDog()))
+//    }
+//}
 

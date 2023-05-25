@@ -1,21 +1,41 @@
-//import Foundation
-//import CityDogEntities
-//
-//
-//class VeterinariansViewModel: ElementsViewModel {
-//    let title = "Veterinarians"
-//    private (set) var elements: [ElementsModel] = []
-//    
-//    init() {
-//        refreshElements()
-//    }
-//    
-//    func refreshElements() {
-//        // TODO: Fetch from DB
-//        elements = [
-//        ElementsModel(type: "Veterinarians", title: "Dr Schwarz", imageURL: "", id: "1", adresse:  "57 rue de la Revolution", postalCode: "93100", latitude: 48.85354317054084, long: 2.428509121061213, goodToKnow: [], description: "iuhemiuchfiuehciufhlcurf", phoneNumber: "0648856001", sumRating: 4, comments: Comments(title: "ok", text: "more than ok", rating: 4))
-//    
-//        ]
-//    }
-//}
-//
+import Foundation
+import CityDogEntities
+
+
+class VeterinariansViewModel: ElementsViewModel {
+    let title = "Veterinarians"
+    var service: CityDogEntities.ElementsService = CityDogEntities.ElementsService(filesService: FilesService())
+    var elements: [CityDogEntities.ElementsModel] = []
+    internal init(elements: [ElementsModel], service: ElementsService) {
+        self.elements = elements
+        self.service = service
+    }
+    
+    internal init(){
+        self.elements = getElements()
+    }
+    func getElements() -> [ElementsModel] {
+        var elements : [ElementsModel] = {
+            return service.retrieveElement()
+        }()
+        return elements
+    }
+    
+    func refreshElements() -> [ElementsModel] {
+        if let fileURL = Bundle.main.url(forResource: "elements", withExtension: "json"),
+           let data = try? Data(contentsOf: fileURL) {
+            let decoder = JSONDecoder()
+            do {
+                let elementsData = try decoder.decode([ElementsModel].self, from: data)
+//                elements = elementsData
+                elements = elementsData.filter { $0.type == "veterinaire" }
+            } catch {
+            
+                print("Error decoding JSON: \(error.localizedDescription)")
+            }
+        }
+
+        return elements
+    }
+}
+

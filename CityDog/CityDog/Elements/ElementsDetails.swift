@@ -11,7 +11,7 @@ struct ElementsDetails: View {
             VStack {
                 Form {
                     Section {
-                        Text("Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+                        Text(viewModel.element.address)
                     } header: {
                         Text("Addresse")
                     } footer: {
@@ -29,13 +29,13 @@ struct ElementsDetails: View {
                     }
 
                     Section {
-                        Text("Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+                        Text(viewModel.element.shortDescription)
                     } header: {
                         Text("Description")
                     }
 
                     Section {
-                        Text("Lorem ipsum")
+                        Text(viewModel.element.goodToKnow)
                     } header: {
                         Text("Bon à savoir")
                     }
@@ -43,7 +43,7 @@ struct ElementsDetails: View {
                     Section {
                         StarRating(rating: .constant(4))
                     } header: {
-                        Text("Rating")
+                        Text(viewModel.element.sumRating)
                     }
 
                     Section {

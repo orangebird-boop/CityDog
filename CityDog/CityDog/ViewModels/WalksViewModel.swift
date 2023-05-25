@@ -2,9 +2,6 @@ import Foundation
 import CityDogEntities
 
 class WalksViewModel: ElementsViewModel {
- 
-    
-    
 
     var service: CityDogEntities.ElementsService = CityDogEntities.ElementsService(filesService: FilesService())
     var elements: [CityDogEntities.ElementsModel] = []
@@ -14,34 +11,11 @@ class WalksViewModel: ElementsViewModel {
     }
     
     internal init(){
-        //service = ElementsService(filesService: FilesService())
         self.elements = getElements()
     }
-    
-    
-  
 
     let title = "Walks"
-//    internal (set) var elements: [ElementsModel]
-   
-    
-    
-    
-//    var dog: DogModel
-//
-//
-//    public init(service: DefaultsService = DefaultsService(filesService: FilesService()), dog: DogModel) {
-//        self.service = service
-//        self.dog = dog
-//
-//    }
-//
-//    func getBreeds() -> [Breed] {
-//        var dogBreeds: [Breed] = {
-//            return service.retrieveDogBreeds()
-//        }()
-//        return dogBreeds
-//    }
+
  
     func getElements() -> [ElementsModel] {
         var elements : [ElementsModel] = {
@@ -56,8 +30,8 @@ class WalksViewModel: ElementsViewModel {
             let decoder = JSONDecoder()
             do {
                 let elementsData = try decoder.decode([ElementsModel].self, from: data)
-                elements = elementsData
-//                elements = elementsData.object.filter { $0. == "caniparc" }
+//                elements = elementsData
+                elements = elementsData.filter { $0.type == "parc" || $0.type == "caniparc" }
             } catch {
             
                 print("Error decoding JSON: \(error.localizedDescription)")

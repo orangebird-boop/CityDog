@@ -12,10 +12,13 @@ public struct ElementsService {
             return []
         }
         
-        guard let element = try? JSONDecoder().decode([ElementsModel].self, from: rawElement) else {
+        do {
+            let element = try JSONDecoder().decode([ElementsModel].self, from: rawElement)
+            return element
+        } catch {
+            dump(error)
             return []
         }
-        
-        return element
+
+        }
     }
-}

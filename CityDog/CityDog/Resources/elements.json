@@ -1,329 +1,292 @@
-
-
 [
     {
+        "id": "1",
         "name": "Canipark rue Hoche",
         "type": "caniparc",
-        "addresse": "89 Rue Hoche, 93100 Montreuil",
-        "description": "",
-        "good to know": "ticks, without leash",
-        "long": "48.863694522033455",
-        "lat": "2.431022734037744",
+        "address": "89 Rue Hoche, 93100 Montreuil",
+        "shortDescription": "",
+        "goodToKnow": "ticks, without leash",
+        "longitude": "48.863694522033455",
+        "latitude": "2.431022734037744",
         "sumRating": "",
         "comments": [
             {
-                "comment": {
-                    "title": {},
-                    "message": {},
-                    "rating": {}
-                }
+                "title": "",
+                "message": "",
+                "rating": ""
             }
         ]
     },
     {
-        "name": "Caniparc rue de l'épine prolongée",
+        "id": "2",
+        "name": "Caniparc rue de l'épine prolongitudeée",
         "type": "caniparc",
-        "addresse": "Parc Jean-Moulin - Les Guilands",
-        "description": "",
-        "good to know": "ticks, without leash",
-        "long": "48.863407",
-        "lat": "2.428333",
+        "address": "Parc Jean-Moulin - Les Guilands",
+        "shortDescription": "",
+        "goodToKnow": "ticks, without leash",
+        "longitude": "48.863407",
+        "latitude": "2.428333",
         "sumRating": "",
         "comments": [
             {
-                "comment": {
-                    "title": {},
-                    "message": {},
-                    "rating": {}
-                }
+                "title": "",
+                "message": "",
+                "rating": ""
             }
         ]
     },
     {
+        "id": "3",
         "name": "Caniparc sud",
         "type": "caniparc",
-        "addresse": "Parc Jean-Moulin - Les Guilands",
-        "description": "",
-        "good to know": "ticks, without leash",
-        "long": "48.860259",
-        "lat": "2.425314",
+        "address": "Parc Jean-Moulin - Les Guilands",
+        "shortDescription": "",
+        "goodToKnow": "ticks, without leash",
+        "longitude": "48.860259",
+        "latitude": "2.425314",
         "sumRating": "",
         "comments": [
             {
-                "comment": {
-                    "title": {},
-                    "message": {},
-                    "rating": {}
-                }
+                "title": "",
+                "message": "",
+                "rating": ""
             }
         ]
     },
     {
+        "id": "4",
         "name": "Parc départemental Jean-Moulin - Les Guilands",
         "type": "parc",
-        "addresse": "Rue de l'Épine Prolongée, 93100 Montreuil",
-        "description": "parc boisée, stade, aire de jeux",
-        "good to know": "water, with leash, ticks",
-        "long": "48,8631",
-        "lat": "2,425",
+        "address": "Rue de l'Épine Prolongitudeée, 93100 Montreuil",
+        "shortDescription": "parc boisée, stade, aire de jeux",
+        "goodToKnow": "water, with leash, ticks",
+        "longitude": "48,8631",
+        "latitude": "2,425",
         "sumRating": "",
         "comments": [
             {
-                "comment": {
-                    "title": {},
-                    "message": {},
-                    "rating": {}
-                }
+                "title": "",
+                "message": "",
+                "rating": ""
             }
         ]
     },
     {
+        "id": "5",
         "name": "Parc des Beaumonts",
         "type": "parc",
-        "addresse": "Parc des Beaumonts, 93100 Montreuil",
-        "description": "parc boisée, aire de jeux",
-        "good to know": "water, with leash, ticks",
-        "long": "48.8428",
-        "lat": "2.3985",
+        "address": "Parc des Beaumonts, 93100 Montreuil",
+        "shortDescription": "parc boisée, aire de jeux",
+        "goodToKnow": "water, with leash, ticks",
+        "longitude": "48.8428",
+        "latitude": "2.3985",
         "sumRating": "",
         "comments": [
             {
-                "comment": {
-                    "title": {},
-                    "message": {},
-                    "rating": {}
-                }
+                "title": "",
+                "message": "",
+                "rating": ""
             }
         ]
     },
     {
-        "name": "Parc Montreau",
-        "type": "parc",
-        "addresse": "33 Bd Théophile Sueur, 93100 Montreuil",
-        "description": "",
-        "good to know": "water, with leash, ticks",
-        "long": "48.865536 ",
-        "lat": "2.471199",
-        "sumRating": "",
-        "comments": [
-            {
-                "comment": {
-                    "title": {},
-                    "message": {},
-                    "rating": {}
-                }
-            }
-        ]
+    "id": "6",
+    "name": "Parc Montreau",
+    "type": "parc",
+    "address": "33 Bd Théophile Sueur, 93100 Montreuil",
+    "shortDescription": "",
+    "goodToKnow": "water, with leash, ticks",
+    "longitude": "48.865536",
+    "latitude": "2.471199",
+    "sumRating": "",
+    "comments": [
+        {
+            "title": "",
+            "message": "",
+            "rating": ""
+        }
+    ]
     },
     {
+        "id": "7",
         "name": "Le Jardin de Montreuil",
         "type": "restaurant",
-        "addresse": "1 Rue du Sergent Godefroy, 93100 Montreuil",
-        "description": "Cuisine française moderne et cocktails servis dans un restaurant charmant doté d'un jardin intérieur et d'un patio.",
-        "good to know": "water, with leash",
-        "long": "48.853497462902894",
-        "lat": "2.434746525258881",
+        "address": "1 Rue du Sergent Godefroy, 93100 Montreuil",
+        "shortDescription": "Cuisine française moderne et cocktails servis dans un restaurant charmant doté d'un jardin intérieur et d'un patio.",
+        "goodToKnow": "water, with leash",
+        "longitude": "48.853497462902894",
+        "latitude": "2.434746525258881",
         "sumRating": "",
         "comments": [
             {
-                "comment": {
-                    "title": {},
-                    "message": {},
-                    "rating": {}
-                }
+                
+                "title": "",
+                "message": "",
+                "rating": ""
             }
         ]
     },
     {
+        "id": "8",
         "name": "L'Atelier",
         "type": "restaurant",
-        "addresse": "60bis Rue Robespierre, 93100 Montreuil",
-        "description": "Une cuisine italienne servie dans une salle au décor industriel élégant dont les murs sont ornés de photos.",
-        "good to know": "water, with leash",
-        "long": "48.85230629748224",
-        "lat": "2.4238469915281984",
+        "address": "60bis Rue Robespierre, 93100 Montreuil",
+        "shortDescription": "Une cuisine italienne servie dans une salle au décor industriel élégant dont les murs sont ornés de photos.",
+        "goodToKnow": "water, with leash",
+        "longitude": "48.85230629748224",
+        "latitude": "2.4238469915281984",
         "sumRating": "",
         "comments": [
             {
-                "comment": {
-                    "title": {},
-                    "message": {},
-                    "rating": {}
-                }
+                "title": "",
+                "message": "",
+                "rating": ""
             }
         ]
     },
     {
+        "id": "9",
         "name": "Les Tonneaux",
         "type": "restaurant",
-        "addresse": "62 Rue Robespierre, 93100 Montreuil",
-        "description": "Ce bistrot et bar à tapas sur 2 étages propose une terrasse arborée, des concerts et des animations enfants.",
-        "good to know": "water, with leash",
-        "long": "48.85208055238423",
-        "lat": "2.423834543013706",
+        "address": "62 Rue Robespierre, 93100 Montreuil",
+        "shortDescription": "Ce bistrot et bar à tapas sur 2 étages propose une terrasse arborée, des concerts et des animations enfants.",
+        "goodToKnow": "water, with leash",
+        "longitude": "48.85208055238423",
+        "latitude": "2.423834543013706",
         "sumRating": "",
         "comments": [
             {
-                "comment": {
-                    "title": {},
-                    "message": {},
-                    "rating": {}
-                }
+                "title": "",
+                "message": "",
+                "rating": ""
             }
         ]
     },
     {
+        "id": "10",
         "name": "L'Armony",
         "type": "bar",
-        "addresse": "39 Rue Edouard Vaillant, 93100 Montreuil",
-        "description": "Bar avec musique live",
-        "good to know": "water, with leash",
-        "long": "48.85531711824381",
-        "lat": "2.4326173810793863",
+        "address": "39 Rue Edouard Vaillant, 93100 Montreuil",
+        "shortDescription": "Bar avec musique live",
+        "goodToKnow": "water, with leash",
+        "longitude": "48.85531711824381",
+        "latitude": "2.4326173810793863",
         "sumRating": "",
         "comments": [
             {
-                "comment": {
-                    "title": {},
-                    "message": {},
-                    "rating": {}
-                }
+                
+                "title": "",
+                "message": "",
+                "rating": ""
             }
         ]
     },
     {
+        "id": "11",
         "name": "Brasserie Croix de Chavaux",
         "type": "bar",
-        "addresse": "8 Rue Désiré Charton, 93100 Montreuil",
-        "description": "Microbrasserie, musique live",
-        "good to know": "water, with leash",
-        "long": "48.86728291874297",
-        "lat": "2.450950632665627",
+        "address": "8 Rue Désiré Charton, 93100 Montreuil",
+        "shortDescription": "Microbrasserie, musique live",
+        "goodToKnow": "water, with leash",
+        "longitude": "48.86728291874297",
+        "latitude": "2.450950632665627",
         "sumRating": "",
         "comments": [
             {
-                "comment": {
-                    "title": {},
-                    "message": {},
-                    "rating": {}
-                }
+                "title": "",
+                "message": "",
+                "rating": ""
             }
         ]
     },
     {
+        "id": "12",
         "name": "\nLe Drunken",
         "type": "bar",
-        "addresse": "19 Rue Girard, 93100 Montreuil",
-        "description": "Bistro",
-        "good to know": "water, with leash",
-        "long": "48.85724616628364",
-        "lat": "2.4338166815019897",
+        "address": "19 Rue Girard, 93100 Montreuil",
+        "shortDescription": "Bistro",
+        "goodToKnow": "water, with leash",
+        "longitude": "48.85724616628364",
+        "latitude": "2.4338166815019897",
         "sumRating": "",
         "comments": [
             {
-                "comment": {
-                    "title": {},
-                    "message": {},
-                    "rating": {}
-                }
+                "title": "",
+                "message": "",
+                "rating": ""
             }
         ]
     },
     {
+        "id": "13",
         "name": "Chiens Chats et les Autres",
         "type": "magasin pour animaux",
-        "addresse": "5 Bd Chanzy, 93100 Montreuil",
-        "description": "Produits pour chiens, chats et nouveaux animaux de compagnie : alimentation, parapharmacie, litières etc.",
-        "good to know": "water, with leash",
-        "long": "48.8582227350119",
-        "lat": " 2.4350646090627643",
+        "address": "5 Bd Chanzy, 93100 Montreuil",
+        "shortDescription": "Produits pour chiens, chats et nouveaux animaux de compagnie : alimentation, parapharmacie, litières etc.",
+        "goodToKnow": "water, with leash",
+        "longitude": "48.8582227350119",
+        "latitude": " 2.4350646090627643",
         "sumRating": "",
         "comments": [
             {
-                "comment": {
-                    "title": {},
-                    "message": {},
-                    "rating": {}
-                }
+                "title": "",
+                "message": "",
+                "rating": ""
             }
         ]
     },
     {
+        "id": "15",
         "name": "Clinique Vétérinaire Chanzy",
         "type": "veterinaire",
-        "addresse": "35 Bd Chanzy, 93100 Montreuil",
-        "description": " http://clinique-veterinaire-montreuil.fr/",
-        "good to know": "with leash",
-        "long": "48.85940058845488",
-        "lat": "2.432075938158396",
+        "address": "35 Bd Chanzy, 93100 Montreuil",
+        "shortDescription": " http://clinique-veterinaire-montreuil.fr/",
+        "goodToKnow": "with leash",
+        "longitude": "48.85940058845488",
+        "latitude": "2.432075938158396",
         "sumRating": "",
         "comments": [
             {
-                "comment": {
-                    "title": {},
-                    "message": {},
-                    "rating": {}
-                }
+                "title": "",
+                "message": "",
+                "rating": ""
             }
         ]
     },
     {
+        "id": "15",
         "name": "Cabinet vétérinaire de la Poste - Dr Courquet et Allgeyer",
         "type": "veterinaire",
-        "addresse": "3 Rue Ariste Hémard, 93100 Montreuil",
-        "description": "https://www.vetorino.com/veterinaire/montreuil-93100",
-        "good to know": "with leash",
-        "long": "48.85956220866641",
-        "lat": "2.4380639786961447",
+        "address": "3 Rue Ariste Hémard, 93100 Montreuil",
+        "shortDescription": "https://www.vetorino.com/veterinaire/montreuil-93100",
+        "goodToKnow": "with leash",
+        "longitude": "48.85956220866641",
+        "latitude": "2.4380639786961447",
         "sumRating": "",
         "comments": [
             {
-                "comment": {
-                    "title": {},
-                    "message": {},
-                    "rating": {}
-                }
+                "title": "",
+                "message": "",
+                "rating": ""
             }
         ]
     },
     {
+        "id": "16",
         "name": "Ducroux Christophe",
         "type": "veterinaire",
-        "addresse": "25 Rue Franklin, 93100 Montreuil",
-        "description": "O148701382",
-        "good to know": "with leash",
-        "long": "48.8633489287898",
-        "lat": "2.444306497616427",
+        "address": "25 Rue Franklin, 93100 Montreuil",
+        "shortDescription": "O148701382",
+        "goodToKnow": "with leash",
+        "longitude": "48.8633489287898",
+        "latitude": "2.444306497616427",
         "sumRating": "",
         "comments": [
             {
-                "comment": {
-                    "title": {},
-                    "message": {},
-                    "rating": {}
-                }
-            }
-        ]
-    },
-    {
-        "name": "",
-        "type": "",
-        "addresse": "",
-        "description": "",
-        "good to know": "",
-        "long": "",
-        "lat": "",
-        "sumRating": "",
-        "comments": [
-            {
-                "comment": {
-                    "title": {},
-                    "message": {},
-                    "rating": {}
-                }
+                "title": "",
+                "message": "",
+                "rating": ""
             }
         ]
     }
 ]
-
-
