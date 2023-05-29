@@ -3,7 +3,7 @@ import Foundation
 public struct ElementsService {
     private let filesService: FilesService
     
-    public init(filesService: FilesService) {
+    public init(filesService: FilesService = FilesService()) {
         self.filesService = filesService
     }
     

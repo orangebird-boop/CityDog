@@ -13,7 +13,8 @@
             {
                 "title": "",
                 "message": "",
-                "rating": ""
+                "rating": "",
+                "elementId": ""
             }
         ]
     },
@@ -31,7 +32,8 @@
             {
                 "title": "",
                 "message": "",
-                "rating": ""
+                "rating": "",
+                "elementId": ""
             }
         ]
     },
@@ -49,7 +51,8 @@
             {
                 "title": "",
                 "message": "",
-                "rating": ""
+                "rating": "",
+                "elementId": ""
             }
         ]
     },
@@ -67,7 +70,8 @@
             {
                 "title": "",
                 "message": "",
-                "rating": ""
+                "rating": "",
+                "elementId": ""
             }
         ]
     },
@@ -85,7 +89,8 @@
             {
                 "title": "",
                 "message": "",
-                "rating": ""
+                "rating": "",
+                "elementId": ""
             }
         ]
     },
@@ -103,7 +108,8 @@
         {
             "title": "",
             "message": "",
-            "rating": ""
+            "rating": "",
+            "elementId": ""
         }
     ]
     },
@@ -122,7 +128,8 @@
                 
                 "title": "",
                 "message": "",
-                "rating": ""
+                "rating": "",
+                "elementId": ""
             }
         ]
     },
@@ -140,7 +147,8 @@
             {
                 "title": "",
                 "message": "",
-                "rating": ""
+                "rating": "",
+                "elementId": ""
             }
         ]
     },
@@ -158,7 +166,8 @@
             {
                 "title": "",
                 "message": "",
-                "rating": ""
+                "rating": "",
+                "elementId": ""
             }
         ]
     },
@@ -177,7 +186,8 @@
                 
                 "title": "",
                 "message": "",
-                "rating": ""
+                "rating": "",
+                "elementId": ""
             }
         ]
     },
@@ -195,13 +205,14 @@
             {
                 "title": "",
                 "message": "",
-                "rating": ""
+                "rating": "",
+                "elementId": ""
             }
         ]
     },
     {
         "id": "12",
-        "name": "\nLe Drunken",
+        "name": "Le Drunken",
         "type": "bar",
         "address": "19 Rue Girard, 93100 Montreuil",
         "shortDescription": "Bistro",
@@ -213,7 +224,8 @@
             {
                 "title": "",
                 "message": "",
-                "rating": ""
+                "rating": "",
+                "elementId": ""
             }
         ]
     },
@@ -231,7 +243,8 @@
             {
                 "title": "",
                 "message": "",
-                "rating": ""
+                "rating": "",
+                "elementId": ""
             }
         ]
     },
@@ -249,7 +262,8 @@
             {
                 "title": "",
                 "message": "",
-                "rating": ""
+                "rating": "",
+                "elementId": ""
             }
         ]
     },
@@ -267,7 +281,8 @@
             {
                 "title": "",
                 "message": "",
-                "rating": ""
+                "rating": "",
+                "elementId": ""
             }
         ]
     },
@@ -285,7 +300,8 @@
             {
                 "title": "",
                 "message": "",
-                "rating": ""
+                "rating": "",
+                "elementId": ""
             }
         ]
     }

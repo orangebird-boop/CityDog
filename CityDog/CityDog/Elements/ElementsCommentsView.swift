@@ -2,7 +2,7 @@
 
 import SwiftUI
 
-struct ElementsComments: View {
+struct ElementsCommentsView: View {
     @State private var isNavigatingToAddComments = false
     
     var body: some View {
@@ -12,7 +12,7 @@ struct ElementsComments: View {
                 List {
                     Section {
                         NavigationLink {
-                            ElementsAddComments()
+                            ElementsAddCommentsView()
                         } label: {
                             Text("Add comment")
                         }.foregroundColor(.accentColor)
@@ -45,6 +45,6 @@ struct ElementsComments: View {
 
 struct PlacesComments_Previews: PreviewProvider {
     static var previews: some View {
-        ElementsComments()
+        ElementsCommentsView()
     }
 }

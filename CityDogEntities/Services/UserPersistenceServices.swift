@@ -18,6 +18,8 @@ public class UserPersistenceServices {
         container.viewContext
     }()
     
+    public init() {}
+    
     func fetchUser() {
         
     }
@@ -51,6 +53,38 @@ public class UserPersistenceServices {
             
             currentUserEntity.addToDogs(dogEntity)
             
+            // save
+            try Self.context.save()
+            
+        } catch {
+            
+        }
+        
+    }
+    
+    public func fetchComment(for elementId: String) ->[Comment] {
+        
+        let request: NSFetchRequest<CommentEntity> = CommentEntity.fetchRequest()
+        request.predicate = NSPredicate(format: "elementId == %@", elementId)
+        // do catch
+        return []
+    }
+    
+    public func add(comment: Comment, to : ElementsModel) {
+       
+        
+        do {
+         
+            guard let commentEntityDescription = NSEntityDescription.entity(forEntityName: "CommentEntity", in: Self.context) else {
+                fatalError("Creating comment entity")
+            }
+            let commentEntity = CommentEntity(entity: commentEntityDescription, insertInto: Self.context)
+            commentEntity.elementId = comment.elementId
+            commentEntity.message = comment.message
+            commentEntity.title = comment.title
+            commentEntity.rating = comment.rating
+            
+        
             // save
             try Self.context.save()
             

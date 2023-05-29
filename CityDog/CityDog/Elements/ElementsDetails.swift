@@ -48,7 +48,7 @@ struct ElementsDetails: View {
 
                     Section {
                         NavigationLink {
-                            ElementsComments()
+                            ElementsCommentsView()
                         } label: {
                             Text("Go to comments")
                                 .foregroundColor(.accentColor)

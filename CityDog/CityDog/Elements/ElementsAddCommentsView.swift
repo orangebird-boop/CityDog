@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ElementsAddComments: View {
+struct ElementsAddCommentsView: View {
     @State private var profileText = "Enter your comment. You can specify a minimum width for each Spacer, or let it squish all the way to zero if the adjacent content needs all the space."
     var body: some View {
         NavigationStack {
@@ -62,6 +62,6 @@ struct ElementsAddComments: View {
 
 struct AddComments_Previews: PreviewProvider {
     static var previews: some View {
-        ElementsAddComments()
+        ElementsAddCommentsView()
     }
 }
