@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B202BDF329B7BD7300845CE3 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BDF229B7BD7300845CE3 /* UserProfileView.swift */; };
-		B202BDF529B7E2E300845CE3 /* Elements.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BDF429B7E2E200845CE3 /* Elements.swift */; };
-		B202BDF729B7E31000845CE3 /* ElementsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BDF629B7E31000845CE3 /* ElementsDetails.swift */; };
+		B202BDF529B7E2E300845CE3 /* ElementsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BDF429B7E2E200845CE3 /* ElementsView.swift */; };
+		B202BDF729B7E31000845CE3 /* ElementsDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BDF629B7E31000845CE3 /* ElementsDetailsView.swift */; };
 		B202BDF929B7E33A00845CE3 /* ElementsCommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BDF829B7E33A00845CE3 /* ElementsCommentsView.swift */; };
 		B202BDFB29B7E34700845CE3 /* ElementsAddCommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BDFA29B7E34700845CE3 /* ElementsAddCommentsView.swift */; };
 		B202BE0529B8A4ED00845CE3 /* StarRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = B202BE0429B8A4ED00845CE3 /* StarRating.swift */; };
@@ -47,6 +47,7 @@
 		B2C0A9C82A01AEE50056521B /* AddDogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9C72A01AEE40056521B /* AddDogViewModel.swift */; };
 		B2C0A9CA2A01AF400056521B /* ModifyPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9C92A01AF400056521B /* ModifyPasswordViewModel.swift */; };
 		B2C0AA0C2A0929270056521B /* dogBreeds.json in Resources */ = {isa = PBXBuildFile; fileRef = B2C0AA0B2A0929260056521B /* dogBreeds.json */; };
+		B2C188482A2692990049D43B /* ElementDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C188472A2692990049D43B /* ElementDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,8 +83,8 @@
 
 /* Begin PBXFileReference section */
 		B202BDF229B7BD7300845CE3 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
-		B202BDF429B7E2E200845CE3 /* Elements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Elements.swift; sourceTree = "<group>"; };
-		B202BDF629B7E31000845CE3 /* ElementsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsDetails.swift; sourceTree = "<group>"; };
+		B202BDF429B7E2E200845CE3 /* ElementsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsView.swift; sourceTree = "<group>"; };
+		B202BDF629B7E31000845CE3 /* ElementsDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsDetailsView.swift; sourceTree = "<group>"; };
 		B202BDF829B7E33A00845CE3 /* ElementsCommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsCommentsView.swift; sourceTree = "<group>"; };
 		B202BDFA29B7E34700845CE3 /* ElementsAddCommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsAddCommentsView.swift; sourceTree = "<group>"; };
 		B202BE0429B8A4ED00845CE3 /* StarRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRating.swift; sourceTree = "<group>"; };
@@ -123,6 +124,7 @@
 		B2C0A9C72A01AEE40056521B /* AddDogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDogViewModel.swift; sourceTree = "<group>"; };
 		B2C0A9C92A01AF400056521B /* ModifyPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyPasswordViewModel.swift; sourceTree = "<group>"; };
 		B2C0AA0B2A0929260056521B /* dogBreeds.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dogBreeds.json; sourceTree = "<group>"; };
+		B2C188472A2692990049D43B /* ElementDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +173,7 @@
 				B2C0A8FF29DB654B0056521B /* RestaurantsBarsViewModel.swift */,
 				B251D6BB2A25113400F4FFA4 /* ElementsAddCommentsViewModel .swift */,
 				B251D6BD2A25251200F4FFA4 /* ElementsCommentsViewModel.swift */,
+				B2C188472A2692990049D43B /* ElementDetailsViewModel.swift */,
 			);
 			path = ElementsViewModels;
 			sourceTree = "<group>";
@@ -262,10 +265,10 @@
 		B2A24FE029CC79A600393887 /* Elements */ = {
 			isa = PBXGroup;
 			children = (
-				B202BDF429B7E2E200845CE3 /* Elements.swift */,
+				B202BDF429B7E2E200845CE3 /* ElementsView.swift */,
 				B202BDFA29B7E34700845CE3 /* ElementsAddCommentsView.swift */,
 				B202BDF829B7E33A00845CE3 /* ElementsCommentsView.swift */,
-				B202BDF629B7E31000845CE3 /* ElementsDetails.swift */,
+				B202BDF629B7E31000845CE3 /* ElementsDetailsView.swift */,
 			);
 			path = Elements;
 			sourceTree = "<group>";
@@ -464,7 +467,7 @@
 				B2C0A90E29E5E30A0056521B /* ShopsViewModel.swift in Sources */,
 				B2C0A90C29E5E2A60056521B /* VeterinariansViewModel.swift in Sources */,
 				B2C0A90029DB654B0056521B /* RestaurantsBarsViewModel.swift in Sources */,
-				B202BDF729B7E31000845CE3 /* ElementsDetails.swift in Sources */,
+				B202BDF729B7E31000845CE3 /* ElementsDetailsView.swift in Sources */,
 				B2C0A9C42A01AAED0056521B /* ModifyNameViewModel.swift in Sources */,
 				B213F78429C8F0B0007F8D2B /* ItemRow.swift in Sources */,
 				B202BE0529B8A4ED00845CE3 /* StarRating.swift in Sources */,
@@ -480,8 +483,9 @@
 				B2C0A90829E48E200056521B /* ModifyPasswordView.swift in Sources */,
 				B2C0A9C62A01ADF00056521B /* DogProfileViewModel.swift in Sources */,
 				B2C0A9BF2A0027360056521B /* ModifyProfileViewModel.swift in Sources */,
+				B2C188482A2692990049D43B /* ElementDetailsViewModel.swift in Sources */,
 				B2C0A90429E1AD9A0056521B /* MainView.swift in Sources */,
-				B202BDF529B7E2E300845CE3 /* Elements.swift in Sources */,
+				B202BDF529B7E2E300845CE3 /* ElementsView.swift in Sources */,
 				B2A24FDD29CC708800393887 /* AddDogView.swift in Sources */,
 				B202BDF929B7E33A00845CE3 /* ElementsCommentsView.swift in Sources */,
 				B2C0A90629E46A700056521B /* ModifyNameView.swift in Sources */,

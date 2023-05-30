@@ -2,7 +2,7 @@ import SwiftUI
 
 
 
-struct Elements: View {
+struct ElementsView: View {
     
     @State var viewModel: ElementsViewModel
     
@@ -12,9 +12,9 @@ struct Elements: View {
         NavigationStack {
             List {
                 ForEach(viewModel.getElements(), id: \.id) { element in
-                    NavigationLink(element.name, destination: ElementsDetails(viewModel: DefaultElementDetailsViewModel(element: element)))
+                    NavigationLink(element.name, destination: ElementsDetailsView(viewModel: DefaultElementDetailsViewModel(element: element)))
                 }
-          } //.navigationTitle(viewModel)
+            } //.navigationTitle(viewModel.)
         }
     }
 }

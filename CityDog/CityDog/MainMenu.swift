@@ -21,7 +21,7 @@ struct MainMenu: View {
                         Spacer()
                         HStack (alignment: .top){
                             NavigationLink {
-                                Elements(viewModel: VeterinariansViewModel())
+                                ElementsView(viewModel: VeterinariansViewModel())
                             } label: {
                                 VStack {
                                     Group {
@@ -46,7 +46,7 @@ struct MainMenu: View {
                          
                             
                             NavigationLink {
-                                Elements(viewModel: WalksViewModel())
+                                ElementsView(viewModel: WalksViewModel())
                             } label: {
                                 VStack {
                                     Group {
@@ -73,7 +73,7 @@ struct MainMenu: View {
                         VStack{
                             HStack (alignment: .top){
                                 NavigationLink {
-                                    Elements(viewModel: ShopsViewModel())
+                                    ElementsView(viewModel: ShopsViewModel())
                                 } label: {
                                     VStack {
                                         Group {
@@ -98,7 +98,7 @@ struct MainMenu: View {
                                 }
 
                                 NavigationLink {
-                                    Elements(viewModel: RestaurantsBarsViewModel())
+                                    ElementsView(viewModel: RestaurantsBarsViewModel())
                                 } label: {
                                     VStack {
                                         Group {

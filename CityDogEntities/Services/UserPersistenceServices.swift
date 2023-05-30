@@ -57,26 +57,40 @@ public class UserPersistenceServices {
             try Self.context.save()
             
         } catch {
-            
+            print(error)
         }
         
     }
     
-    public func fetchComment(for elementId: String) ->[Comment] {
-        
+//    public func fetchComment(for elementId: String) ->[Comment] {
+//
+//        let request: NSFetchRequest<CommentEntity> = CommentEntity.fetchRequest()
+//        request.predicate = NSPredicate(format: "elementId == %@", elementId)
+//        // do catch
+//        return []
+//    }
+    
+    public func fetchComment(for elementId: String) throws -> [ElementsModel.Comment] {
         let request: NSFetchRequest<CommentEntity> = CommentEntity.fetchRequest()
         request.predicate = NSPredicate(format: "elementId == %@", elementId)
-        // do catch
-        return []
+        
+        do {
+            let fetchedCommentEntities = try Self.context.fetch(request)
+            
+            let comments =  try fetchedCommentEntities.compactMap { try ElementsModel.Comment(from: $0 as! Decoder) }
+            return comments
+        } catch {
+            throw error
+        }
     }
     
-    public func add(comment: Comment, to : ElementsModel) {
+    public func add(comment: ElementsModel.Comment, to : ElementsModel) {
        
         
         do {
          
             guard let commentEntityDescription = NSEntityDescription.entity(forEntityName: "CommentEntity", in: Self.context) else {
-                fatalError("Creating comment entity")
+                fatalError("Creating comment entity was unsuccessful")
             }
             let commentEntity = CommentEntity(entity: commentEntityDescription, insertInto: Self.context)
             commentEntity.elementId = comment.elementId
@@ -89,7 +103,7 @@ public class UserPersistenceServices {
             try Self.context.save()
             
         } catch {
-            
+            print(error)
         }
         
     }

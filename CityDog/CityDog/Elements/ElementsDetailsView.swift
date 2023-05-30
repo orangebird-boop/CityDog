@@ -1,7 +1,7 @@
 import SwiftUI
 import CityDogEntities
 
-struct ElementsDetails: View {
+struct ElementsDetailsView: View {
     
     @State private var isNavigatingToComments = false
     @State var viewModel: ElementsDetailsViewModel
@@ -48,7 +48,7 @@ struct ElementsDetails: View {
 
                     Section {
                         NavigationLink {
-                            ElementsCommentsView()
+                            ElementsCommentsView(viewModel: ElementsCommentsViewModel())
                         } label: {
                             Text("Go to comments")
                                 .foregroundColor(.accentColor)

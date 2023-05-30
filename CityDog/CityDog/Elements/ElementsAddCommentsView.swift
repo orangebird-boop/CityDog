@@ -1,7 +1,10 @@
 import SwiftUI
+import CityDogEntities
 
 struct ElementsAddCommentsView: View {
     @State private var profileText = "Enter your comment. You can specify a minimum width for each Spacer, or let it squish all the way to zero if the adjacent content needs all the space."
+    @State var viewModel: ElementsAddCommentViewModel
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -60,8 +63,8 @@ struct ElementsAddCommentsView: View {
 
 }
 
-struct AddComments_Previews: PreviewProvider {
-    static var previews: some View {
-        ElementsAddCommentsView()
-    }
-}
+//struct AddComments_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ElementsAddCommentsView()
+//    }
+//}
