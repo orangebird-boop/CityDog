@@ -20,13 +20,55 @@ public class UserPersistenceServices {
     
     public init() {}
     
-    func fetchUser() {
-        
+    func createUser(firstName: String, lastName: String, email: String, password: String, id: String) {
+        do {
+            guard let userEntityDescription = NSEntityDescription.entity(forEntityName: "DogEntity", in: Self.context) else {
+                fatalError("fetching dogs was unsuccessful")
+            }
+            
+            let userEntity = UserEntity(entity: userEntityDescription, insertInto: Self.context)
+            userEntity.firstName = firstName
+            userEntity.lastName = lastName
+            userEntity.email = email
+            userEntity.password = password
+            userEntity.id = id
+            
+            try Self.context.save()
+            
+        } catch {
+            print(error)
+        }
     }
     
-    func fetchDogs(for user: User) {
-  
+    func fetchUser() -> UserEntity? {
+        let fetchRequest: NSFetchRequest<UserEntity> = UserEntity.fetchRequest()
+        
+        
+        do {
+            let results = try UserPersistenceServices.context.fetch(fetchRequest)
+            return results.first
+        } catch {
+            print("Error fetching user: \(error)")
+            return nil
+        }
     }
+    
+    public func fetchDog(for user: User) throws -> [DogModel] {
+        let request: NSFetchRequest<DogEntity> = DogEntity.fetchRequest()
+        request.predicate = NSPredicate(format: "userId == %@", user.id)
+        
+        do {
+            let fetchedDogEntities = try Self.context.fetch(request)
+            
+            let dogs =  try fetchedDogEntities.compactMap { try DogModel(id: <#String#>, name: <#String#>, breed: <#Breed#>, age: <#String#>, pictureURL: <#String#>) }
+            return dogs
+        } catch {
+            throw error
+        }
+    }
+    
+   
+    
     
     func add(dog: DogModel, to user: User) {
         
