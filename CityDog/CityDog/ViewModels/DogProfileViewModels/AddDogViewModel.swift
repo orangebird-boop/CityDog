@@ -25,5 +25,9 @@ struct AddDogViewModel {
         }()
         return dogBreeds
     }
+    
+    func saveDog() {
+        
+    }
 
 }

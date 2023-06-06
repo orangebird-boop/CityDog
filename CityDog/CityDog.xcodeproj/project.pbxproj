@@ -107,6 +107,7 @@
 		B2A24FE229CC7ACE00393887 /* ModifyProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyProfileView.swift; sourceTree = "<group>"; };
 		B2AE843B29ABDC8000C44500 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		B2AE843D29AC16F300C44500 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
+		B2B16DB92A2FA25700661EB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		B2BC5BB32A13F7740061F258 /* elements.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = elements.json; sourceTree = "<group>"; };
 		B2C0A8FF29DB654B0056521B /* RestaurantsBarsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsBarsViewModel.swift; sourceTree = "<group>"; };
 		B2C0A90129DB75D90056521B /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
@@ -202,6 +203,7 @@
 		B2A1276829A8202000391C10 /* CityDog */ = {
 			isa = PBXGroup;
 			children = (
+				B2B16DB92A2FA25700661EB8 /* Info.plist */,
 				B2C0AA0A2A0929000056521B /* Resources */,
 				B2A1276D29A8202300391C10 /* Assets.xcassets */,
 				B2A1276B29A8202000391C10 /* LaunchScreen.swift */,
@@ -656,6 +658,7 @@
 				DEVELOPMENT_TEAM = U56C9Q3FLL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CityDog/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Program needs acces to your camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -690,6 +693,7 @@
 				DEVELOPMENT_TEAM = U56C9Q3FLL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CityDog/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Program needs acces to your camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

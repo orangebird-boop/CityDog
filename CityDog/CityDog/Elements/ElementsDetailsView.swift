@@ -1,12 +1,15 @@
 import SwiftUI
 import CityDogEntities
+import MapKit
 
 struct ElementsDetailsView: View {
     
     @State private var isNavigatingToComments = false
     @State var viewModel: ElementsDetailsViewModel
-
+   
+    
     var body: some View {
+       
         NavigationStack {
             VStack {
                 Form {
@@ -16,36 +19,49 @@ struct ElementsDetailsView: View {
                         Text("Addresse")
                     } footer: {
                         HStack{
+                            
                             Image(systemName: "mappin.circle")
                                 .font(.headline)
                                 .cornerRadius(16)
                                 .foregroundColor(.accentColor)
-                            Text("Show on map")
-                                .font(.headline)
-                                .cornerRadius(16)
-                                .foregroundColor(.accentColor)
-
+                            Button(action: {
+                                print("button clicked")
+                                openMaps()
+                            }, label: {
+                                Text("Show on map")
+                                    .font(.headline)
+                                    .cornerRadius(16)
+                                    .foregroundColor(.accentColor)
+                                
+                                
+                                //                            Text("Show on map")
+                                //                                .font(.headline)
+                                //                                .cornerRadius(16)
+                                //                                .foregroundColor(.accentColor)
+                                
+                            }
+                            )
                         }
                     }
-
+                    
                     Section {
                         Text(viewModel.element.shortDescription)
                     } header: {
                         Text("Description")
                     }
-
+                    
                     Section {
                         Text(viewModel.element.goodToKnow)
                     } header: {
                         Text("Bon à savoir")
                     }
-
+                    
                     Section {
                         StarRating(rating: .constant(4))
                     } header: {
                         Text(viewModel.element.sumRating)
                     }
-
+                    
                     Section {
                         NavigationLink {
                             ElementsCommentsView(viewModel: ElementsCommentsViewModel())
@@ -53,21 +69,30 @@ struct ElementsDetailsView: View {
                             Text("Go to comments")
                                 .foregroundColor(.accentColor)
                         }
-
+                        
                     } header: {
                         Text("Comments")
                     }
+                    
                 }
             }
         }
-  }
+    }
+    
+    func openMaps() {
+        guard let latitudeDouble = Double(viewModel.element.latitude),
+              let longitudeDouble = Double(viewModel.element.longitude) else {
+               print("Invalid latitude or longitude format")
+               return
+           }
+           
+           let coordinates = CLLocationCoordinate2D(latitude: latitudeDouble, longitude: longitudeDouble)
+           let placemark = MKPlacemark(coordinate: coordinates)
+           let mapItem = MKMapItem(placemark: placemark)
+        MKMapItem.openMaps(with: [MKMapItem(placemark: placemark)], launchOptions: nil)
+      }
+    
 }
-
-//struct PlacesDetails_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ElementsDetails(viewModel: DummyViewModel(element: ElementsModel(type: "", title: "Dummy", imageURL: "", id: "", adresse: "", postalCode: "", latitude: 0.1, long: 0.4, description: "", sumRating: 3)) )
-//    }
-//}
 
 private struct DummyViewModel: ElementsDetailsViewModel {
     var element: CityDogEntities.ElementsModel

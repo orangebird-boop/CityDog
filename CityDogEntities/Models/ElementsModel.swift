@@ -2,7 +2,6 @@ import Foundation
 
 public struct ElementsModel: Codable, Identifiable {
     public let id: String
-
     public let name: String
     public let type: String
     public let address: String
