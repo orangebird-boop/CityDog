@@ -2,7 +2,7 @@
 //  AddressEntity+CoreDataProperties.swift
 //  CityDogEntities
 //
-//  Created by Nora Lilla Matyassi on 08/05/2023.
+//  Created by Nora Lilla Matyassi on 07/06/2023.
 //
 //
 
@@ -20,6 +20,7 @@ extension AddressEntity {
     @NSManaged public var number: String?
     @NSManaged public var street: String?
     @NSManaged public var zipCode: Int32
+    @NSManaged public var element: ElementEntity?
 
 }
 

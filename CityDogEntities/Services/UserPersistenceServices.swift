@@ -60,7 +60,7 @@ public class UserPersistenceServices {
         do {
             let fetchedDogEntities = try Self.context.fetch(request)
             
-            let dogs =  try fetchedDogEntities.compactMap { try DogModel(id: <#String#>, name: <#String#>, breed: <#Breed#>, age: <#String#>, pictureURL: <#String#>) }
+            let dogs =  user.dogs
             return dogs
         } catch {
             throw error
@@ -70,7 +70,7 @@ public class UserPersistenceServices {
    
     
     
-    func add(dog: DogModel, to user: User) {
+    public func add(dog: DogModel, to user: User) {
         
         // fetching user
         let request: NSFetchRequest<UserEntity> = UserEntity.fetchRequest()
@@ -104,13 +104,7 @@ public class UserPersistenceServices {
         
     }
     
-//    public func fetchComment(for elementId: String) ->[Comment] {
-//
-//        let request: NSFetchRequest<CommentEntity> = CommentEntity.fetchRequest()
-//        request.predicate = NSPredicate(format: "elementId == %@", elementId)
-//        // do catch
-//        return []
-//    }
+
     
     public func fetchComment(for elementId: String) throws -> [ElementsModel.Comment] {
         let request: NSFetchRequest<CommentEntity> = CommentEntity.fetchRequest()

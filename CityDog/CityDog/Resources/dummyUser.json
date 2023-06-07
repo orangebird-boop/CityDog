@@ -1,0 +1,11 @@
+
+
+   {
+       "id": "1",
+       "firstNames": "John",
+       "lastName": "Appleseed",
+       "email": "johnappleseed@apple.com",
+       "password": "Pa$$word",
+       "dogs": []
+       }
+   

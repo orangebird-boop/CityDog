@@ -2,7 +2,7 @@
 //  UserEntity+CoreDataProperties.swift
 //  CityDogEntities
 //
-//  Created by Nora Lilla Matyassi on 08/05/2023.
+//  Created by Nora Lilla Matyassi on 07/06/2023.
 //
 //
 
@@ -16,12 +16,13 @@ extension UserEntity {
         return NSFetchRequest<UserEntity>(entityName: "UserEntity")
     }
 
-    @NSManaged public var email: String
-    @NSManaged public var firstName: String
-    @NSManaged public var id: String
-    @NSManaged public var lastName: String
-    @NSManaged public var password: String
-    @NSManaged public var dogs: NSSet
+    @NSManaged public var email: String?
+    @NSManaged public var firstName: String?
+    @NSManaged public var id: String?
+    @NSManaged public var lastName: String?
+    @NSManaged public var password: String?
+    @NSManaged public var dogs: NSSet?
+    @NSManaged public var comments: NSSet?
 
 }
 
@@ -39,6 +40,23 @@ extension UserEntity {
 
     @objc(removeDogs:)
     @NSManaged public func removeFromDogs(_ values: NSSet)
+
+}
+
+// MARK: Generated accessors for comments
+extension UserEntity {
+
+    @objc(addCommentsObject:)
+    @NSManaged public func addToComments(_ value: CommentEntity)
+
+    @objc(removeCommentsObject:)
+    @NSManaged public func removeFromComments(_ value: CommentEntity)
+
+    @objc(addComments:)
+    @NSManaged public func addToComments(_ values: NSSet)
+
+    @objc(removeComments:)
+    @NSManaged public func removeFromComments(_ values: NSSet)
 
 }
 

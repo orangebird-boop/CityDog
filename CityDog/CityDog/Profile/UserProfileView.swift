@@ -48,7 +48,7 @@ struct UserProfileView: View {
                         List {
                             Section{
                                 NavigationLink {
-                                    AddDogView(viewModel: AddDogViewModel(dog: DogModel(id: "11", name: "Santa", breed: Breed(id: 1, name: "Puli"), age: "5", pictureURL: "")))
+                                    AddDogView(viewModel: AddDogViewModel(dog: DogModel(id: "11", name: "Santa", breed: Breed(id: 1, name: "Puli"), age: "5", pictureURL: ""), persistenceServices: UserPersistenceServices()))
                                 } label: {
                                     Text("Add dog")
                                 }.foregroundColor(Color.red)

@@ -5,12 +5,15 @@
         <attribute name="number" attributeType="String"/>
         <attribute name="street" attributeType="String"/>
         <attribute name="zipCode" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="element" maxCount="1" deletionRule="Nullify" destinationEntity="ElementEntity" inverseName="address" inverseEntity="ElementEntity"/>
     </entity>
     <entity name="CommentEntity" representedClassName="CommentEntity" syncable="YES">
         <attribute name="elementId" attributeType="String"/>
         <attribute name="message" optional="YES" attributeType="String"/>
         <attribute name="rating" attributeType="String" minValueString="0" maxValueString="5"/>
         <attribute name="title" attributeType="String"/>
+        <relationship name="element" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ElementEntity" inverseName="comments" inverseEntity="ElementEntity"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserEntity" inverseName="comments" inverseEntity="UserEntity"/>
     </entity>
     <entity name="DogEntity" representedClassName="DogEntity" syncable="YES">
         <attribute name="age" attributeType="String"/>
@@ -18,6 +21,7 @@
         <attribute name="id" attributeType="String"/>
         <attribute name="image" attributeType="String"/>
         <attribute name="name" attributeType="String"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="UserEntity" inverseName="dogs" inverseEntity="UserEntity"/>
     </entity>
     <entity name="ElementEntity" representedClassName="ElementEntity" syncable="YES">
         <attribute name="goodToKnow" attributeType="String"/>
@@ -27,8 +31,8 @@
         <attribute name="smallDescription" attributeType="String"/>
         <attribute name="title" attributeType="String"/>
         <attribute name="type" attributeType="String"/>
-        <relationship name="address" maxCount="1" deletionRule="Cascade" destinationEntity="AddressEntity"/>
-        <relationship name="comments" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CommentEntity"/>
+        <relationship name="address" maxCount="1" deletionRule="Cascade" destinationEntity="AddressEntity" inverseName="element" inverseEntity="AddressEntity"/>
+        <relationship name="comments" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CommentEntity" inverseName="element" inverseEntity="CommentEntity"/>
     </entity>
     <entity name="UserEntity" representedClassName="UserEntity" syncable="YES">
         <attribute name="email" optional="YES" attributeType="String"/>
@@ -36,6 +40,7 @@
         <attribute name="id" optional="YES" attributeType="String"/>
         <attribute name="lastName" optional="YES" attributeType="String"/>
         <attribute name="password" optional="YES" attributeType="String"/>
-        <relationship name="dogs" toMany="YES" minCount="1" maxCount="5" deletionRule="Cascade" destinationEntity="DogEntity"/>
+        <relationship name="comments" toMany="YES" deletionRule="Nullify" destinationEntity="CommentEntity" inverseName="user" inverseEntity="CommentEntity"/>
+        <relationship name="dogs" toMany="YES" minCount="1" maxCount="5" deletionRule="Cascade" destinationEntity="DogEntity" inverseName="user" inverseEntity="DogEntity"/>
     </entity>
 </model>

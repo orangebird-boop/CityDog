@@ -2,7 +2,7 @@
 //  CommentEntity+CoreDataClass.swift
 //  CityDogEntities
 //
-//  Created by Nora Lilla Matyassi on 08/05/2023.
+//  Created by Nora Lilla Matyassi on 07/06/2023.
 //
 //
 
