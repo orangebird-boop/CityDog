@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B23AC3CD2A32675500DCA088 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23AC3CC2A32675500DCA088 /* UserService.swift */; };
 		B2B7EAE92A312C4100DF819F /* ElementEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B7EADF2A312C4100DF819F /* ElementEntity+CoreDataClass.swift */; };
 		B2B7EAEA2A312C4100DF819F /* ElementEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B7EAE02A312C4100DF819F /* ElementEntity+CoreDataProperties.swift */; };
 		B2B7EAEB2A312C4100DF819F /* UserEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B7EAE12A312C4100DF819F /* UserEntity+CoreDataClass.swift */; };
@@ -20,15 +21,15 @@
 		B2BC5BB02A1120200061F258 /* FilesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BC5BAF2A1120200061F258 /* FilesService.swift */; };
 		B2BC5BB22A1122FB0061F258 /* DogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BC5BB12A1122FB0061F258 /* DogService.swift */; };
 		B2BC5BB82A13FA660061F258 /* ElementsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BC5BB72A13FA660061F258 /* ElementsService.swift */; };
-		B2C0A92729E83C420056521B /* UserProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A92629E83C420056521B /* UserProfileModel.swift */; };
 		B2C0A92929E83C560056521B /* ElementsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A92829E83C560056521B /* ElementsModel.swift */; };
 		B2C0A93129F93B720056521B /* Entities.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A92F29F93B720056521B /* Entities.xcdatamodeld */; };
-		B2C0A9B929FFDAB20056521B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9B829FFDAB20056521B /* User.swift */; };
+		B2C0A9B929FFDAB20056521B /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9B829FFDAB20056521B /* UserModel.swift */; };
 		B2C0A9BB29FFDBB60056521B /* DogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9BA29FFDBB60056521B /* DogModel.swift */; };
 		B2C0AA092A090C1B0056521B /* UserPersistenceServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0AA082A090C1B0056521B /* UserPersistenceServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B23AC3CC2A32675500DCA088 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		B2B7EADF2A312C4100DF819F /* ElementEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ElementEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
 		B2B7EAE02A312C4100DF819F /* ElementEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ElementEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		B2B7EAE12A312C4100DF819F /* UserEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -43,10 +44,9 @@
 		B2BC5BB12A1122FB0061F258 /* DogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogService.swift; sourceTree = "<group>"; };
 		B2BC5BB72A13FA660061F258 /* ElementsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsService.swift; sourceTree = "<group>"; };
 		B2C0A91C29E83B7E0056521B /* CityDogEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CityDogEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2C0A92629E83C420056521B /* UserProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileModel.swift; sourceTree = "<group>"; };
 		B2C0A92829E83C560056521B /* ElementsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementsModel.swift; sourceTree = "<group>"; };
 		B2C0A93029F93B720056521B /* Entities.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Entities.xcdatamodel; sourceTree = "<group>"; };
-		B2C0A9B829FFDAB20056521B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		B2C0A9B829FFDAB20056521B /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		B2C0A9BA29FFDBB60056521B /* DogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModel.swift; sourceTree = "<group>"; };
 		B2C0AA082A090C1B0056521B /* UserPersistenceServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPersistenceServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,9 +83,8 @@
 		B2C0A91E29E83B7E0056521B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B2C0A92629E83C420056521B /* UserProfileModel.swift */,
 				B2C0A92829E83C560056521B /* ElementsModel.swift */,
-				B2C0A9B829FFDAB20056521B /* User.swift */,
+				B2C0A9B829FFDAB20056521B /* UserModel.swift */,
 				B2C0A9BA29FFDBB60056521B /* DogModel.swift */,
 			);
 			path = Models;
@@ -116,6 +115,7 @@
 				B2BC5BAF2A1120200061F258 /* FilesService.swift */,
 				B2BC5BB12A1122FB0061F258 /* DogService.swift */,
 				B2BC5BB72A13FA660061F258 /* ElementsService.swift */,
+				B23AC3CC2A32675500DCA088 /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -204,7 +204,6 @@
 				B2B7EAEC2A312C4100DF819F /* UserEntity+CoreDataProperties.swift in Sources */,
 				B2B7EAEB2A312C4100DF819F /* UserEntity+CoreDataClass.swift in Sources */,
 				B2C0A9BB29FFDBB60056521B /* DogModel.swift in Sources */,
-				B2C0A92729E83C420056521B /* UserProfileModel.swift in Sources */,
 				B2B7EAF22A312C4100DF819F /* CommentEntity+CoreDataProperties.swift in Sources */,
 				B2BC5BB82A13FA660061F258 /* ElementsService.swift in Sources */,
 				B2C0A93129F93B720056521B /* Entities.xcdatamodeld in Sources */,
@@ -213,7 +212,8 @@
 				B2B7EAEF2A312C4100DF819F /* AddressEntity+CoreDataClass.swift in Sources */,
 				B2B7EAED2A312C4100DF819F /* DogEntity+CoreDataClass.swift in Sources */,
 				B2B7EAE92A312C4100DF819F /* ElementEntity+CoreDataClass.swift in Sources */,
-				B2C0A9B929FFDAB20056521B /* User.swift in Sources */,
+				B2C0A9B929FFDAB20056521B /* UserModel.swift in Sources */,
+				B23AC3CD2A32675500DCA088 /* UserService.swift in Sources */,
 				B2B7EAEE2A312C4100DF819F /* DogEntity+CoreDataProperties.swift in Sources */,
 				B2B7EAEA2A312C4100DF819F /* ElementEntity+CoreDataProperties.swift in Sources */,
 				B2BC5BB22A1122FB0061F258 /* DogService.swift in Sources */,

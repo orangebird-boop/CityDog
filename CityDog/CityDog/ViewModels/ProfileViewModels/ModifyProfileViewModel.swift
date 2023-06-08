@@ -2,5 +2,5 @@ import Foundation
 import CityDogEntities
 
 struct ModifyProfileViewModel {
-    let user: User
+    let user: UserModel
 }

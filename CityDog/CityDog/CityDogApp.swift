@@ -4,7 +4,7 @@ import SwiftUI
 struct CityDogApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView()
+            MainView(viewModel: UserProfileViewModel())
         }
     }
 }

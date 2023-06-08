@@ -2,7 +2,7 @@ import Foundation
 import CityDogEntities
 
 struct ModifyPasswordViewModel{
-    let user: User
+    let user: UserModel
     var newPassword: String
     
     func saveChanges() {

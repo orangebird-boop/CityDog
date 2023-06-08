@@ -91,7 +91,7 @@ struct AddDogView: View {
             
             
             Button(action: {
-                // TODO: Specify action
+                viewModel.saveDog()
             }, label: {
                 Text("Save changes")
                     .fontWeight(.heavy)

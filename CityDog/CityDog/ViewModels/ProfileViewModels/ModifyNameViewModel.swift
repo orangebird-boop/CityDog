@@ -3,7 +3,7 @@ import CityDogEntities
 
 struct ModifyNameViewModel {
     
-    var user: User
+    var user: UserModel
     var firstName: String
     var lastName: String
     
@@ -11,7 +11,7 @@ struct ModifyNameViewModel {
         user.firstName != firstName && user.lastName != lastName
     }
     
-    init(user: User) {
+    init(user: UserModel) {
         self.user = user
         self.firstName = user.firstName
         self.lastName = user.lastName

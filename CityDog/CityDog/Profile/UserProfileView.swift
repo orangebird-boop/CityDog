@@ -26,7 +26,7 @@ struct UserProfileView: View {
                                 
                             
                             VStack(alignment: .leading) {
-                                Text(viewModel.user.fullName)
+                                Text(viewModel.user.firstName)
                                     .foregroundColor(Color.accentColor)
                                     .lineLimit(nil)
                                 Text("Manage profile")
@@ -101,6 +101,6 @@ struct UserProfileView: View {
 
 struct UserProfile_Previews: PreviewProvider {
     static var previews: some View {
-        UserProfileView(viewModel: UserProfileViewModel(user: User(id: UUID().uuidString, firstNames: "John", lastName: "Appleseed", email: "johnappleseed@apple.com", password: "", dogs: [DogModel(id: UUID().uuidString, name: "Snoopy", breed: Breed(id: 1, name: "Beagle"), age: "11", pictureURL: "")])))
+        UserProfileView(viewModel: UserProfileViewModel(user: UserModel(id: UUID().uuidString, firstName: "John", lastName: "Appleseed", email: "johnappleseed@apple.com", password: "", dogs: [DogModel(id: UUID().uuidString, name: "Snoopy", breed: Breed(id: 1, name: "Beagle"), age: "11", pictureURL: "")])))
     }
 }

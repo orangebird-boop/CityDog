@@ -58,7 +58,7 @@ struct ModifyProfileView: View {
                         }
                     }
                 }
-            }.navigationTitle(viewModel.user.fullName)
+            }.navigationTitle(viewModel.user.firstName)
             
 //            Button(action: {
 //                // TODO: Specify action
@@ -80,6 +80,6 @@ struct ModifyProfileView: View {
 
 struct ModifyProfile_Previews: PreviewProvider {
     static var previews: some View {
-        ModifyProfileView(viewModel: ModifyProfileViewModel(user: User.dummyUser()))
+        ModifyProfileView(viewModel: ModifyProfileViewModel(user: UserModel.dummyUser()))
     }
 }

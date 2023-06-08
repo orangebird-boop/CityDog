@@ -3,6 +3,7 @@ import SwiftUI
 import CityDogEntities
 
 struct MainView: View {
+    var viewModel: UserProfileViewModel
     var body: some View {
         TabView {
             MainMenu()
@@ -10,7 +11,7 @@ struct MainView: View {
                     Label("Home", systemImage: "house")
                 }
             // TODO: Replace this by real data from DB
-            UserProfileView(viewModel: UserProfileViewModel(user: User.dummyUser()))
+            UserProfileView(viewModel: UserProfileViewModel())
                 .tabItem {
                     Label("Profile", systemImage: "person.circle")
                 }
@@ -18,8 +19,8 @@ struct MainView: View {
     }
 }
 
-struct TabView_Previews: PreviewProvider {
-    static var previews: some View {
-        MainView()
-    }
-}
+//struct TabView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        MainView(viewModel: UserProfileViewModel( user: UserModel))
+//    }
+//}

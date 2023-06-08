@@ -1,11 +1,23 @@
 
 
-   {
-       "id": "1",
-       "firstNames": "John",
-       "lastName": "Appleseed",
-       "email": "johnappleseed@apple.com",
-       "password": "Pa$$word",
-       "dogs": []
-       }
-   
+    {
+        "id": "1",
+        "firstName": "John",
+        "lastName": "Appleseed",
+        "email": "johnappleseed@apple.com",
+        "password": "Pa$$word",
+        "dogs": [
+            {
+                "id": "3",
+                "name": "Lenny",
+                "breed": {
+                    "id": 1,
+                    "name": "Affenpinscher"
+                },
+                "age": "11",
+                "pictureURL": ""
+            }
+        ]
+    }
+    
+

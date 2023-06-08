@@ -32,7 +32,7 @@ struct AddDogViewModel {
     }
     
     
-    func saveDog(dog: DogModel, for user: User) {
+    func saveDog(dog: DogModel, for user: UserModel) {
         persistenceServices.add(dog: dog, to: user)
     }
     

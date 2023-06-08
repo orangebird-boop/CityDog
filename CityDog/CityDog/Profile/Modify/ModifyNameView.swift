@@ -53,6 +53,6 @@ struct ModifyNameView: View {
 
 struct ModifyName_Previews: PreviewProvider {
     static var previews: some View {
-        ModifyNameView(viewModel: ModifyNameViewModel(user: User.dummyUser()))
+        ModifyNameView(viewModel: ModifyNameViewModel(user: UserModel.dummyUser()))
     }
 }

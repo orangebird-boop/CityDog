@@ -1,6 +1,6 @@
 import Foundation
 
-public struct DogModel: Identifiable {
+public struct DogModel: Identifiable, Decodable {
 
     // MARK: - Properties
     

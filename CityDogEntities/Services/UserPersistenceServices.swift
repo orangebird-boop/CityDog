@@ -53,7 +53,7 @@ public class UserPersistenceServices {
         }
     }
     
-    public func fetchDog(for user: User) throws -> [DogModel] {
+    public func fetchDog(for user: UserModel) throws -> [DogModel] {
         let request: NSFetchRequest<DogEntity> = DogEntity.fetchRequest()
         request.predicate = NSPredicate(format: "userId == %@", user.id)
         
@@ -70,7 +70,7 @@ public class UserPersistenceServices {
    
     
     
-    public func add(dog: DogModel, to user: User) {
+    public func add(dog: DogModel, to user: UserModel) {
         
         // fetching user
         let request: NSFetchRequest<UserEntity> = UserEntity.fetchRequest()
