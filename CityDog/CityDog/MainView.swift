@@ -4,7 +4,7 @@ import CityDogEntities
 
 struct MainView: View {
     var viewModel: UserProfileViewModel
-    
+//     var service: UserDataService
     @State private var userLoaded = false
     
     var body: some View {

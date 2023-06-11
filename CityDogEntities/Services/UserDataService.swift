@@ -2,10 +2,10 @@ import Foundation
 import CoreData
 
 
-class UserDataService {
-    static let shared = UserDataService()
+public class UserDataService {
+    static public let shared = UserDataService()
     
-    private init() {}
+    public init() {}
     
     public func loadUserFromJSON() {
         guard let path = Bundle.main.path(forResource: "dummyUser", ofType: "json") else {
