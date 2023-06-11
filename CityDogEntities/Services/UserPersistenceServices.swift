@@ -40,7 +40,7 @@ public class UserPersistenceServices {
         }
     }
     
-    func fetchUser() -> UserEntity? {
+    public func fetchUser() -> UserEntity? {
         let fetchRequest: NSFetchRequest<UserEntity> = UserEntity.fetchRequest()
         
         

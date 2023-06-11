@@ -7,6 +7,7 @@ struct AddDogView: View {
 
     var ageOfDog = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13"]
     var viewModel: AddDogViewModel
+    var service: UserPersistenceServices
 
 //    @State private var selectedDogBreed: Breed
     @State private var selectedDogBreedIndex = -1
@@ -57,16 +58,24 @@ struct AddDogView: View {
                     Text("Name of your dog")
                 }
                 
-                Section {
-                    Picker("Please select a dog breed", selection: $selectedDogBreedIndex) {
-                        
-                        ForEach(viewModel.dogBreeds, id: \.id) {
-                            Text($0.name)
-                            
-                        }
-                    }.pickerStyle(.navigationLink)
-                    
-                }
+                Section(header: Text("Please select a dog breed")) {
+                                   Picker(selection: $selectedDogBreedIndex, label: Text("Please select a dog breed")) {
+                                       ForEach(viewModel.dogBreeds, id: \.id) { breed in
+                                           Text(breed.name).tag(breed.id)
+                                       }
+                                   }.pickerStyle(.navigationLink)
+                               }
+                
+//                Section {
+//                    Picker("Please select a dog breed", selection: $selectedDogBreedIndex) {
+//
+//                        ForEach(viewModel.dogBreeds, id: \.id) {
+//                            Text($0.name)
+//
+//                        }
+//                    }.pickerStyle(.navigationLink)
+//
+//                }
                 
                 Section {
                     Picker("Please select your dogs age", selection: $selectedAge) {
@@ -91,7 +100,7 @@ struct AddDogView: View {
             
             
             Button(action: {
-                viewModel.saveDog()
+                saveDog()
             }, label: {
                 Text("Save changes")
                     .fontWeight(.heavy)
@@ -107,6 +116,42 @@ struct AddDogView: View {
             
         }
     }
+    
+    private func transformImage(_ image: UIImage) -> UIImage {
+        let targetSize = CGSize(width: 200, height: 200) // Set your desired image size here
+
+        UIGraphicsBeginImageContextWithOptions(targetSize, false, 0.0)
+        image.draw(in: CGRect(origin: .zero, size: targetSize))
+
+        let transformedImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+
+        return transformedImage ?? image
+    }
+    
+    private func saveDog() {
+        let transformedImage = transformImage(image) // Apply image transformations here
+
+            guard let imageData = transformedImage.jpegData(compressionQuality: 1.0) else {
+                return
+            }
+
+            let base64ImageString = imageData.base64EncodedString()
+
+        let dog = DogModel(id: UUID().uuidString, name: dogName, breed: viewModel.dogBreeds[selectedDogBreedIndex], age: selectedAge, pictureURL: base64ImageString)
+        let user = service.fetchUser() // Replace with your user model instance
+
+                // Save the image to Core Data
+          
+           
+
+                viewModel.saveDog(dog: dog, for: user)
+//        let dog = DogModel(name: dogName, age: selectedAge, breed: viewModel.dogBreeds[selectedDogBreedIndex])
+//        let user = UserModel() // Replace with your user model instance
+//
+//        viewModel.saveDog(dog: dog, for: user)
+    }
+
 }
 
 //struct AddDog_Previews: PreviewProvider {

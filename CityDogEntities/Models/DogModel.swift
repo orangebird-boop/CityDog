@@ -12,7 +12,7 @@ public struct DogModel: Identifiable, Decodable {
     
     // MARK: - Initialization
     public init(id: String, name: String, breed: Breed, age: String, pictureURL: String) {
-        self.id = id
+        self.id = UUID().uuidString
         self.name = name
         self.breed = breed
         self.age = age
