@@ -1,6 +1,6 @@
 import Foundation
 
-public struct UserModel: Identifiable, Decodable {
+public class UserModel: Identifiable, Decodable, ObservableObject {
  
     
     // MARK: - Initialization
