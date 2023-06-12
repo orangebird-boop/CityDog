@@ -3,9 +3,10 @@ import UIKit
 import CoreData
 
 
+
 public class UserDataService {
     static public let shared = UserDataService()
-    
+     
     public init() {}
     
     public func loadUserFromJSON() {
@@ -26,13 +27,23 @@ public class UserDataService {
             print("Failed to load user from JSON: \(error)")
         }
     }
+ 
     
     private func saveUserToCoreData(user: UserModel) {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            return
-        }
-        
-        let context = appDelegate.persistentContainer.viewContext
+
+        var container: NSPersistentContainer = {
+           let container = NSPersistentContainer(name: "Entities")
+           
+           container.loadPersistentStores { _, error in
+               if let error {
+                   dump(error)
+               }
+           }
+           return container
+       }()
+        var context: NSManagedObjectContext = {
+           container.viewContext
+       }()
         
         // Check if the user already exists in Core Data
         let fetchRequest: NSFetchRequest<UserEntity> = UserEntity.fetchRequest()
@@ -42,9 +53,11 @@ public class UserDataService {
             let matchingUsers = try context.fetch(fetchRequest)
             let currentUserEntity: UserEntity
             
-            if let existingUserEntity = matchingUsers.first {
+            if !matchingUsers.isEmpty {
                 // Update the existing user entity
-                currentUserEntity = existingUserEntity
+                guard matchingUsers.first != nil else {
+                            fatalError("Fetching user was unsuccessful")
+                        }
             } else {
                 // Create a new user entity
                 currentUserEntity = UserEntity(context: context)
@@ -56,10 +69,10 @@ public class UserDataService {
             currentUserEntity.email = user.email
             currentUserEntity.password = user.password
             
-            // Remove any existing dogs for the user
-            if let existingDogs = currentUserEntity.dogs as? Set<DogEntity> {
-                currentUserEntity.removeFromDogs(existingDogs)
-            }
+//            // Remove any existing dogs for the user
+//            if let existingDogs = currentUserEntity.dogs as? Set<DogEntity> {
+//                currentUserEntity.removeDogs(existingDogs)
+//            }
             
             // Add the dogs to the user entity
             for dog in user.dogs {
@@ -68,11 +81,9 @@ public class UserDataService {
                 dogEntity.name = dog.name
                 dogEntity.age = dog.age
                 
-                let breedEntity = BreedEntity(context: context)
-                breedEntity.id = Int16(dog.breed.id)
-                breedEntity.name = dog.breed.name
                 
-                dogEntity.breed = breedEntity
+                dogEntity.breed = dog.breed.name
+            
                 currentUserEntity.addToDogs(dogEntity)
             }
             
@@ -84,4 +95,6 @@ public class UserDataService {
             print("Failed to save user to Core Data: \(error)")
         }
     }
+    
+  
 }

@@ -66,16 +66,7 @@ struct AddDogView: View {
                                    }.pickerStyle(.navigationLink)
                                }
                 
-//                Section {
-//                    Picker("Please select a dog breed", selection: $selectedDogBreedIndex) {
-//
-//                        ForEach(viewModel.dogBreeds, id: \.id) {
-//                            Text($0.name)
-//
-//                        }
-//                    }.pickerStyle(.navigationLink)
-//
-//                }
+
                 
                 Section {
                     Picker("Please select your dogs age", selection: $selectedAge) {
@@ -118,7 +109,7 @@ struct AddDogView: View {
     }
     
     private func transformImage(_ image: UIImage) -> UIImage {
-        let targetSize = CGSize(width: 200, height: 200) // Set your desired image size here
+        let targetSize = CGSize(width: 200, height: 200) // Set image size here
 
         UIGraphicsBeginImageContextWithOptions(targetSize, false, 0.0)
         image.draw(in: CGRect(origin: .zero, size: targetSize))
@@ -130,7 +121,7 @@ struct AddDogView: View {
     }
     
     private func saveDog() {
-        let transformedImage = transformImage(image) // Apply image transformations here
+        let transformedImage = transformImage(image) // image transformations here
 
             guard let imageData = transformedImage.jpegData(compressionQuality: 1.0) else {
                 return
@@ -139,9 +130,9 @@ struct AddDogView: View {
             let base64ImageString = imageData.base64EncodedString()
 
         let dog = DogModel(id: UUID().uuidString, name: dogName, breed: viewModel.dogBreeds[selectedDogBreedIndex], age: selectedAge, pictureURL: base64ImageString)
-        let user = service.fetchUser() // Replace with your user model instance
+        let user = service.fetchUser()
 
-                // Save the image to Core Data
+               
           
            
 

@@ -2,7 +2,7 @@
 //  UserEntity+CoreDataProperties.swift
 //  CityDogEntities
 //
-//  Created by Nora Lilla Matyassi on 07/06/2023.
+//  Created by Nora Lilla Matyassi on 12/06/2023.
 //
 //
 
@@ -21,25 +21,8 @@ extension UserEntity {
     @NSManaged public var id: String?
     @NSManaged public var lastName: String?
     @NSManaged public var password: String?
-    @NSManaged public var dogs: NSSet?
     @NSManaged public var comments: NSSet?
-
-}
-
-// MARK: Generated accessors for dogs
-extension UserEntity {
-
-    @objc(addDogsObject:)
-    @NSManaged public func addToDogs(_ value: DogEntity)
-
-    @objc(removeDogsObject:)
-    @NSManaged public func removeFromDogs(_ value: DogEntity)
-
-    @objc(addDogs:)
-    @NSManaged public func addToDogs(_ values: NSSet)
-
-    @objc(removeDogs:)
-    @NSManaged public func removeFromDogs(_ values: NSSet)
+    @NSManaged public var dogs: NSSet?
 
 }
 
@@ -57,6 +40,23 @@ extension UserEntity {
 
     @objc(removeComments:)
     @NSManaged public func removeFromComments(_ values: NSSet)
+
+}
+
+// MARK: Generated accessors for dogs
+extension UserEntity {
+
+    @objc(addDogsObject:)
+    @NSManaged public func addToDogs(_ value: DogEntity)
+
+    @objc(removeDogsObject:)
+    @NSManaged public func removeFromDogs(_ value: DogEntity)
+
+    @objc(addDogs:)
+    @NSManaged public func addToDogs(_ values: NSSet)
+
+    @objc(removeDogs:)
+    @NSManaged public func removeFromDogs(_ values: NSSet)
 
 }
 

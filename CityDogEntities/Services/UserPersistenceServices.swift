@@ -104,6 +104,37 @@ public class UserPersistenceServices {
         
     }
     
+    public func removeAllDogs(from user:UserModel) {
+        // Fetch the user entity
+        let userFetchRequest: NSFetchRequest<UserEntity> = UserEntity.fetchRequest()
+        userFetchRequest.predicate = NSPredicate(format: "id == %@", user.id)
+
+        do {
+            let matchingUsers = try Self.context.fetch(userFetchRequest)
+
+            guard let currentUserEntity = matchingUsers.first else {
+                fatalError("Fetching user was unsuccessful")
+            }
+
+            // Remove all dog entities from the user
+            if let dogs = currentUserEntity.dogs as? Set<DogEntity> {
+                for dogEntity in dogs {
+                    currentUserEntity.removeFromDogs(dogEntity)
+                    Self.context.delete(dogEntity)
+                }
+
+                // Save the changes
+                try Self.context.save()
+
+                print("All dogs removed successfully")
+            } else {
+                print("User does not have any dogs")
+            }
+        } catch {
+            print("Failed to remove dogs. Error: \(error)")
+        }
+    }
+    
 
     
     public func fetchComment(for elementId: String) throws -> [ElementsModel.Comment] {

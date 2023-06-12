@@ -31,6 +31,6 @@ public class UserModel: Identifiable, Decodable, ObservableObject {
 
 public extension UserModel {
     static func dummyUser() -> Self {
-        UserModel(id: UUID().uuidString, firstName: "Peter", lastName: "Griffin", email: "johnappleseed@apple.com", password: "", dogs: [DogModel(id: UUID().uuidString, name: "Snoopy", breed: Breed(id: 1, name: "Beagle"), age: "11", pictureURL: "")])
+        UserModel(id: UUID().uuidString, firstName: "Peter", lastName: "Griffin", email: "johnappleseed@apple.com", password: "", dogs: [DogModel(id: UUID().uuidString, name: "Snoopy", breed: Breed(id: 1, name: "Beagle"), age: "11", pictureURL: "")]) as! Self
     }
 }
