@@ -9,8 +9,7 @@ struct MainView: View {
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
-            // TODO: Replace this by real data from DB
-            UserProfileView(viewModel: UserProfileViewModel(user: User.dummyUser()))
+           DogImageView()
                 .tabItem {
                     Label("Profile", systemImage: "person.circle")
                 }

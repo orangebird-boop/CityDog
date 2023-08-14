@@ -33,12 +33,6 @@ struct ElementsDetailsView: View {
                                     .cornerRadius(16)
                                     .foregroundColor(.accentColor)
                                 
-                                
-                                //                            Text("Show on map")
-                                //                                .font(.headline)
-                                //                                .cornerRadius(16)
-                                //                                .foregroundColor(.accentColor)
-                                
                             }
                             )
                         }
@@ -61,19 +55,6 @@ struct ElementsDetailsView: View {
                     } header: {
                         Text(viewModel.element.sumRating)
                     }
-                    
-                    Section {
-                        NavigationLink {
-                            ElementsCommentsView(viewModel: ElementsCommentsViewModel())
-                        } label: {
-                            Text("Go to comments")
-                                .foregroundColor(.accentColor)
-                        }
-                        
-                    } header: {
-                        Text("Comments")
-                    }
-                    
                 }
             }
         }

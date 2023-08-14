@@ -110,10 +110,74 @@
             filePath = "CityDog/CityDog/Elements/ElementsDetailsView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "89"
-            endingLineNumber = "89"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "openMaps()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "61FFE970-C359-4F5D-9C71-324776B1B2C5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CityDog/CityDog/Elements/ElementsDetailsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "openMaps()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "61FFE970-C359-4F5D-9C71-324776B1B2C5 - 20a2aafec8907d8e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CityDog.ElementsDetailsView.openMaps() -&gt; ()"
+                  moduleName = "CityDog"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/noralilla/LocalDocuments/work/CityDog/CityDog/CityDog/Elements/ElementsDetailsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "109">
+               </Location>
+               <Location
+                  uuid = "61FFE970-C359-4F5D-9C71-324776B1B2C5 - 20a2aafec8907d8e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CityDog.ElementsDetailsView.openMaps() -&gt; ()"
+                  moduleName = "CityDog"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/noralilla/LocalDocuments/work/CityDog/CityDog/CityDog/Elements/ElementsDetailsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "561">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "21C5479E-9567-4610-81AB-D2E3D728B4A2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CityDog/CityDogTests/ShopViewModelTests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

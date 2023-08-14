@@ -8,47 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		B2BC5BB02A1120200061F258 /* FilesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BC5BAF2A1120200061F258 /* FilesService.swift */; };
-		B2BC5BB22A1122FB0061F258 /* DogService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BC5BB12A1122FB0061F258 /* DogService.swift */; };
 		B2BC5BB82A13FA660061F258 /* ElementsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BC5BB72A13FA660061F258 /* ElementsService.swift */; };
-		B2C0A92729E83C420056521B /* UserProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A92629E83C420056521B /* UserProfileModel.swift */; };
 		B2C0A92929E83C560056521B /* ElementsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A92829E83C560056521B /* ElementsModel.swift */; };
-		B2C0A93129F93B720056521B /* Entities.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A92F29F93B720056521B /* Entities.xcdatamodeld */; };
-		B2C0A9B929FFDAB20056521B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9B829FFDAB20056521B /* User.swift */; };
-		B2C0A9BB29FFDBB60056521B /* DogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9BA29FFDBB60056521B /* DogModel.swift */; };
-		B2C0A9FD2A090BA50056521B /* ElementEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9F32A090BA50056521B /* ElementEntity+CoreDataClass.swift */; };
-		B2C0A9FE2A090BA50056521B /* ElementEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9F42A090BA50056521B /* ElementEntity+CoreDataProperties.swift */; };
-		B2C0A9FF2A090BA50056521B /* CommentEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9F52A090BA50056521B /* CommentEntity+CoreDataClass.swift */; };
-		B2C0AA002A090BA50056521B /* CommentEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9F62A090BA50056521B /* CommentEntity+CoreDataProperties.swift */; };
-		B2C0AA012A090BA50056521B /* UserEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9F72A090BA50056521B /* UserEntity+CoreDataClass.swift */; };
-		B2C0AA022A090BA50056521B /* UserEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9F82A090BA50056521B /* UserEntity+CoreDataProperties.swift */; };
-		B2C0AA032A090BA50056521B /* AddressEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9F92A090BA50056521B /* AddressEntity+CoreDataClass.swift */; };
-		B2C0AA042A090BA50056521B /* AddressEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9FA2A090BA50056521B /* AddressEntity+CoreDataProperties.swift */; };
-		B2C0AA052A090BA50056521B /* DogEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9FB2A090BA50056521B /* DogEntity+CoreDataClass.swift */; };
-		B2C0AA062A090BA50056521B /* DogEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0A9FC2A090BA50056521B /* DogEntity+CoreDataProperties.swift */; };
-		B2C0AA092A090C1B0056521B /* UserPersistenceServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2C0AA082A090C1B0056521B /* UserPersistenceServices.swift */; };
+		B2DD81582A6D32EE00A36A7D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DD81572A6D32EE00A36A7D /* NetworkManager.swift */; };
+		B2DD815A2A6D333E00A36A7D /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DD81592A6D333E00A36A7D /* ImageService.swift */; };
+		B2DD815C2A6D341D00A36A7D /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2DD815B2A6D341D00A36A7D /* ImageModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B2BC5BAF2A1120200061F258 /* FilesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesService.swift; sourceTree = "<group>"; };
-		B2BC5BB12A1122FB0061F258 /* DogService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogService.swift; sourceTree = "<group>"; };
 		B2BC5BB72A13FA660061F258 /* ElementsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementsService.swift; sourceTree = "<group>"; };
 		B2C0A91C29E83B7E0056521B /* CityDogEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CityDogEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B2C0A92629E83C420056521B /* UserProfileModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileModel.swift; sourceTree = "<group>"; };
 		B2C0A92829E83C560056521B /* ElementsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ElementsModel.swift; sourceTree = "<group>"; };
-		B2C0A93029F93B720056521B /* Entities.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Entities.xcdatamodel; sourceTree = "<group>"; };
-		B2C0A9B829FFDAB20056521B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		B2C0A9BA29FFDBB60056521B /* DogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogModel.swift; sourceTree = "<group>"; };
-		B2C0A9F32A090BA50056521B /* ElementEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ElementEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
-		B2C0A9F42A090BA50056521B /* ElementEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ElementEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		B2C0A9F52A090BA50056521B /* CommentEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommentEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
-		B2C0A9F62A090BA50056521B /* CommentEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CommentEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		B2C0A9F72A090BA50056521B /* UserEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
-		B2C0A9F82A090BA50056521B /* UserEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		B2C0A9F92A090BA50056521B /* AddressEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddressEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
-		B2C0A9FA2A090BA50056521B /* AddressEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AddressEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		B2C0A9FB2A090BA50056521B /* DogEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DogEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
-		B2C0A9FC2A090BA50056521B /* DogEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DogEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		B2C0AA082A090C1B0056521B /* UserPersistenceServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPersistenceServices.swift; sourceTree = "<group>"; };
+		B2DD81572A6D32EE00A36A7D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = SOURCE_ROOT; };
+		B2DD81592A6D333E00A36A7D /* ImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		B2DD815B2A6D341D00A36A7D /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +40,6 @@
 			isa = PBXGroup;
 			children = (
 				B2C0AA072A090BF80056521B /* Services */,
-				B2C0A9AB29FD49690056521B /* Entities */,
 				B2C0A91E29E83B7E0056521B /* Models */,
 				B2C0A91D29E83B7E0056521B /* Products */,
 			);
@@ -83,39 +56,19 @@
 		B2C0A91E29E83B7E0056521B /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				B2C0A92629E83C420056521B /* UserProfileModel.swift */,
 				B2C0A92829E83C560056521B /* ElementsModel.swift */,
-				B2C0A9B829FFDAB20056521B /* User.swift */,
-				B2C0A9BA29FFDBB60056521B /* DogModel.swift */,
+				B2DD815B2A6D341D00A36A7D /* ImageModel.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		B2C0A9AB29FD49690056521B /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				B2C0A9F32A090BA50056521B /* ElementEntity+CoreDataClass.swift */,
-				B2C0A9F42A090BA50056521B /* ElementEntity+CoreDataProperties.swift */,
-				B2C0A9F52A090BA50056521B /* CommentEntity+CoreDataClass.swift */,
-				B2C0A9F62A090BA50056521B /* CommentEntity+CoreDataProperties.swift */,
-				B2C0A9F72A090BA50056521B /* UserEntity+CoreDataClass.swift */,
-				B2C0A9F82A090BA50056521B /* UserEntity+CoreDataProperties.swift */,
-				B2C0A9F92A090BA50056521B /* AddressEntity+CoreDataClass.swift */,
-				B2C0A9FA2A090BA50056521B /* AddressEntity+CoreDataProperties.swift */,
-				B2C0A9FB2A090BA50056521B /* DogEntity+CoreDataClass.swift */,
-				B2C0A9FC2A090BA50056521B /* DogEntity+CoreDataProperties.swift */,
-				B2C0A92F29F93B720056521B /* Entities.xcdatamodeld */,
-			);
-			path = Entities;
 			sourceTree = "<group>";
 		};
 		B2C0AA072A090BF80056521B /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				B2C0AA082A090C1B0056521B /* UserPersistenceServices.swift */,
 				B2BC5BAF2A1120200061F258 /* FilesService.swift */,
-				B2BC5BB12A1122FB0061F258 /* DogService.swift */,
 				B2BC5BB72A13FA660061F258 /* ElementsService.swift */,
+				B2DD81592A6D333E00A36A7D /* ImageService.swift */,
+				B2DD81572A6D32EE00A36A7D /* NetworkManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -198,25 +151,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2C0AA042A090BA50056521B /* AddressEntity+CoreDataProperties.swift in Sources */,
-				B2C0AA002A090BA50056521B /* CommentEntity+CoreDataProperties.swift in Sources */,
-				B2C0AA022A090BA50056521B /* UserEntity+CoreDataProperties.swift in Sources */,
-				B2C0AA012A090BA50056521B /* UserEntity+CoreDataClass.swift in Sources */,
-				B2C0A9FF2A090BA50056521B /* CommentEntity+CoreDataClass.swift in Sources */,
+				B2DD81582A6D32EE00A36A7D /* NetworkManager.swift in Sources */,
+				B2DD815C2A6D341D00A36A7D /* ImageModel.swift in Sources */,
 				B2C0A92929E83C560056521B /* ElementsModel.swift in Sources */,
-				B2C0A9FD2A090BA50056521B /* ElementEntity+CoreDataClass.swift in Sources */,
-				B2C0A9BB29FFDBB60056521B /* DogModel.swift in Sources */,
-				B2C0A92729E83C420056521B /* UserProfileModel.swift in Sources */,
-				B2C0AA052A090BA50056521B /* DogEntity+CoreDataClass.swift in Sources */,
 				B2BC5BB82A13FA660061F258 /* ElementsService.swift in Sources */,
-				B2C0A93129F93B720056521B /* Entities.xcdatamodeld in Sources */,
-				B2C0AA032A090BA50056521B /* AddressEntity+CoreDataClass.swift in Sources */,
-				B2C0AA062A090BA50056521B /* DogEntity+CoreDataProperties.swift in Sources */,
-				B2C0AA092A090C1B0056521B /* UserPersistenceServices.swift in Sources */,
+				B2DD815A2A6D333E00A36A7D /* ImageService.swift in Sources */,
 				B2BC5BB02A1120200061F258 /* FilesService.swift in Sources */,
-				B2C0A9B929FFDAB20056521B /* User.swift in Sources */,
-				B2C0A9FE2A090BA50056521B /* ElementEntity+CoreDataProperties.swift in Sources */,
-				B2BC5BB22A1122FB0061F258 /* DogService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,19 +361,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		B2C0A92F29F93B720056521B /* Entities.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				B2C0A93029F93B720056521B /* Entities.xcdatamodel */,
-			);
-			currentVersion = B2C0A93029F93B720056521B /* Entities.xcdatamodel */;
-			path = Entities.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = B2C0A91329E83B7E0056521B /* Project object */;
 }
